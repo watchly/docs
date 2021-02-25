@@ -47,12 +47,11 @@ filebeat.inputs:
     # Specify the path of the system log files to be sent to Axiom deployment. 
     paths: 
       - $PATH_TO_LOG_FILE
-
 output.elasticsearch:
   # using the specified Axiom API
-  hosts: ["$YOUR_A_URL:443/api/v1/datasets/<my-datasets>/elastic"]
+  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<my-datasets>/elastic"]
   # api_key can be your ingest or personal token
-  api_key: ""
+  api_key: "user:token"
 
 ```
 
