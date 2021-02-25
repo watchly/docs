@@ -97,7 +97,7 @@ This gives deep insights into how your various applications are behaving. It als
 **Customize Organizations / Team management** - Teams can have multiple Axiom users as members and your Axiom user can be a member of multiple teams. [Learn how to manage users and teams](/usage/settings/#manage-teams) for your configuration. 
 ## We’re here to help/Support
 
-- Blog: Explore the various contents on our [blog](blog.axiom.co)
+- Blog: Explore the various contents on our [blog](https://axiom.co/blog)
 
 - Community - Visit the Axiom community to learn, ask questions, and discuss ideas with everyone.
 
