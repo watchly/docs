@@ -1,0 +1,61 @@
+site_name: Documentation
+site_url: https://docs.axiom.co
+copyright: Copyright (c) Axiom, Inc. 2021
+theme:
+  name: material
+  custom_dir: overrides
+  font: false
+  logo: assets/xiom.svg
+  favicon: assets/favicon.ico
+  features:
+    - instant
+plugins:
+  - search
+  - minify:
+      minify_html: true
+extra_css:
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - assets/javascript/expand-nav.js
+markdown_extensions:
+  - footnotes
+  - admonition
+  - codehilite
+  - meta
+  - toc:
+      permalink: true
+  - codehilite:
+      linenums: true
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://axiom.co
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/AxiomHQ
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/AxiomFM
+nav:
+  - Home: 
+      - Welcome: "index.md"
+      - Getting started: "getting-started.md"
+      - Axiom Interface: "Axiom-Interface.md"
+  - Usage:
+      - Ingesting: "usage/ingest.md"
+      - Analyzing: "usage/analyze.md"
+      - Streaming: "usage/stream.md"
+      - Dashboards: "usage/dashboards.md"
+      - Alerting: "usage/alerts.md"
+      - Integrations: "usage/integrations.md"
+    # - Elastic Beats: "elastic-beats.md"
+      - CLI: "usage/CLI.md"
+      - Settings: "usage/settings.md"
+  - Reference:
+      - Visualizations: "reference/visualizations.md"
+      - Virtual Fields: "reference/virtual-fields.md"
+      - API: "reference/api.md"
+#      - Use Cases: "reference/use-cases.md"

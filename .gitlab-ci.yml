@@ -1,0 +1,25 @@
+stages:
+  - build
+  - deploy
+
+pages:
+  stage: build
+  image: python:3-alpine
+  script:
+    - apk update
+    - apk add --virtual build-dependencies build-base gcc wget git python3-dev
+    - pip3 install mkdocs mkdocs-material pygments mkdocs-minify-plugin
+    - mkdocs build -d public
+  artifacts:
+    paths:
+      - public
+
+deploy:
+  stage: deploy
+  image: google/cloud-sdk:288.0.0-alpine
+  script:
+    - gcloud auth activate-service-account --key-file=$GCLOUD_KEY_FILE
+    - gsutil -m rsync -r -d public gs://docs-axiomtestlabs-co
+  only:
+    - master@watchmakers/docs
+  when: on_success
