@@ -1,11 +1,11 @@
 <div class="axi-header">
-  <h1>Axiom Interface</h1>
+  <h1>Interface</h1>
 </div>
 
 
 This page describes the major components of the Axiom Interface. 
 
-The [overview](index.md) of the entire Infrastructure is displayed in the table list below with description of each infrastructure feature. 
+The [overview](index.md) of the entire interface is displayed in the table list below with description of each element. 
 
 ---
 

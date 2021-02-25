@@ -43,7 +43,7 @@ nav:
   - Home: 
       - Welcome: "index.md"
       - Getting started: "getting-started.md"
-      - Axiom Interface: "interface.md"
+      - Interface: "interface.md"
   - Usage:
       - Ingesting: "usage/ingest.md"
       - Analyzing: "usage/analyze.md"
