@@ -52,7 +52,6 @@ output.elasticsearch:
   hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<my-datasets>/elastic"]
   # api_key can be your ingest or personal token
   api_key: "user:token"
-
 ```
 
 #### Metricbeat
