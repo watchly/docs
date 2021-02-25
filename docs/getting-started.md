@@ -25,7 +25,7 @@ Events can be emitted from internal or third-party services, cloud functions, co
 }
 ```
 
-An event must belong to a **Dataset**, which is a collection of similar events. You can have multiple datasets that help to segment your events to make them easier to query and visualize, and also aide in acceas control.
+An event must belong to a **Dataset**, which is a collection of similar events. You can have multiple datasets that help to segment your events to make them easier to query and visualize, and also aide in access control.
 
 Axiom stores **every event you send** and makes it available to you for querying either by streaming logs in real-time, or by analyzing events to produce visualizations.
 
