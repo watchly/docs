@@ -89,12 +89,6 @@ output.elasticsearch:
   api_key:  "user:token"
 ```
 
-#### Packetbeat
-
-
-#### Ingest data using Kubernetes. 
-
-```
 
 
 
