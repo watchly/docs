@@ -88,7 +88,7 @@ metricbeat.modules:
     - memory
     - network
 output.elasticsearch:
-  hosts: ["https://axiom-azure1.instance.axiomtestlabs.co:443/api/v1/datasets/<dataset>/elastic"]
+  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
   api_key: "axiom:"
 
 ```
