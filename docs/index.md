@@ -69,9 +69,9 @@ Axiom lets you ingest any kind of structured data, be that logs from functions, 
 
 Axiom provides you with the tools to stream and analyze massive amounts of data with ease. View live data streaming in or run aggregations across your data to gain insights on how things are behaving.
 
-## Get(ing) started with Axiom 
+## Getting started with Axiom 
 
-To get started with Axiom, learn how to [Get your data into Axiom](getting-started/#1-get-your-data-into-axiom). This page aims to ensure users are getting the best value/significance out of Axiom Cloud Native data insight platform.
+To get started with Axiom, learn how to [Push your data into Axiom](getting-started/#1-get-your-data-into-axiom). This page aims to ensure users are getting the best value/significance out of Axiom Cloud Native data insight platform.
 ## Explore Axiom
 
 Explore our documentation to learn about Axiom products and features. Here are some highlights from each section of the docs:
