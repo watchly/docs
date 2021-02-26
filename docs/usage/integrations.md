@@ -64,16 +64,12 @@ Metricbeat is installed on your systems and services and used for monitoring the
 
 Visit the [MetricBeat OSS download page](https://www.elastic.co/downloads/beats/metricbeat-oss) to install Metricbeat. For more information, check out Metricbeat's [official documentation](https://www.elastic.co/guide/en/beats/metricbeat/current/index.html)
 
-**When downloading Metricbeat, install the OSS version being that the non-oss version doesn't work with Axiom**
-
-
 ##### **Configuration**
 
 === "yml"
 
 ```
 metricbeat.modules:
-
 setup.ilm.enabled: false
 metricbeat.config.modules:
   path:
@@ -89,8 +85,8 @@ metricbeat.modules:
     - network
 output.elasticsearch:
   hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
-  api_key: "axiom:"
-
+  # api_key can be your ingest or personal token
+  api_key:  "user:token"
 ```
 
 #### Packetbeat
