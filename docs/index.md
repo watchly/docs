@@ -71,7 +71,7 @@ Axiom provides you with the tools to stream and analyze massive amounts of data 
 
 ## Getting started with Axiom 
 
-To get started with Axiom, learn how to [Push your data into Axiom](getting-started/#1-get-your-data-into-axiom). This page aims to ensure users are getting the best value/significance out of Axiom Cloud Native data insight platform.
+To get started with Axiom, learn how to [Push your data into Axiom](getting-started/#1-get-your-data-into-axiom). This page aims to ensure users are getting the best value out of Axiom Cloud Native data insight platform.
 ## Explore Axiom
 
 Explore our documentation to learn about Axiom products and features. Here are some highlights from each section of the docs:
