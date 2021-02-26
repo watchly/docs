@@ -10,7 +10,7 @@ A Data shipper is a tool which collects data from different sources, and then se
 
 These logs can then be [monitored](/usage/alerts/) and [analyzed](/usage/analyze/) based on specific logging pattern. 
 
-Presently, Axiom provides support/integration for the following Data shippers:
+Presently, Axiom provides support & integration for the following Data shippers:
 
 ### [Elastic Beats](/usage/integrations/#elastic-beats)
 
@@ -89,12 +89,6 @@ output.elasticsearch:
   api_key:  "user:token"
 ```
 
-#### Packetbeat
-
-
-#### Ingest data using Kubernetes. 
-
-```
 
 
 
