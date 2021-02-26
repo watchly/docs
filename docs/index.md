@@ -69,9 +69,9 @@ Axiom lets you ingest any kind of structured data, be that logs from functions, 
 
 Axiom provides you with the tools to stream and analyze massive amounts of data with ease. View live data streaming in or run aggregations across your data to gain insights on how things are behaving.
 
-## Get(ing) started with Axiom 
+## Getting started with Axiom 
 
-To get started with Axiom, learn how to [Get your data into Axiom](getting-started/#1-get-your-data-into-axiom). This page aims to ensure users are getting the best value/significance out of Axiom Cloud Native data insight platform.
+To get started with Axiom, learn how to [Push your data into Axiom](getting-started/#1-get-your-data-into-axiom). This page aims to ensure users are getting the best value/significance out of Axiom Cloud Native data insight platform.
 ## Explore Axiom
 
 Explore our documentation to learn about Axiom products and features. Here are some highlights from each section of the docs:
@@ -94,7 +94,7 @@ An event must belong to a **Dataset**. A Dataset is a collection of similar even
 
 This gives deep insights into how your various applications are behaving. It also lets you track your services, gather metrics, and monitor performance in your different environments.
 
-**Customize Organizations / Team management** - Teams can have multiple Axiom users as members and your Axiom user can be a member of multiple teams. [Learn how to manage users and teams](/usage/settings/#manage-teams) for your configuration. 
+**Customize Organizations & Team management** - Teams can have multiple Axiom users as members and your Axiom user can be a member of multiple teams. [Learn how to manage users and teams](/usage/settings/#manage-teams) for your configuration. 
 ## We’re here to help/Support
 
 - Blog: Explore the various contents on our [blog](https://axiom.co/blog)
