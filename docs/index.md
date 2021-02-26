@@ -95,7 +95,7 @@ An event must belong to a **Dataset**. A Dataset is a collection of similar even
 This gives deep insights into how your various applications are behaving. It also lets you track your services, gather metrics, and monitor performance in your different environments.
 
 **Customize Organizations & Team management** - Teams can have multiple Axiom users as members and your Axiom user can be a member of multiple teams. [Learn how to manage users and teams](/usage/settings/#manage-teams) for your configuration. 
-## We’re here to help/Support
+## We’re here to Support
 
 - Blog: Explore the various contents on our [blog](https://axiom.co/blog)
 
