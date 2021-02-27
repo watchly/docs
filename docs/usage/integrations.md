@@ -88,8 +88,3 @@ output.elasticsearch:
   # api_key can be your ingest or personal token
   api_key:  "user:token"
 ```
-
-
-
-
-
