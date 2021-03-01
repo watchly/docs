@@ -96,3 +96,11 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     ```
 
 ```
+
+## License
+
+&copy; Axiom, Inc., 2021
+
+Distributed under MIT License (`The MIT License`).
+
+See [LICENSE](LICENSE) for more information.
