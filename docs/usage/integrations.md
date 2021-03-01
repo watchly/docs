@@ -40,7 +40,6 @@ In order for Filebeat to work, index lifecycle management (ILM) must be disabled
 === "yml"
 
 ```
-
 setup.ilm.enabled: false
 filebeat.inputs:
   - type: log
