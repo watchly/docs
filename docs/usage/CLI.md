@@ -18,6 +18,8 @@ To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.
     $ go get -u github.com/axiomhq/cli/cmd/axiom
     ```
 
+---
+
 You can also install the CLI using [Homebrew](https://brew.sh/) 
 
 === "Brew"
