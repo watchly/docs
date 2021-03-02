@@ -30,9 +30,23 @@ You can also install the CLI using [Homebrew](https://brew.sh/)
     ```
 This installs Axiom command globally so you can run `axiom` commands from any directory. 
 
+---
+
+Install from source using the native [go mod](https://golang.org/cmd/go/#hdr-Module_maintenance) support
+
+=== "Bash"
+
+    ```Bash
+    $ git clone https://github.com/axiomhq/cli.git
+    $ cd cli
+    $ make install # Build and install binary into $GOPATH
+    ```
+
+
 You can check the version and find out basic commands about the tool with the following command:
 
 === "bash"
+
 ```
 $ axiom
 ```
