@@ -44,7 +44,6 @@ Axiom lets you ingest data with the ElasticSearch bulk ingest API.
 
 In order for Filebeat to work, index lifecycle management (ILM) must be disabled. To do so, **add setup.ilm.enabled: false** to the filebeat.yml configuration file. 
 
----
 
 === "yml"
 
@@ -75,7 +74,6 @@ Metricbeat is installed on your systems and services and used for monitoring the
 
 Visit the [MetricBeat OSS download page](https://www.elastic.co/downloads/beats/metricbeat-oss) to install Metricbeat. For more information, check out Metricbeat's [official documentation](https://www.elastic.co/guide/en/beats/metricbeat/current/index.html)
 
----
 
 ##### **Configuration**
 
