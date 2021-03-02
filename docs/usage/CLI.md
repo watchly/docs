@@ -42,6 +42,17 @@ Install from source using the native [go mod](https://golang.org/cmd/go/#hdr-Mod
     $ make install # Build and install binary into $GOPATH
     ```
 
+---
+
+Install & Run the Docker image
+
+=== "Bash"
+
+    ```Bash
+    $ docker pull axiomhq/cli
+    $ docker run axiomhq/cli  
+    ```
+
 
 You can check the version and find out basic commands about the tool with the following command:
 
