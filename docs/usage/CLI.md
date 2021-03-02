@@ -137,7 +137,7 @@ visit the [Axiom CLI](https://github.com/axiomhq/cli) repository on GitHub.
 
 Import, transfer, load and process data for later use or storage using the Axiom CLI move data from o Axiom CLI supports the ingestion of different formats of data ( JSON, NDJSON, and CSV) 
 
-**To view a list of all the available commands run `axiom` on your terminal:** 
+> **To view a list of all the available commands run `axiom` on your terminal:** 
 
 === "Shell"
 
