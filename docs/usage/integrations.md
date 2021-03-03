@@ -104,6 +104,6 @@ output.elasticsearch:
 
 Heartbeat allows you to periodically check the status of your services and determine whether they are available or not. With Heartbeat you can configure three different types of monitors:
 
-> - ICMP: Pings the particular IP address called hostname 
-> - TCP: This monitor allows you to connect to a particular endpoint, you can configure the monitor to verify the endpoint by sending and/or receiving a custom payload.
-> - HTTP: Use the `http` monitor to connect via `HTTP`. you can configure the monitor to verify the that the service returns the expected response. 
+- ICMP: Pings the particular IP address called hostname 
+- TCP: This monitor allows you to connect to a particular endpoint, you can configure the monitor to verify the endpoint by sending and/or receiving a custom payload.
+- HTTP: Use the `http` monitor to connect via `HTTP`. you can configure the monitor to verify the that the service returns the expected response. 
