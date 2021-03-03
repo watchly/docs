@@ -21,7 +21,7 @@ Presently, Axiom provides support & integration for the following Data shippers:
 There are different [Elastic Beats](https://www.elastic.co/beats/) you could use to ship logs and Axioms documentation provides a detailed step by step procedure on how to use each Beats. 
 
 ---
-#### Filebeat
+> #### Filebeat
 
 [Filebeat](https://www.elastic.co/beats/filebeat) is a lightweight shipper for logs, it helps you centralize logs, files and can read files from your system.
 
@@ -99,7 +99,6 @@ output.elasticsearch:
   # api_key can be your ingest or personal token
   api_key:  "user:token"
 ```
-
 
 #### Winlogbeat
 
