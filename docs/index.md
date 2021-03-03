@@ -51,18 +51,18 @@ The documentation has been written to be read in order or as a reference. If you
       <p>Manage & Test</p>
     </div>
   </a>
-  <a href="/usage/integrations" class="overview-item" title="CLI">
-    <img src="assets/integration.svg" alt="Integration icon"/>
+  <a href="/data-shippers/elastic-beats" class="overview-item" title="CLI">
+    <img src="assets/data-shippers.svg" alt="ingest icon"/>
     <div class="overview-item-desc">
-      <h4>Integrations</h4>
+      <h4>Data Shippers</h4>
       <p>Integrate Orchestrators</p>
     </div>
   </a>
   <a href="/usage/settings/#manage-teams" class="overview-item" title="">
     <img src="assets/team-management.svg" alt="management icon"/>
     <div class="overview-item-desc">
-      <h4>Team management</h4>
-      <p>Accounts & User</p>
+      <h4>Users & Teams</h4>
+      <p>Role-based Access Control</p>
     </div>
   </a>
 </div>
