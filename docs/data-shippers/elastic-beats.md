@@ -8,22 +8,7 @@
 There are different [Elastic Beats](https://www.elastic.co/beats/) you could use to ship logs and Axioms documentation provides a detailed step by step procedure on how to use each Beats.
 
 
-<<<<<<< HEAD:docs/data-shippers/elastic-beats.md
 ## Filebeat
-=======
-Presently, Axiom provides support & integration for the following Data shippers:
-
----
-
-### [Elastic Beats](/usage/integrations/#elastic-beats)
-
-[Elasticbeats](https://www.elastic.co/beats/) serves as a lightweight platform for data shippers that transfer information from the source to axiom and other tools based on the configuration. Before shipping data, beats collects metrics and logs from different sources, which later are deployed to your Axiom instance/deployments. 
-
-There are different [Elastic Beats](https://www.elastic.co/beats/) you could use to ship logs and Axioms documentation provides a detailed step by step procedure on how to use each Beats. 
-
----
-> #### Filebeat
->>>>>>> c453aae (fix):docs/usage/integrations.md
 
 [Filebeat](https://www.elastic.co/beats/filebeat) is a lightweight shipper for logs, it helps you centralize logs, files and can read files from your system.
 
@@ -89,10 +74,3 @@ output.elasticsearch:
   # api_key can be your ingest or personal token
   api_key:  "user:token"
 ```
-<<<<<<< HEAD:docs/data-shippers/elastic-beats.md
-=======
-
-#### Winlogbeat
-
-Ship your windows events logs using Winlogbeat
->>>>>>> c453aae (fix):docs/usage/integrations.md
