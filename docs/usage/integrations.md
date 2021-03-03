@@ -2,7 +2,7 @@
   <h1>Integrations</h1>
 </div>
 
-> ## Ingest Data logs using a Data shipper. 
+# Ingest Data logs using a Data shipper. 
 
 Axiom supports the installation and configuration of different data shippers (filebeats, logstash) which lets you ingest logs, metrics, into your dataset. 
 
