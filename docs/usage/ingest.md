@@ -13,8 +13,7 @@ Before ingesting data, you will need an API Token which you can generate from th
 
 1. Using the [Ingest API](#ingest-api)
 2. Using a [Data Shipper](#data-shippers) (Logstash, Filebeats, etc)
-3. Using an [Integration](#integrations)
-4. Using the [Elasticsearch Bulk API](#elasticsearch-bulk-api) that Axiom supports natively
+4. Using the [Elasticsearch Bulk API](/data-shippers/api) that Axiom supports natively
 
 ## Ingest API
 
@@ -48,19 +47,18 @@ More client libraries are coming very soon!
 | Maximum Event Fields      |   250 |
 | Maximum Array Field Items |   100 |
 
-## Data Shippers
+## Data Shippers
 
-Configure, read, collect, and Send logs to your Axiom deployment using a variety of log shippers. Data shippers are lightweight agents that acquire logs, metrics, and lets you ship data directly into Axiom. 
+Configure, read, collect, and Send logs to your Axiom deployment using a variety of data shippers. Data shippers are lightweight agents that acquire logs, metrics, and lets you ship data directly into Axiom. 
 
-With the integration of Data shippers to ingest data into Axiom, it is easier for you to create custom built beats for any type of data you would like to send to Axiom. 
-
-
-<a class="axi-link-button" href="/usage/integrations" title="Learn about integrations">
+<a class="axi-link-button" href="/data-shippers/api" title="API Compatibility">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
-  <span>Learn about integrations</span>
+  <span>Ingest using API</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
 </a>
 
-## Elasticsearch Bulk API
-
-By default, Axiom supports the ingestion of events by sending them to the [Elastic Bulk API](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/docs-bulk.html) compatible endpoint at **/datasets/:dataset/elastic.** Only the index and create actions are supported, other actions are discarded.
+<a class="axi-link-button" href="/data-shippers/elastic-beats" title="Elastic Beats">
+  <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
+  <span>Ingest using Elastic Beats</span>
+  <img src="/assets/chevron-right.svg" width=16 alt="go" />
+</a>

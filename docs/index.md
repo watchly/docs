@@ -1,6 +1,12 @@
 <div class="axi-header">
-  <h1>Welcome to Axiom</h1>
+  <h1>Welcome to Axiom Documentation</h1>
 </div>
+
+Axiom is a cloud-native, serverless data analytics platform that enables storing and querying unlimited machine data.
+
+In this documentation, you will be able to gain a deeper understanding of what Axiom is, how to get it installed, and how best to use it for your organization's use-case.
+
+The documentation has been written to be read in order or as a reference. If you find that something is unclear, missing, or would like further understanding, please do not hesitate to [get in touch](mailto:support@axiom.co).
 
 <div class="overview-grid">
   <a href="/usage/ingest" class="overview-item" title="Ingest">
@@ -45,65 +51,30 @@
       <p>Manage & Test</p>
     </div>
   </a>
-  <a href="/usage/integrations" class="overview-item" title="CLI">
-    <img src="assets/integration.svg" alt="Integration icon"/>
+  <a href="/data-shippers/elastic-beats" class="overview-item" title="CLI">
+    <img src="assets/data-shippers.svg" alt="ingest icon"/>
     <div class="overview-item-desc">
-      <h4>Integrations</h4>
+      <h4>Data Shippers</h4>
       <p>Integrate Orchestrators</p>
     </div>
   </a>
   <a href="/usage/settings/#manage-teams" class="overview-item" title="">
     <img src="assets/team-management.svg" alt="management icon"/>
     <div class="overview-item-desc">
-      <h4>Team management</h4>
-      <p>Accounts & User</p>
+      <h4>Users & Teams</h4>
+      <p>Role-based Access Control</p>
     </div>
   </a>
 </div>
 
-## Welcome to Axiom
+## New to Axiom?
 
-Axiom is a cloud-native, serverless data analytics platform that enables storing and querying unlimited machine data.
+If you're new to Axiom, check out our [Introduction](/introducing-axiom) and [FAQ](/faq).
 
-Axiom lets you ingest any kind of structured data, be that logs from functions, containers, or VMs, to event data from internal or external services.
+## We’re Here to Help
 
-Axiom provides you with the tools to stream and analyze massive amounts of data with ease. View live data streaming in or run aggregations across your data to gain insights on how things are behaving.
+- <a href="https://axiom.co/blog" target="_blank">Blog</a>: Keep up to date with the latest news from Axiom.
 
-## Getting started with Axiom 
+- <a href="https://axiom.co/support" target="_blank">Community</a>: Visit the Axiom community to learn, ask questions, and discuss ideas with everyone.
 
-To get started with Axiom, learn how to [Push your data into Axiom](getting-started/#1-get-your-data-into-axiom). This page aims to ensure users are getting the best value out of Axiom Cloud Native data insight platform.
-## Explore Axiom
-
-Explore our documentation to learn about Axiom products and features. Here are some highlights from each section of the docs:
-
-**Ingest data into Axiom** - Axiom supports ingesting structured data which can be sent via a variety of means without requiring you to configure any infrastructure. Each individual piece of data is called an **Event**. 
-
-An event must belong to a **Dataset**. A Dataset is a collection of similar events. You can have multiple datasets that help to segment your events which makes them easier to query, visualize, and also aid in access control. Learn more about [Ingesting Data](/usage/ingest)
-
-**Analyze data** - With Axiom you can [evaluate](/getting-started/#3-analyze-your-data), and segment your data for monitoring and observability. Learn how to gain [insights](/usage/analyze/) from your data visually.
-
-**Stream data** - Axiom makes it really easy to send and view data on all deployments. Learn more about data [streams](/getting-started/#2-stream-your-data) and how to [Filter](/usage/stream/) individual events as they are ingested to see important information, and finally inspect each event.
-
-**Create a Dashboard** - Axiom users can modify and create personalized dashboards to show custom models and metrics for their services, infrastructure and resources in a single location. Explore and learn how to create custom [dashboards](/usage/dashboards/)
-
-**Monitor data** - Axiom lets you get [notified](/getting-started/#4-monitor-for-problems) when there are issues with your data. Learn how to [Setup Monitors and Notifiers](/usage/alerts/) for your resources and workloads.
-
-**CLI** - You can use [Axiom's command line interface](https://github.com/axiomhq/cli) to create, manage, build and test your Axiom projects.
-
-**Manage integrations** - Axiom supports the integration of different platforms, applications, orchestrators, and third-party services. Get [started](/getting-started/#5-integrate-with-data-shippers) and Explore the various [Integrations](/usage/integrations) supported on Axiom.
-
-This gives deep insights into how your various applications are behaving. It also lets you track your services, gather metrics, and monitor performance in your different environments.
-
-**Customize Organizations & Team management** - Teams can have multiple Axiom users as members and your Axiom user can be a member of multiple teams. [Learn how to manage users and teams](/usage/settings/#manage-teams) for your configuration. 
-## We’re here to Support
-
-- Blog: Explore the various contents on our [blog](https://www.axiom.co/blog/)
-
-- Community - Visit the Axiom community to learn, ask questions, and discuss ideas with everyone.
-
-- Tutorials - Explore the tutorials on our blog for step-by-step guides on Axiom features.
-
-<a class="axi-link-button" href="/getting-started" title="Geting Started">
-  <span>Get Started with Axiom</span>
-  <img src="/assets/chevron-right.svg" width=16 alt="go" />
-</a>
+- [Contact Support](mailto:support@axiom.co): For anything not covered in this documentation.
