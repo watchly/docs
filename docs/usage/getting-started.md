@@ -4,7 +4,7 @@
 
 This guide will introduce you to the concepts behind working with Axiom and give a short introduction to each of the high-level features.
 
----
+<img class="axi-window-shadow" src="/assets/shots/analytics.png" alt="axiom overview" />
 
 ## 1. Get your data into Axiom
 
@@ -43,7 +43,7 @@ Axiom **does not sample** your data on ingest or querying, unless you've express
 
 Axiom makes it really easy to view your data as it's being ingested live. This is also referred to as "Live Stream" or "Live Tail", and the result is having a terminal-like feel of being able to view all your events in real-time:
 
-<img src="/assets/window-stream.png" alt="Axiom stream page screenshot" />
+<img class="axi-window-shadow" src="/assets/shots/stream.png" alt="Axiom stream page screenshot" />
 
 From the Stream page, you can easily add filters to narrow down the results as well as save popular searches and share them with your organization members. You can also hide/show specific fields
 
@@ -59,7 +59,7 @@ Another useful feature of the stream page is to only show events in a particular
 
 While viewing individual events can be very useful, at scale and for general monitoring and observability, it is important to be able to quickly aggregate, filter, and segment your data. The Analytics page lets you do just that, and more:
 
-<img src="/assets/window-analytics.png" alt="Axiom analytics page screenshot" />
+<img class="axi-window-shadow"  src="/assets/shots/analytics.png" alt="Axiom analytics page screenshot" />
 
 The Analyze page gives you various tools to extract insights from a dataset, including **visualizing aggregations** (count, min, max, average, percentiles, heatmaps, and more), **filtering events** (with and/or grouped filters containing one or more field filters), and segmentation via **group-by**.
 
@@ -81,6 +81,8 @@ Get alerted when there are problems with your data, such as
 - Web containers are taking too long to respond
 - A specific customer has started using a new feature
 - etc, etc
+
+<img class="axi-window-shadow"  src="/assets/shots/alerts.png" alt="Axiom alerts page screenshot" />
 
 Axiom alerting consists of two key concepts:
 
@@ -114,6 +116,8 @@ As your use of Axiom widens, you can customize it for your organization's needs:
 - Create and manage teams
 - Setup Role-Base Access Control
 - Setup per-user/service API tokens
+
+<img class="axi-window-shadow"  src="/assets/shots/settings.png" alt="Axiom settings page screenshot" />
 
 <a class="axi-link-button" href="/usage/settings" title="Learn about settings">
   <img src="/assets/settings.svg" width=24 alt="integrations icon" />
