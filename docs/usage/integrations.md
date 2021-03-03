@@ -100,7 +100,7 @@ output.elasticsearch:
   api_key:  "user:token"
 ```
 
-> #### Heartbeat
+#### Heartbeat
 
 Heartbeat allows you to periodically check the status of your services and determine whether they are available or not. With Heartbeat you can configure three different types of monitors:
 
