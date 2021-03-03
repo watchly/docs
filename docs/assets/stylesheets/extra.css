@@ -1,18 +1,35 @@
 :root {
   /* Primary color shades */
-  --md-primary-fg-color: #37248f;
+  --md-primary-fg-color: #364153;
   --md-primary-fg-color--light: #ffffff;
-  --md-primary-fg-color--dark: #37248f;
+  --md-primary-fg-color--dark: #364153;
   --md-primary-bg-color: hsla(0, 0%, 100%, 1);
   --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
 
   /* Accent color shades */
-  --md-accent-fg-color: #735dd0;
-  --md-accent-fg-color--transparent: #735dd0;
-  --md-primary-bg-color: hsla(0, 0%, 100%, 1);
-  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-accent-fg-color: #364153;
+  --md-accent-fg-color--transparent: #364153;
+  --md-default-fg-color--lightest: #f0f2f5;
 
-  --md-text-link-color: #1070ca;
+  --md-text-link-color: #326ec4;
+}
+
+p a, p a:visited{
+  color: #326ec4 !important;
+}
+
+p a:hover{
+  color: #326ec4 !important;
+  text-decoration: underline;
+}
+
+li:not(.md-nav__item) a, li:not(.md-nav__item) a:visited{
+  color: #326ec4;
+}
+
+li:not(.md-nav__item) a:hover{
+  color: #326ec4;
+  text-decoration: underline;
 }
 
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
@@ -31,13 +48,13 @@
 .md-typeset h2 {
   margin-top: 48px;
   padding-top: 48px;
-  color: #000;
+  color: var(--md-accent-fg-color);
   border-top: 1px solid #e4e7eb;
 }
 
 .md-typeset h3 {
   margin-top: 48px;
-  color: #000;
+  color: var(--md-accent-fg-color);
 }
 
 .md-typeset h4 {
@@ -53,11 +70,11 @@ label.md-nav__link {
 }
 
 .md-footer {
-  background-color: #37248f;
+  background-color: #364153;
 }
 
 .md-typeset table:not([class]) th {
-  background-color: #735dd0;
+  background-color: #384151;
   color: #fff;
   font-weight: 600;
 }
@@ -71,12 +88,12 @@ label.md-nav__link {
   padding: 16px 24px;
   margin-bottom: 36px;
   border-radius: 4px;
-  background-color: #342589;
-  background-image: url("/assets/circles.png");
+  background-color: #364153;
+  background-image: url("/assets/axiom-circles.svg");
   background-position-y: center;
-  background-position-x: right;
+  background-position-x: 425px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 60%;
 }
 
 .axi-header h1 {
@@ -84,8 +101,7 @@ label.md-nav__link {
   font-weight: 400;
   color: #fff;
   margin: 0;
-  border-left: 2px solid #735dd0;
-  padding: 6px 0 6px 24px;
+  padding: 6px 0;
 }
 
 .axi-link-button {
@@ -126,6 +142,12 @@ label.md-nav__link {
 
 }
 
+.axi-window-shadow {
+  margin: 12px 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 16px rgba(127, 140, 160, 0.5);
+}
+
 .axi-crop {
   background-color: #f5f6f7;
   padding: 12px;
@@ -146,7 +168,7 @@ label.md-nav__link {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: #000;
+  color: var(--md-accent-fg-color);
 
   transition: box-shadow 0.2s ease-in-out;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0);
@@ -156,8 +178,8 @@ label.md-nav__link {
   box-shadow: 0px 4px 12px rgba(127, 140, 160, 0.1);
 }
 
-.overview-item:visited {
-  color: #000;
+.overview-item:visited, .overview-item:active {
+  color: var(--md-accent-fg-color);
 }
 
 .overview-item > img {
