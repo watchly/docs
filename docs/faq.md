@@ -2,7 +2,7 @@
   <h1>Frequently Asked Questions</h1>
 </div>
 
-This page includes frequently asked questions from users which we feel help to build a better understanding of Axiom and how best to use it. If you cannot find an answer to your own questions, please do not hesitate to [contact us](support@axiom.co).
+This page includes frequently asked questions from users which we feel help to build a better understanding of Axiom and how best to use it. If you cannot find an answer to your own questions, please do not hesitate to [contact us](mailto:support@axiom.co).
 
 ## What is Axiom?
 

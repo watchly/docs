@@ -10,56 +10,56 @@ The documentation has been written to be read in order or as a reference. If you
 
 <div class="overview-grid">
   <a href="/usage/ingest" class="overview-item" title="Ingest">
-    <img src="assets/ingest.svg" alt="ingest icon" />
+    <img src="/assets/ingest.svg" alt="ingest icon" />
     <div class="overview-item-desc">
       <h4>Ingesting Data</h4>
       <p>Get data into Axiom</p>
     </div>
   </a>
   <a href="/usage/analyze" class="overview-item" title="Analyze">
-    <img src="assets/analyze.svg" alt="analyze icon" />
+    <img src="/assets/analyze.svg" alt="analyze icon" />
     <div class="overview-item-desc">
       <h4>Analyzing Data</h4>
       <p>Gain insights from your data</p>
     </div>
   </a>
   <a href="/usage/stream" class="overview-item" title="Stream">
-    <img src="assets/stream.svg" alt="stream icon" />
+    <img src="/assets/stream.svg" alt="stream icon" />
     <div class="overview-item-desc">
       <h4>Stream Data</h4>
       <p>Inspect streams of data live</p>
     </div>
   </a>
   <a href="/usage/alerts" class="overview-item" title="Monitor">
-    <img src="assets/monitor.svg" alt="monitor icon"/>
+    <img src="/assets/monitor.svg" alt="monitor icon"/>
     <div class="overview-item-desc">
       <h4>Monitor Data</h4>
       <p>Alert in real-time</p>
     </div>
   </a>
   <a href="/usage/dashboards" class="overview-item" title="Dashboard">
-    <img src="assets/dashboard.svg" alt="dashboard icon"/>
+    <img src="/assets/dashboard.svg" alt="dashboard icon"/>
     <div class="overview-item-desc">
       <h4>Create Dashboards</h4>
       <p>Personalize custom models</p>
     </div>
   </a>
   <a href="/usage/CLI" class="overview-item" title="CLI">
-    <img src="assets/command-line.svg" alt="CLI icon"/>
+    <img src="/assets/command-line.svg" alt="CLI icon"/>
     <div class="overview-item-desc">
       <h4>Axiom CLI</h4>
       <p>Manage & Test</p>
     </div>
   </a>
   <a href="/data-shippers/elastic-beats" class="overview-item" title="CLI">
-    <img src="assets/data-shippers.svg" alt="ingest icon"/>
+    <img src="/assets/data-shippers.svg" alt="ingest icon"/>
     <div class="overview-item-desc">
       <h4>Data Shippers</h4>
       <p>Integrate Orchestrators</p>
     </div>
   </a>
   <a href="/usage/settings/#manage-teams" class="overview-item" title="">
-    <img src="assets/team-management.svg" alt="management icon"/>
+    <img src="/assets/team-management.svg" alt="management icon"/>
     <div class="overview-item-desc">
       <h4>Users & Teams</h4>
       <p>Role-based Access Control</p>
