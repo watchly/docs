@@ -76,7 +76,7 @@ output.elasticsearch:
 
 ## Winlogbeat  
 
-[Winlogbeat](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html) is an open-source Windows specific event-log shipper that is installed as a Windows service. It can be used to collect and send event logs to Axiom. 
+[Winlogbeat](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html) is an open-source Windows specific event-log shipper that is installed as a Windows service. It can be used to collect and send event logs to **Axiom.**
 
 Winlogbeat reads from one or more event logs using Windows APIs, filters the events based on user-configured criteria, then sends the event data to the configured outputs. 
 
