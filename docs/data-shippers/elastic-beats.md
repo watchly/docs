@@ -2,7 +2,6 @@
   <h1>Ingest using Elastic Beats</h1>
 </div>
 
-
 [Elasticbeats](https://www.elastic.co/beats/) serves as a lightweight platform for data shippers that transfer information from the source to axiom and other tools based on the configuration. Before shipping data, beats collects metrics and logs from different sources, which later are deployed to your Axiom instance/deployments.
 
 There are different [Elastic Beats](https://www.elastic.co/beats/) you could use to ship logs and Axioms documentation provides a detailed step by step procedure on how to use each Beats.
@@ -74,3 +73,86 @@ output.elasticsearch:
   # api_key can be your ingest or personal token
   api_key:  "user:token"
 ```
+
+## Winlogbeat  
+
+[Winlogbeat](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html) is an open-source Windows specific event-log shipper that is installed as a Windows service. It can be used to collect and send event logs to **Axiom.**
+
+Winlogbeat reads from one or more event logs using Windows APIs, filters the events based on user-configured criteria, then sends the event data to the configured outputs. 
+
+You can Capture:
+- application events
+- hardware events
+- security events
+- system events
+
+### Installation 
+Visit the [Winlogbeat download page](https://www.elastic.co/downloads/beats/winlogbeat) to install Winlogbeat. For more information, check out Winlogbeat's [official documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/winlogbeat-installation-configuration.html)
+
+- Extract the contents of the zip file into C:\Program Files.
+- Rename the winlogbeat-<version> directory to Winlogbeat
+- Open a PowerShell prompt as an Administrator and run 
+
+```
+PS C:\Users\Administrator> cd 'C:\Program Files\Winlogbeat'
+
+PS C:\Program Files\Winlogbeat> .\install-service-winlogbeat.ps1
+```
+
+### Configuration
+
+Configuration for Winlogbeat Service is found in the `winlogbeat.yml file in C:\Program Files\Winlogbeat.`
+
+Edit the winlogbeat.yml configuration file found in `C:\Program Files\Winlogbeat` this will let you send data to Axiom.
+
+**What is winlogbeat.yml File?**
+The winlogbeat.yml file contains the configuration on which windows events and service it should monitor and the time required.
+
+```yaml
+winlogbeat.event_logs:
+  - name: Application
+  - name: System
+  - name: Security
+output.elasticsearch:
+  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
+  api_key: "user:token"
+logging.to_files: true
+logging.files:
+  path: C:\ProgramData\Winlogbeat\Logs
+logging.level: info
+
+```
+
+#### Validate Configuration 
+
+```
+# Check if your configuration is correct 
+
+PS C:\Program Files\Winlogbeat> .\winlogbeat.exe test config -c .\winlogbeat.yml -e
+
+```
+
+#### Start Winlogbeat 
+
+```
+PS C:\Program Files\Winlogbeat> Start-Service winlogbeat
+```
+
+You can view the status of the service and control it from the Services management console in Windows. To launch the management console, run this command:
+
+```
+PS C:\Program Files\Winlogbeat> services.msc
+```
+
+#### Stop Winlogbeat 
+
+```
+PS C:\Program Files\Winlogbeat> Stop-Service winlogbeat
+
+```
+
+> For more information on Winlogbeat event logs visit the [documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)
+
+
+
+
