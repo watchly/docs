@@ -2,7 +2,7 @@
   <h1>Ingest using Elastic Beats</h1>
 </div>
 
-[Elasticbeats](https://www.elastic.co/beats/) serves as a lightweight platform for data shippers that transfer information from the source to axiom and other tools based on the configuration. Before shipping data, beats collects metrics and logs from different sources, which later are deployed to your Axiom instance/deployments.
+[Elasticbeats](https://www.elastic.co/beats/) serves as a lightweight platform for data shippers that transfer information from the source to axiom and other tools based on the configuration. Before shipping data, beats collects metrics and logs from different sources, which later are deployed to your Axiom deployments.
 
 There are different [Elastic Beats](https://www.elastic.co/beats/) you could use to ship logs and Axioms documentation provides a detailed step by step procedure on how to use each Beats.
 
@@ -88,14 +88,15 @@ You can Capture:
 - system events
 
 ### Installation 
+
 Visit the [Winlogbeat download page](https://www.elastic.co/downloads/beats/winlogbeat) to install Winlogbeat. For more information, check out Winlogbeat's [official documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/winlogbeat-installation-configuration.html)
 
 - Extract the contents of the zip file into C:\Program Files.
-- Rename the winlogbeat-<version> directory to Winlogbeat
+- Rename the **winlogbeat-<version>** directory to Winlogbeat
 - Open a PowerShell prompt as an Administrator and run 
 
-```
-PS C:\Users\Administrator> cd 'C:\Program Files\Winlogbeat'
+```shell 
+PS C:\Users\Administrator> cd C:\Program Files\Winlogbeat
 
 PS C:\Program Files\Winlogbeat> .\install-service-winlogbeat.ps1
 ```
@@ -125,7 +126,7 @@ output.elasticsearch:
 
 #### Validate Configuration 
 
-```
+```shell
 # Check if your configuration is correct 
 
 PS C:\Program Files\Winlogbeat> .\winlogbeat.exe test config -c .\winlogbeat.yml -e
@@ -134,24 +135,28 @@ PS C:\Program Files\Winlogbeat> .\winlogbeat.exe test config -c .\winlogbeat.yml
 
 #### Start Winlogbeat 
 
-```
+```shell 
 PS C:\Program Files\Winlogbeat> Start-Service winlogbeat
 ```
 
-You can view the status of the service and control it from the Services management console in Windows. To launch the management console, run this command:
+You can view the status of your service and control it from the Services management console in Windows. 
 
-```
+To launch the management console, run this command:
+
+```shell 
 PS C:\Program Files\Winlogbeat> services.msc
 ```
 
 #### Stop Winlogbeat 
 
-```
+```shell 
 PS C:\Program Files\Winlogbeat> Stop-Service winlogbeat
 
 ```
 
-> For more information on Winlogbeat event logs visit the [documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)
+
+---
+**For more information on Winlogbeat event logs visit the [documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)**
 
 
 
