@@ -13,7 +13,7 @@ There are different [Elastic Beats](https://www.elastic.co/beats/) you could use
 
 Filebeats is useful for workloads, system, application log files, and data logs you would like to ingest to Axiom in some way.
 
-In the logging case, it helps centralize logs and files in a structured pattern by reading from your various applications, services, workloads and VMs, then shipping to your Axiom instance/deployments.
+In the logging case, it helps centralize logs and files in a structured pattern by reading from your various applications, services, workloads and VMs, then shipping to your Axiom deployments.
 
 ### **Installation**
 
