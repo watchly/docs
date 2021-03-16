@@ -81,6 +81,7 @@ output.elasticsearch:
 Winlogbeat reads from one or more event logs using Windows APIs, filters the events based on user-configured criteria, then sends the event data to the configured outputs. 
 
 You can Capture:
+
 - application events
 - hardware events
 - security events
@@ -113,14 +114,13 @@ winlogbeat.event_logs:
   - name: Application
   - name: System
   - name: Security
-output.elasticsearch:
-  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
-  api_key: "user:token"
 logging.to_files: true
 logging.files:
   path: C:\ProgramData\Winlogbeat\Logs
 logging.level: info
-
+output.elasticsearch:
+  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
+  api_key: "user:token"
 ```
 
 #### Validate Configuration 
