@@ -75,12 +75,4 @@ output.elasticsearch:
   api_key:  "user:token"
 ```
 
-## Heartbeat
-
-[Heartbeat](https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-overview.html) lets you to check the status of your services and determine if they are available or not. There are three different types of monitors you can configure inside heartbeat. 
-
-- ICMP: When you want to check whether a specific service is available. 
-- TCP: This monitor allows you to verify the endpoint by sending and receiving a transmitted data sent by communicating endpoints.
-- HTTP: The `http` monitor lets you verify that the service returns the expected response.  
-
-Check out the [documentation](https://www.elastic.co/guide/en/beats/heartbeat/current/index.html) on how to install, configure and run Heartbeat. 
+## Winlogbeat  
