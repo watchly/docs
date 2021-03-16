@@ -88,7 +88,7 @@ You can Capture:
 
 ### Installation 
 Visit the [Winlogbeat download page](https://www.elastic.co/downloads/beats/winlogbeat) to install Winlogbeat. For more information, check out Winlogbeat's [official documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/winlogbeat-installation-configuration.html)
----
+
 - Extract the contents of the zip file into C:\Program Files.
 - Rename the winlogbeat-<version> directory to Winlogbeat
 - Open a PowerShell prompt as an Administrator and run 
