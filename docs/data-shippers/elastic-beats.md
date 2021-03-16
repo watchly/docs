@@ -80,7 +80,7 @@ output.elasticsearch:
 
 Winlogbeat reads from one or more event logs using Windows APIs, filters the events based on user-configured criteria, then sends the event data to the configured outputs. 
 
-> You can Capture:
+You can Capture:
 - application events
 - hardware events
 - security events
