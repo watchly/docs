@@ -114,14 +114,13 @@ winlogbeat.event_logs:
   - name: Application
   - name: System
   - name: Security
-output.elasticsearch:
-  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
-  api_key: "user:token"
 logging.to_files: true
 logging.files:
   path: C:\ProgramData\Winlogbeat\Logs
 logging.level: info
-
+output.elasticsearch:
+  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
+  api_key: "user:token"
 ```
 
 #### Validate Configuration 
