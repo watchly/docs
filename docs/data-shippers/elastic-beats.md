@@ -165,7 +165,7 @@ PS C:\Program Files\Winlogbeat> Stop-Service winlogbeat
 ---
 **For more information on Winlogbeat event logs visit the [documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)**
 
----
+
 
 ## Heartbeat
 
@@ -189,7 +189,9 @@ Visit the [Heartbeat download page](https://www.elastic.co/guide/en/beats/heartb
 
 Heartbeat provides monitors to check the status of hosts at set intervals. Heartbeat currently provides monitors for ICMP, TCP, and HTTP. 
 
-You configure each monitor individually. In `heartbeat.yml`, specify the list of monitors that you want to enable. Each item in the list begins with a dash (-). The example below configures Heartbeat to use three monitors: *an icmp monitor, a tcp monitor, and an http monitor.* and deploy instantly to **Axiom**. 
+You configure each monitor individually. In `heartbeat.yml`, specify the list of monitors that you want to enable. Each item in the list begins with a dash (-). 
+
+The example below configures Heartbeat to use three monitors: *an icmp monitor, a tcp monitor, and an http monitor.* and deploy instantly to **Axiom**. 
 
 === "Yaml"
 
