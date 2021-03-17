@@ -191,7 +191,7 @@ Heartbeat provides monitors to check the status of hosts at set intervals. Heart
 
 You configure each monitor individually. In `heartbeat.yml`, specify the list of monitors that you want to enable. Each item in the list begins with a dash (-). 
 
-The example below configures Heartbeat to use three monitors: *an icmp monitor, a tcp monitor, and an http monitor.* and deploy instantly to **Axiom**. 
+The example below configures Heartbeat to use three monitors: *an icmp monitor, a tcp monitor, and an http monitor.* deployed instantly to **Axiom**. 
 
 === "Yaml"
 
