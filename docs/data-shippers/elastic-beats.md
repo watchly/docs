@@ -170,7 +170,7 @@ PS C:\Program Files\Winlogbeat> Stop-Service winlogbeat
 
 [Heartbeat](https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-overview.html)  is a lightweight shipper for uptime monitoring. 
 
-It Monitor your services, and ship response time to **Axiom** using Heartbeat. It lets you check periodically check the status of your services and determine whether they are available. 
+It Monitor your services, and ship response time to **Axiom**. It lets you check periodically check the status of your services and determine whether they are available. 
 
 Heartbeat is useful when you need to verify that you’re meeting your service level agreements for service uptime.
 
