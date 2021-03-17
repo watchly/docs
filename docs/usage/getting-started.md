@@ -99,7 +99,7 @@ Monitors are configured with a query, a frequency (how often the monitor should 
 
 ## 5. Integrate with Data shippers
 
-Integrations can be installed and configured using different third-party Data shippers to quickly get insights from your logs and services by setting up a background task that continously synchronizes events into Axiom. 
+Integrations can be installed and configured using different third-party Data shippers to quickly get insights from your logs and services by setting up a background task that continuously synchronizes events into Axiom. 
 
 <a class="axi-link-button" href="/usage/integrations" title="Learn about integrations">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
