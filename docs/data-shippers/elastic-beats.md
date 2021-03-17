@@ -159,5 +159,29 @@ PS C:\Program Files\Winlogbeat> Stop-Service winlogbeat
 **For more information on Winlogbeat event logs visit the [documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)**
 
 
+## Heartbeat
+
+[Heartbeat](https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-overview.html)  is a lightweight shipper for uptime monitoring. 
+
+It Monitor your services, and ship response time to **Axiom** using Heartbeat. It lets you check periodically check the status of your services and determine whether they are available. 
+
+Heartbeat is useful when you need to verify that you’re meeting your service level agreements for service uptime.
+
+Heartbeat currently supports monitors for checking hosts via:
+
+- ICMP (v4 and v6) Echo Requests. Use the icmp monitor when you simply want to check whether a service is available. This monitor requires root access.
+- TCP. Use the tcp monitor to connect via TCP. You can optionally configure this monitor to verify the endpoint by sending and/or receiving a custom payload.
+- HTTP. Use the http monitor to connect via HTTP. You can optionally configure this monitor to verify that the service returns the expected response, such as a specific status code, response header, or content.
+
+
+
+
+[Heartbeat](https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-overview.html) lets you to check the status of your services and determine if they are available or not. There are three different types of monitors you can configure inside heartbeat.
+- ICMP: When you want to check whether a specific service is available.
+- TCP: This monitor allows you to verify the endpoint by sending and receiving a transmitted data sent by communicating endpoints.
+- HTTP: The `http` monitor lets you verify that the service returns the expected response.
+Check out the [documentation](https://www.elastic.co/guide/en/beats/heartbeat/current/index.html) on how to install, configure and run Heartbeat.
+
+
 
 
