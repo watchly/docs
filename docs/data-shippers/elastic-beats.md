@@ -223,3 +223,7 @@ output.elasticsearch:
 ## Auditbeat 
 
 Auditbeat is a lightweight shipper that ships events in real time to **Axiom** for further analysis. It Collects your Linux audit framework data and monitor the integrity of your files. Auditbeat is use to evaluate the activities of users and processes on your systems. 
+
+### Installation 
+
+Visit the [Auditbeat download page](https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-installation-configuration.html#installation) to install Heartbeat on your system. 
