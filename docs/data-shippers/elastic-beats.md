@@ -226,4 +226,4 @@ Auditbeat is a lightweight shipper that ships events in real time to **Axiom** f
 
 ### Installation 
 
-Visit the [Auditbeat download page](https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-installation-configuration.html#installation) to install Heartbeat on your system. 
+Visit the [Auditbeat download page](https://www.elastic.co/downloads/beats/auditbeat) to install Auditbeat on your system. 
