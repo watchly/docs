@@ -263,3 +263,8 @@ output.elasticsearch:
   api_key: "user:token"
 ```
 
+## Packetbeat
+
+Packetbeat is a real-time network packet analyzer that you can use with Axiom to provide an application monitoring and performance analytics system between the servers of your network.
+
+With **Axiom** you can use Packetbeat to capture the network traffic between your application servers, decode the application layer protocols (HTTP, MySQL, Redis, pgsql and so on), correlating the requests with the responses, and recording the interesting fields for each transaction.
