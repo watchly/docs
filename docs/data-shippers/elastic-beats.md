@@ -221,8 +221,6 @@ output.elasticsearch:
 ```
 
 ## Auditbeat 
-----
-----
 
 Auditbeat is a lightweight shipper that ships events in real time to **Axiom** for further analysis. It Collects your Linux audit framework data and monitor the integrity of your files. It is also used to evaluate the activities of users and processes on your system. 
 
