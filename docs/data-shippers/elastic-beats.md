@@ -299,7 +299,7 @@ In `packetbeat.yml`, configure the network devices and protocols to capture traf
 
 To see a list of available devices for `packetbeat.yml` configuration , run:
 
-| **OS type**    | **Commands**                                                |                                        
+| **OS type**    | **Command**                                                |                                        
 |--------------------|-----------------------------------------------------------------|
 | **DEB**       | Run `packetbeat devices`|
 | **RPM**       | Run `packetbeat devices`|
