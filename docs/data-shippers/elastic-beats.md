@@ -221,6 +221,8 @@ output.elasticsearch:
 ```
 
 ## Auditbeat 
+----
+----
 
 Auditbeat is a lightweight shipper that ships events in real time to **Axiom** for further analysis. It Collects your Linux audit framework data and monitor the integrity of your files. It is also used to evaluate the activities of users and processes on your system. 
 
@@ -231,3 +233,35 @@ You can also use Auditbeat to detect changes to critical files, like binaries an
 Visit the [Auditbeat download page](https://www.elastic.co/downloads/beats/auditbeat) to install Auditbeat on your system. 
 
 ### Configuration
+
+Auditbeat uses modules to collect audit information:
+
+- Auditd
+- File integrity
+- System 
+
+By default, Auditbeat uses a configuration that’s tailored to the operating system where Auditbeat is running.
+
+To use a different configuration, change the module settings in `auditbeat.yml.`
+
+The example below configures Auditbeat to use the ``file_integrity`` module configured to generate events whenever a file in one of the specified paths changes on disk. The events contains the file metadata and hashes, and it's deployed instantly to **Axiom**. 
+
+=== "Yaml"
+
+```yaml
+setup.ilm.enabled: false
+auditbeat.modules:
+- module: file_integrity
+  paths:
+  - /usr/bin
+  - /sbin
+  - /usr/sbin
+  - /etc
+  - /bin
+  - /usr/local/sbin
+output.elasticsearch:
+  hosts: [""$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
+  # api_key can be your ingest or personal token
+  api_key: "user:token"
+```
+
