@@ -89,25 +89,29 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 
 |**Functions** |        **Description**                  |
 |-----------------|-----------------------------------------------------------|
-| **isBool** `(val: any): bool`           |         Returns `true` if the element is a Boolean. |
-| **isInt**  `(val: any): bool`           |   	Returns `true` if the element is an integer.    |
-| **isNull** `(val: any): bool`           |      Returns `true` if the element is NULL.           |
-| **isNotNull** `(val: any): bool`        |    	Returns `true` if the element is not NULL.       |
-| **isString** `(val: any): bool`         |      Returns `true` if the field value is a string.     |
-| **isArray** `(val: any): bool`          |                Returns `true` if the object is an array. |
-| **typeOf** `(val: any): string`          |   Returns the type of a variable when you call it.|
+|**isBool** `(val: any): bool`           |         Returns TRUE if the element is a Boolean. |
+|**isInt**  `(val: any): bool`           |   	Returns TRUE if the element is an integer.    |
+|**isNill** `(val: any): bool`           |      Returns TRUE if the element is Nil.           |
+|**isNotNil** `(val: any): bool`        |    	Returns TRUE if the element is not Nil.       |
+|**isNumber** `(val: any): bool`         |        Returns TRUE when value is numeric and FALSE when not.  |
+|**isString** `(val: any): bool`        |      Returns TRUE if the field value is a string.     |
+|**isArray** `(val: any): bool`          |                Returns true if the object is an array. |
+|**isObject** `(val: any): bool`          |    Returns True if expression is a variable of Object subtype. |
+| **typeof** `(val: any): string`          |   Returns the type of a variable when you call it.|
 | **decodeBase64** `(val: string): string`  |    computes elements in base 64           |
-| **decodeHex** `(val: string): number`  | Returns the bytes represented by the hexadecimal string.  |   
-| **encodeHex** `(val: string): string` | Converts an array of bytes into a hexadecimal string.|    
-| **isCC** `(value: string): bool` | Returns true if a string is a valid credit card number |      
-| **isIMEI** `(value: string): bool`       | Returns true if the string is a valid IMEI |    
-| **md5**`(value: string): string`     | Calculates the md5 hash for the given value.          |   
-| **sha1** `(value: string): string`    | Calculates the sha1 hash for the given value.   |  
-| **sha256** `(value: string): string]`   | Calculates the sha256 hash for the given value.| 
-| **sha512** `(value: string): string`     | Calculates the sha512 hash for the given value.    |    
-| **matchCIDR** `(cidrIpRange: string, ipAddress: string): boolean`  | Returns true if the IP address range, in CIDR notation, contains `ipAddress`.|  
-| **normalizeIPV6** `(address: string): string`  | Returns the IP address or prefix normalized to the NetDB internal format.|  
-| **sprintf** `(format: string, val ...any): string`  | Returns a formatted string with the given values. |
+|  **decodeHex** `(val: string): number`  | Returns the bytes represented by the hexadecimal strings.  |  
+| **decodeURI** `(val: string): string`   | Returns a decoded URI by replacing each elements with the characters it represents.|    
+| **encodeHexString** `(val: number): string` | Converts an array of bytes into a String representing the hexadecimal elements of each byte in order.|   
+| **encodeURI** `(val: string): string`   |   returns the encoded string.  |     
+|  **isCC** `(value: string): bool` |     |      
+|  **isIMEI** `(value: string): bool`       |                   |    
+|  **md5**`(value: string): string`     |   calculates the md5 hash for the given value.          |   
+|  **sha1** `(value: string): string`    | Calculates the sha1 hash for the given value.   |  
+|  **sha256** `(value: string): string]`   |  Calculates the sha256 hash for the given value.| 
+|  **sha512** `(value: string): string`     |   Calculates the sha512 hash for the given value.    |    
+|  **matchCIDR** `(cidrIpRange: string, ipAddress: string): boolean`  | Returns TRUE or FALSE based on if an IP address matches a CIDR notation.|  
+|  **normalizeIPV6** `(address: string): string`  | Returns the IP address or prefix normalized to the NetDB internal format.|  
+|  **sprint** `(format: string, val ...any): string`  | Returns the number of characters written to **str**, excluding the nil character|
 
 ### Literals
 
