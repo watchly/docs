@@ -94,8 +94,8 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 |-----------------|-----------------------------------------------------------|
 |**isBool** `(val: any): bool`           |         Returns TRUE if the element is a Boolean. |
 |**isInt**  `(val: any): bool`           |   	Returns TRUE if the element is an integer.    |
-|**isNull** `(val: any): bool`           |      Returns TRUE if the element is NULL.           |
-|**isNotNull** `(val: any): bool`        |    	Returns TRUE if the element is not NULL.       |
+|**isNill** `(val: any): bool`           |      Returns TRUE if the element is Nil.           |
+|**isNotNil** `(val: any): bool`        |    	Returns TRUE if the element is not Nil.       |
 |**isNumber** `(val: any): bool`         |        Returns TRUE when value is numeric and FALSE when not.  |
 |**isString** `(val: any): bool`        |      Returns TRUE if the field value is a string.     |
 |**isArray** `(val: any): bool`          |                Returns true if the object is an array. |
@@ -114,7 +114,7 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 |  **sha512** `(value: string): string`     |   Calculates the sha512 hash for the given value.    |    
 |  **matchCIDR** `(cidrIpRange: string, ipAddress: string): boolean`  | Returns TRUE or FALSE based on if an IP address matches a CIDR notation.|  
 |  **normalizeIPV6** `(address: string): string`  | Returns the IP address or prefix normalized to the NetDB internal format.|  
-|  **sprint** `(format: string, val ...any): string`  | Returns the number of characters written to **str**, excluding the null character|
+|  **sprint** `(format: string, val ...any): string`  | Returns the number of characters written to **str**, excluding the nil character|
 
 ### Literals
 
