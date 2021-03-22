@@ -265,7 +265,7 @@ output.elasticsearch:
 
 ## Packetbeat
 
-Packetbeat is a real-time network packet analyzer that you can integrate with Axiom to provide an application monitoring and performance analytics system between the servers of your network.
+Packetbeat is a real-time network packet analyzer that you can integrate with **Axiom** to provide an application monitoring and performance analytics system between the servers of your network.
 
 With **Axiom** you can use Packetbeat to capture the network traffic between your application servers, decode the application layer protocols (HTTP, MySQL, Redis, pgsql, thrift, mongodb and so on), correlating the requests with the responses, and recording the interesting fields for each transaction.
 
@@ -316,8 +316,6 @@ Packetbeat supports these sniffer types:
 
 - af_packet
 
-----
-
 In the **protocols section,** configure the ports where Packetbeat can find each `protocol.` If you use any non-standard ports, add them here. Otherwise, use the default values:
 
 ---
@@ -341,28 +339,20 @@ packetbeat.flows:
 protocols:
   dns:
     ports: [53]
-
     include_authorities: true
     include_additionals: true
-
   http:
     ports: [80, 8080, 8081, 5000, 8002]
-
   memcache:
     ports: [11211]
-
   mysql:
     ports: [3306]
-
   pgsql:
     ports: [5432]
-
   redis:
     ports: [6379]
-
   thrift:
     ports: [9090]
-
   mongodb:
     ports: [27017]
 output.elasticsearch:
