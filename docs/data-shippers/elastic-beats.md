@@ -316,8 +316,11 @@ Packetbeat supports these sniffer types:
 
 - af_packet
 
+----
 
 In the **protocols section,** configure the ports where Packetbeat can find each `protocol.` If you use any non-standard ports, add them here. Otherwise, use the default values:
+
+---
 
 === "Yaml"
 
