@@ -297,7 +297,7 @@ Visit the [Packetbeat download page](https://www.elastic.co/downloads/beats/pack
 
 In `packetbeat.yml`, configure the network devices and protocols to capture traffic from.
 
-To see a list of available devices, run:
+To see a list of available devices for `packetbeat.yml` configuration , run:
 
 | **OS Command type**    | **Commands**                                                |                                        
 |--------------------|-----------------------------------------------------------------|
@@ -362,8 +362,3 @@ output.elasticsearch:
 ```
 
 **For more information on configuring Packetbeats, visit the [documentation](https://www.elastic.co/guide/en/beats/packetbeat/current/configuring-howto-packetbeat.html)**
-
-
-
-
-
