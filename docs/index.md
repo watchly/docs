@@ -52,8 +52,16 @@ The documentation has been written to be read in order or as a reference. If you
     </div>
   </a>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <a href="/data-shippers/elastic-beats" class="overview-item" title="CLI">
     <img src="assets/data-shippers.svg" alt="ingest icon"/>
+||||||| 09ff13e
+  <a href="/usage/integrations" class="overview-item" title="CLI">
+    <img src="assets/integration.svg" alt="Integration icon"/>
+=======
+  <a href="/data-shippers/elastic-beats" class="overview-item" title="CLI">
+    <img src="/assets/data-shippers.svg" alt="ingest icon"/>
+>>>>>>> master
 ||||||| 09ff13e
   <a href="/usage/integrations" class="overview-item" title="CLI">
     <img src="assets/integration.svg" alt="Integration icon"/>
