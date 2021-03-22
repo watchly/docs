@@ -306,7 +306,7 @@ To see a list of available devices for `packetbeat.yml` configuration , run:
 | **MacOS**     | Run `./packetbeat devices`|
 | **Brew**     |  Run `packetbeat devices`    |
 | **Linux**    | Run `./packetbeat devices`   |
-| **Windows**   | RUn `PS C:\Program Files\Packetbeat> .\packetbeat.exe devices`|
+| **Windows**   | Run `PS C:\Program Files\Packetbeat> .\packetbeat.exe devices`|
 
 ---
 
