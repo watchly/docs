@@ -228,4 +228,4 @@ You can also use Auditbeat to detect changes to critical files, like binaries an
 
 ### Installation 
 
-Visit the [Auditbeat download page](https://www.elastic.co/downloads/beats/auditbeat) to install Auditbeat on your system. 
+Vi the [Auditbeat download page](https://www.elastic.co/downloads/beats/auditbeat) to install Auditbeat on your system. 
