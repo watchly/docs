@@ -6,7 +6,7 @@
 
 One of the most powerful features of Axiom are Virtual Fields. With Virtual Fields, there is no need to do any up-front planning of how to structure or transform your data. Instead, send your data as-is and then use Virtual Fields to manipulate your data in real-time during queries.
 
-The feature is also known has "derviced columns/fields", however Axiom's Virtual Fields have some unique properties that make them much more powerful.
+The feature is also known has "derived columns/fields", however Axiom's Virtual Fields have some unique properties that make them much more powerful.
 
 In this guide, you'll be introduced to Virtual Fields, their features, how to manage them, and how to get the best out of them.
 
@@ -24,12 +24,12 @@ Click "Add Virtual Field" to open the virtual field editor dialog.
 
 The editor dialog has the following components:
 
-* **Name** & **Description** - help your team understand what thie virtual field is doing
+* **Name** & **Description** - help your team understand what the virtual field is doing
 * **Alias** - this is the name of the field when used in visualizations, filters, and group-bys
 * **Expression** - this the expression that is run on every event to derive the virtual field. The expression would produce some output (from a `boolean` check like the example, to `strings`, `numbeers`, `objects` or more)
 * **Preview** - use the preview window to test your virtual field expression against live data
 
-The power of virtual fields is in letting you manipulate data 'on read' ineas of 'on write', allowing you and your team members to adjust and update virtual fields over time as well as easily add new ones without worrying that the data has already been indexed.
+The power of virtual fields is in letting you manipulate data 'on read' instead of 'on write', allowing you and your team members to adjust and update virtual fields over time as well as easily add new ones without worrying that the data has already been indexed.
 
 ## Usage
 ### Visualizations
@@ -42,51 +42,48 @@ Virtual Fields will be available in the filter menu and all filter options will 
 
 Virtual Fields can be used for segmentation in the same way as any standard field.
 ## Reference
-Virtual Fields use a rich expression language that is easy to grasp but powerful in use. This section will 
-### Examples
+Virtual Fields use a rich expression language that is easy to grasp but powerful in use. This section documents the language, and the functions available.
 
 ### Strings 
 
 | **Functions** | **Description**                                            |
 |----------------|---------------------------------------------------------------------------------------|
-| **len** `(val: string): number`      | will return the length of an array, map, or string |
-| **toLower** `(val: string): string`   | return the lowercase letter corresponding to the elements passed| 
-| **replace** `(val: string, regex: string, replacement: string): string`    |  returns a new string with some or all elements replaced by a replacement |
-| **trimLeft** `(val: string, trimChars: string): string`  |  Returns the string of elements trimmed from its left end |
-| **trimRight** `(val: string, trimChars: string): string` |  Returns the string of elements trimmed from its right end |
-| **trim** `(val: string, trimChars: string): string`      | Returns the string of elements trimmed from both end |
-| **toUpper** `(val: string): string`     | Returns the string of elements in uppercase |
-| **match** `(ELEMENT, "REGEX")`       |      Returns TRUE or FALSE based on whether REGEX matches ELEMENT         |
-| **contains** ``(val: string): string` ` |  Returns true if sequence of char values are found in the string otherwise returns false.  |
+| **len** `(val: string): number`      | Will return the length of an array, map, or string. |
+| **toLower** `(val: string): string`   | Converts a string to lowercase. | 
+| **replace** `(val: string, regex: string, replacement: string): string`    |  Replace all matches of `regex` with `replacement`. |
+| **trimLeft** `(val: string, trimChars: string): string`  |  Removes any characters from `trimChars` from the left end of a string. |
+| **trimRight** `(val: string, trimChars: string): string` |  Removes any characters from `trimChars` from the right end of a string. |
+| **trim** `(val: string, trimChars: string): string`      | Returns the string of elements trimmed from both end. |
+| **toUpper** `(val: string): string`     | Converts a string to uppercase. |
 
 
-### Arithmetic Operators
+### Arithmetic Functions
 
 | **Functions**    | **Description**                                                |                                        
 |--------------------|-----------------------------------------------------------------------------------------------|
-| **abs**  `(val: number):number`        | returns the absolute value of the specified number |
-| **ceil** `(val: string):number`        | returns the smallest integer that is greater than or equal to the element specified.|
-| **exp** `(val: number): number)`        | returns the exponential function of the element. |
-| **floor** `(val: number):number)`             | returns the largest integer less than or equal to a given element. |
-| **ln** `(val: number): natural log of number)`            | returns the natural logarithm. |
-| **log** `(val: number, base: number): number)`         | returns the logarithm of a number that is equal to its base.|
-| **pi** `(): number`         | returns the mathematical constant “pi.” |
-| **pow** `(val: number, exp: number): number`          | returns the base to the exponent power of the given element.|
-| **round** `(val: number, precision: number): number`        | returns the rounded number with the specified version of decimals.|
-| **sqrt** `(val: number): number`       | returns the square root of the element. |
-| **acos** `(val: number): number`         | returns the inverse (arc) cosine of an element(number) in radians.|
-| **acosh** `(val: number): number`         | returns the inverse hyperbolic cosine of an element(number).|
-| **asin** `(val: number): number`      | returns the inverse (arc) sine of an element(number) in radians.| 
-| **asinh** `(val: number): number`      | returns the inverse hyperbolic sine of an element(number).|
-| **atan** `(val: number): number`         | returns the inverse (arc) tangent of an element.|
-| **atan2** `(y: number, x: number): number`         | returns the inverse (arc) tangent of the two numbers (elements).|
-| **cos** `(val: number): number`         | returns the cosine of an angle (radians).|
-| **cosh** `(val: number): number`       | returns the hyperbolic cosine value.|
-| **hypot** `(x: number, y: number): number`        | returns the hypotenuse of a right-angled triangle.|
-|  **sin** `(val: number): number`         | returns the sine of an angle in radians.|
-|  **sinh** `(val: number): number`       | returns the hyperbolic sine of an angle.| 
-|  **tan** `(val: number): number`        | returns the tangent of the angle.| 
-|  **tanh** `(val: number): number)`      |  returns the hyperbolic tangent of an angle.|   
+| **abs**  `(val: number):number`        | Returns the absolute value of a number. |
+| **ceil** `(val: number):number`        | Returns the smallest integer that is greater than or equal to a given number. |
+| **exp** `(val: number): number)`        | Returns the exponential function of a number. |
+| **floor** `(val: number):number)`             | Returns the largest integer less than or equal to a given number. |
+| **ln** `(val: number): natural log of number)`            | The natural logarithm. |
+| **log** `(val: number, base: number): number)`         | The logarithm in a given base. |
+| **pi** `(): number`         | Returns the mathematical constant “pi.” |
+| **pow** `(val: number, exp: number): number`          | Raises number to a given power. |
+| **round** `(val: number): number`        | Rounds a number off to the nearest integer. |
+| **sqrt** `(val: number): number`       | Returns the square root of a number. |
+| **acos** `(val: number): number`         | Returns the inverse (arc) cosine of a number in radians.|
+| **acosh** `(val: number): number`         | Returns the inverse hyperbolic cosine of a number.|
+| **asin** `(val: number): number`      | Returns the inverse (arc) sine of a number in radians.| 
+| **asinh** `(val: number): number`      | Returns the inverse hyperbolic sine of a number.|
+| **atan** `(val: number): number`         | Returns the inverse (arc) tangent of a number.|
+| **atan2** `(y: number, x: number): number`         | Returns the inverse (arc) tangent of `y/x`.|
+| **cos** `(val: number): number`         | Returns the cosine of an angle (radians).|
+| **cosh** `(val: number): number`       | Returns the hyperbolic cosine value.|
+| **hypot** `(x: number, y: number): number`        | Returns the hypotenuse of a right-angled triangle.|
+| **sin** `(val: number): number`         | Returns the sine of an angle in radians.|
+| **sinh** `(val: number): number`       | Returns the hyperbolic sine of an angle.| 
+| **tan** `(val: number): number`        | Returns the tangent of the angle.| 
+| **tanh** `(val: number): number)`      |  Returns the hyperbolic tangent of an angle.|   
 
 ### General Utility Functions
 
@@ -134,7 +131,7 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 * `%` - modulus
 * `**` - pow
 
-### Comparison Operators
+### Comparison Operators
 
 * `==` - equal
 * `!=` - not equal
@@ -143,7 +140,7 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 * `<=` - less than or equal to
 * `>=` - greater than or equal to
 
-### Logical Operators
+### Logical Operators
 
 * `and` or `&&`
 * `or` or `||`
