@@ -91,8 +91,8 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 |-----------------|-----------------------------------------------------------|
 | **isBool** `(val: any): bool`           |         Returns `true` if the element is a Boolean. |
 | **isInt**  `(val: any): bool`           |   	Returns `true` if the element is an integer.    |
-| **isNull** `(val: any): bool`           |      Returns `true` if the element is NULL.           |
-| **isNotNull** `(val: any): bool`        |    	Returns `true` if the element is not NULL.       |
+| **isNil** `(val: any): bool`           |      Returns `true` if the element is NIL.           |
+| **isNotNil** `(val: any): bool`        |    	Returns `true` if the element is not NIL.       |
 | **isString** `(val: any): bool`         |      Returns `true` if the field value is a string.     |
 | **isArray** `(val: any): bool`          |                Returns `true` if the object is an array. |
 | **typeOf** `(val: any): string`          |   Returns the type of a variable when you call it.|
