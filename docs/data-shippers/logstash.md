@@ -20,7 +20,7 @@ To configure the `logstash.conf` file, you have to define the source, set the ru
 The Logstash Pipeline has three stages:
 - **Input stage:** which generates the event & Ingest Data of all volumes, Sizes, forms and Sources
 - **Filter stage:** modifies the event as you specify in the filter component 
-- **Ouput stage:** shifts the event it to Axiom. 
+- **Ouput stage:** shifts and sends the event it to **Axiom.** 
 
 
 
