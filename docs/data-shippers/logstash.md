@@ -4,7 +4,7 @@
 
 ## Logstash
 
-Logstash is a powerful open source log aggregation and transformation tool and server-side data processing pipeline that ingests data from a multitude of sources simultaneously. With Logstash, you can transforms your data, and then it directly to **Axiom**. 
+Logstash is an open source log aggregation and transformation tool and server-side data processing pipeline that ingests data from a multitude of sources simultaneously. With Logstash, you can transforms your data, and then it directly to **Axiom**. 
 
 It can read data from various `input` sources , **filter data** for the specified configuration and eventually **stores the data.**
 Logstash sits between your data and where you want to store it. 
