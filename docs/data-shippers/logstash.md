@@ -17,13 +17,15 @@ Visit the [Logstash download page](https://www.elastic.co/downloads/logstash) to
 
 ### Configuration
 
-To configure the `logstash.conf` file, you have to define the source, set the rules to format the data and also set **Axiom** as the destination where the data will be forwarded to. 
+To configure the `logstash.conf` file, you have to define the source, set the rules to format your data and also set **Axiom** as the destination where the data will be forwarded to. 
 
 The Logstash Pipeline has three stages:
 
 - **Input stage:** which generates the event & Ingest Data of all volumes, Sizes, forms and Sources
 - **Filter stage:** modifies the event as you specify in the filter component 
 - **Output stage:** shifts and sends the event into **Axiom.** 
+
+---
 
 In `logstash.conf`, configure your `logstash pipeline` to collect and send data logs to **Axiom**
 
