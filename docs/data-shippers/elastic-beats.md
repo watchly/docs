@@ -258,7 +258,7 @@ auditbeat.modules:
   - /bin
   - /usr/local/sbin
 output.elasticsearch:
-  hosts: [""$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
+  hosts: ["$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"]
   # api_key can be your ingest or personal token
   api_key: "user:token"
 ```
