@@ -15,10 +15,7 @@ INPUTS: Ingest Data of All Shapes, Sizes, and Sources
 FILTERS: Parse & Transform Your Data On the Fly
 OUTPUTS: Choose Your Stash, Transport Your Data
 
-The Logstash Pipeline has three stages:
-- Input stage: which generates the event & Ingest Data of all volumes, Sizes, forms and Sources
-- Filter stage: modifies the event as you specify in the filter component 
-- Ouput stage: shifts the event it to Axiom. 
+
 
 The input and output stages are required elements whereas the filter element is an optional 
 
@@ -28,7 +25,12 @@ Visit the [Logstash download page](https://www.elastic.co/downloads/logstash) to
 
 ### Configuration
 
-TO configure the `logstash.conf` file, you have to define the source, set the rules to format the data and also set **Axiom** as the destination where the data will be forwarded to. 
+To configure the `logstash.conf` file, you have to define the source, set the rules to format the data and also set **Axiom** as the destination where the data will be forwarded to. 
+
+The Logstash Pipeline has three stages:
+- Input stage: which generates the event & Ingest Data of all volumes, Sizes, forms and Sources
+- Filter stage: modifies the event as you specify in the filter component 
+- Ouput stage: shifts the event it to Axiom. 
 
 
 
