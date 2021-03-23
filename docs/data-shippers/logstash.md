@@ -28,6 +28,8 @@ Visit the [Logstash download page](https://www.elastic.co/downloads/logstash) to
 
 ### Configuration
 
+TO configure the `logstash.conf` file, you have to define the source, set the rules to format the data and also set **Axiom** as the destination where the data will be forwarded to. 
+
 
 
 
