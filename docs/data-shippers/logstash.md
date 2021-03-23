@@ -18,6 +18,6 @@ The input and output stages are required elements whereas the filter element is 
 
 ### Installation 
 
-Visit the [Logstash download page]() to install Logstash on your system.
+Visit the [Logstash download page](https://www.elastic.co/downloads/logstash) to install Logstash on your system.
 
 
