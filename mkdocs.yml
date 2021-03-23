@@ -62,7 +62,7 @@ nav:
       - Elastic Beats: "data-shippers/elastic-beats.md"
 #     - FluentD: "usage/fluentd.md"
 #     - HEC: "usage/hec.md"
-#     - Logstash: "usage/logstash.md"
+      - Logstash: "usage/logstash.md"
 #     - Loki: "usage/logstash.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
