@@ -4,14 +4,12 @@
 
 ## Logstash
 
-Logstash is an open source log aggregation and transformation tool and server-side data processing pipeline that ingests data from a multitude of sources simultaneously. With Logstash, you can transforms your data, and send it directly to **Axiom**. 
-
-You can use Logstash to collect, parse, and store logs for future use on Axiom.
+Logstash is an open source log aggregation and transformation tool and server-side data processing pipeline that ingests data from a multitude of sources simultaneously. With Logstash, you can transforms your data, and send it directly to **Axiom**. You can use Logstash to collect, parse, and store logs for future use on Axiom.
 
 Logstash works as a Data pipeline tool with Axiom, where from one end the data is input from your servers and system and from the other end **Axiom** takes out the data and converts it into useful information.
 
 It can read data from various `input` sources , **filter data** for the specified configuration and eventually **stores the data.**
-Logstash sits between your data and where you want to store it. 
+Logstash sits between your data and where you want to store it.
 
 ### Installation 
 
