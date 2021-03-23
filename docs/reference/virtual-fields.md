@@ -55,6 +55,8 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 | **trimRight** `(val: string, trimChars: string): string` |  Removes any characters from `trimChars` from the right end of a string. |
 | **trim** `(val: string, trimChars: string): string`      | Returns the string of elements trimmed from both end. |
 | **toUpper** `(val: string): string`     | Converts a string to uppercase. |
+| **join** `(arr: array, val: delim): string`     | Returns a string with the elements from an array concatenated with `delim` between them. |
+| **split** `(val: string, delim: string): array`     | Returns an array of substrings split by `delim`. |
 
 
 ### Arithmetic Functions
