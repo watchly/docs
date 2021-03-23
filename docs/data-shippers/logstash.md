@@ -15,3 +15,9 @@ The Logstash Pipeline has three stages:
 - Ouput stage: shifts the event it to Axiom. 
 
 The input and output stages are required elements whereas the filter element is an optional 
+
+### Installation 
+
+Visit the [Packetbeat download page](https://www.elastic.co/downloads/beats/packetbeat) to install Packetbeat on your system.
+
+
