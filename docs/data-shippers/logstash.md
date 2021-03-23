@@ -11,4 +11,4 @@ The Logstash Pipeline has three stages:
 - Filter stage: modifies the event as you specify in the filter component 
 - Ouput stage: shifts the event it to Axiom. 
 
-The input and output stages are required elements whereas the filter element is an optional component
+The input and output stages are required elements whereas the filter element is an optional 
