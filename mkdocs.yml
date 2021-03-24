@@ -60,10 +60,10 @@ nav:
   - Data Shippers:
       - API Compatibility: "data-shippers/api.md"
       - Elastic Beats: "data-shippers/elastic-beats.md"
-#     - FluentD: "usage/fluentd.md"
-#     - HEC: "usage/hec.md"
+      - FluentD: "data-shippers/fluentd.md"
       - Logstash: "data-shippers/logstash.md"
 #     - Loki: "usage/logstash.md"
+#     - HEC: "usage/hec.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
       - Virtual Fields: "reference/virtual-fields.md"
