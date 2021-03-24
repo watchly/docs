@@ -19,7 +19,7 @@ Visit the [FluentD download page](https://www.fluentd.org/download) to install F
 FluentD lifecycle consist of five different components which are:
 
 - Setup: Configure your `fluent.conf` file. 
-- Inputs: Define your listeners. 
+- Inputs: Define your input listeners. 
 - Filters: Create a rule to allow or disallow an event. 
 - Matches: Send output to **Axiom** when input data matches and pair specific data from your data input within your configuration. 
 - Labels:  Groups filters and simplifies tag handling. 
