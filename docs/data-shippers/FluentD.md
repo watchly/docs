@@ -2,6 +2,8 @@
   <h1>Ingest using FluentD</h1>
 </div>
 
+## FluentD
+
 FluentD is an open-source log collector that allows you to collect, aggregate, process, analyze and route log files. 
 
 With FluentD you can collect logs from multiple sources and ship it instantly into **Axiom**
@@ -30,6 +32,7 @@ When setting up fluentD, the configuration file `.conf` is used to connect its c
 The example below shows fluentD configuration that sends data to Axiom:
 
 === "Conf"
+
 ```conf
 ## FluentD is listening for forward, monitor agent and debug agent using the source element. 
 ## built-in TCP input
