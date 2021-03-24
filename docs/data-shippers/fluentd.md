@@ -34,29 +34,28 @@ The example below shows fluentD configuration that sends data to Axiom:
 === "Conf"
 
 ```conf
-## FluentD is listening for forward, monitor agent and debug agent using the source element. 
-## built-in TCP input
-## $ echo <json> | fluent-cat <tag>
+# FluentD is listening for forward, monitor agent and debug agent using the source element. 
+# built-in TCP input
+# $ echo <json> | fluent-cat <tag>
 <source>
   @type forward
   @id forward_input
 </source>
-## built-in UNIX socket input
-#<source>
-#  @type unix
-#</source>
+
 <source>
   @type monitor_agent
   @id monitor_agent_input
   port 24220
 </source>
 # Listen DRb for debug
+
 <source>
   @type debug_agent
   @id debug_agent_input
   bind 127.0.0.1
   port 24230
 </source>
+
 ## matches the input and sends output to **Axiom host**
 <match *.**>
   @type           elasticsearch
