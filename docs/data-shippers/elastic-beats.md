@@ -15,11 +15,15 @@ Filebeats is useful for workloads, system, application log files, and data logs 
 
 In the logging case, it helps centralize logs and files in a structured pattern by reading from your various applications, services, workloads and VMs, then shipping to your Axiom deployments.
 
+---
+
 ### **Installation**
 
 Visit the [Filebeat OSS download page](https://www.elastic.co/downloads/beats/filebeat-oss) to install Filebeat. For more information, check out Filebeat's [official documentation](https://www.elastic.co/guide/en/beats/filebeat/current/index.html)
 
 **When downloading Filebeats, install the OSS version being that the non-oss version doesn't work with Axiom**
+
+---
 
 ### **Configuration**
 
@@ -43,15 +47,20 @@ output.elasticsearch:
   api_key: "user:token"
 ```
 
+
 ## Metricbeat
 
 [Metricbeat](https://www.elastic.co/beats/metricbeat) is a lightweight shipper for metrics.
 
 Metricbeat is installed on your systems and services and used for monitoring their performance, as well as different remote packages/utilities running on them.
 
+---
+
 ### **Installation**
 
 Visit the [MetricBeat OSS download page](https://www.elastic.co/downloads/beats/metricbeat-oss) to install Metricbeat. For more information, check out Metricbeat's [official documentation](https://www.elastic.co/guide/en/beats/metricbeat/current/index.html)
+
+---
 
 ### **Configuration**
 
@@ -105,6 +114,8 @@ PS C:\Users\Administrator> cd C:\Program Files\Winlogbeat
 PS C:\Program Files\Winlogbeat> .\install-service-winlogbeat.ps1
 ```
 
+---
+
 ### Configuration
 
 Configuration for Winlogbeat Service is found in the `winlogbeat.yml file in C:\Program Files\Winlogbeat.`
@@ -113,6 +124,8 @@ Edit the winlogbeat.yml configuration file found in `C:\Program Files\Winlogbeat
 
 **What is winlogbeat.yml File?**
 The winlogbeat.yml file contains the configuration on which windows events and service it should monitor and the time required.
+
+---
 
 === "Yaml"
 
@@ -181,9 +194,13 @@ Heartbeat is useful when you need to verify that you’re meeting your service l
 - **TCP** Use the tcp monitor to connect `via TCP.` You can optionally configure this monitor to verify the endpoint by sending and/or receiving a custom payload.
 - **HTTP.** Use the http monitor to connect `via HTTP.` You can optionally configure this monitor to verify that the service returns the expected response, such as a specific status code, response header, or content.
 
+---
+
 ### Installation 
 
 Visit the [Heartbeat download page](https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-installation-configuration.html#installation) to install Heartbeat on your system. 
+
+---
 
 ### Configuration
 
@@ -226,10 +243,13 @@ Auditbeat is a lightweight shipper that ships events in real time to **Axiom** f
 
 You can also use Auditbeat to detect changes to critical files, like binaries and configuration files, and identify potential security policy violations.
 
+---
+
 ### Installation 
 
 Visit the [Auditbeat download page](https://www.elastic.co/downloads/beats/auditbeat) to install Auditbeat on your system. 
 
+---
 ### Configuration
 
 Auditbeat uses modules to collect audit information:
@@ -289,9 +309,12 @@ Currently, Packetbeat supports the following protocols:
 - TLS
 - SIP/SDP (beta)
 
+---
 ### Installation 
 
 Visit the [Packetbeat download page](https://www.elastic.co/downloads/beats/packetbeat) to install Packetbeat on your system.
+
+---
 
 ### Configuration
 
