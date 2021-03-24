@@ -21,7 +21,7 @@ FluentD lifecycle consist of five different components which are:
 - Inputs: Define your listeners. 
 - Filters: Create a rule to allow or disallow an event. 
 - Matches: Send output to **Axiom** when input data matches and pair specific data from your data input within your configuration. 
-- Labels: 
+- Labels:  Groups filters and simplifies tag handling. 
 
 When setting up your fluentD, the configuration file is used to connect its components. 
 
