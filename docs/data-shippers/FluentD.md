@@ -2,7 +2,6 @@
   <h1>Ingest using FluentD</h1>
 </div>
 
-
 FluentD is an open-source log collector that allows you to collect, aggregate, process, analyze and route log files. 
 
 With FluentD you can collect logs from multiple sources and ship it instantly into **Axiom**
