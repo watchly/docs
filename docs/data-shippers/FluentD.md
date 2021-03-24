@@ -61,8 +61,8 @@ In the configuration file, inputs are defined
 
 <match *.**>
   @type           elasticsearch
-  hosts https://azure1.staging.axiomtestlabs.co:443/api/v1/datasets/heartbeat/elastic
-  api_key 89c75799-00c1-4329-96fc-272281ef86f1 
+  hosts "$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"
+  api_key "user:token"
   verify_es_version_at_startup false
 </match>
 ```
