@@ -11,8 +11,9 @@ With FluentD you can collect logs from multiple sources and ship it instantly in
 
 ### Installation
 
----
+Visit the [FluentD download page](https://www.fluentd.org/download) to install FluentD on your system.  
 
+---
 ### Configuration
 
 FluentD lifecycle consist of five different components which are:
