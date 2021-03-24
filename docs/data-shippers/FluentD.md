@@ -27,3 +27,43 @@ FluentD lifecycle consist of five different components which are:
 When setting up your fluentD, the configuration file is used to connect its components. 
 
 In the configuration file, inputs are defined 
+
+=== "Conf"
+
+```conf
+## built-in TCP input
+## $ echo <json> | fluent-cat <tag>
+<source>
+  @type forward
+  @id forward_input
+</source>
+
+## built-in UNIX socket input
+#<source>
+#  @type unix
+#</source>
+
+<source>
+  @type monitor_agent
+  @id monitor_agent_input
+
+  port 24220
+</source>
+
+# Listen DRb for debug
+<source>
+  @type debug_agent
+  @id debug_agent_input
+
+  bind 127.0.0.1
+  port 24230
+</source>
+
+<match *.**>
+  @type           elasticsearch
+  hosts https://azure1.staging.axiomtestlabs.co:443/api/v1/datasets/heartbeat/elastic
+  api_key 89c75799-00c1-4329-96fc-272281ef86f1 
+  verify_es_version_at_startup false
+</match>
+```
+
