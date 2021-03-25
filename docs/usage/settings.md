@@ -26,8 +26,6 @@ The ingest token is to used to send data to one or more datasets. Ingest tokens 
 3. Enter a **name** and **description** and select **ADD**.
 4. Copy the generated token to your clipboard. Once you navigate from the page, token can be seen again by selecting **Personal token**
 
----
-
 ## API
 
 The best way to get started with our API is to use [Go-Axiom](https://github.com/axiomhq/cli)
@@ -37,8 +35,6 @@ Send events directly to Axiom API.
 The authentication protocol uses the authorization token which allows third party services obtain limited access to your Axiom instances. It lets you configure a OAuth2 authentication when your provide your `Client ID` and `Client Secret` from your provider for multiple use case support. 
 
 **To add OAuth2 Provider** visit **Settings > Authentication**
-
----
 
 ## Manage Teams
 
@@ -52,8 +48,6 @@ Search for the team member you want to add to your Team.
 
 
 **Only users with the roles User or Read Only can be added as team members. Once a user is added to one or more teams, they can only see the datasets that are visible to those teams.**
-
----
 
 ## User Settings
 
