@@ -10,6 +10,8 @@ You can generate an ingest and personal token manually in your Axiom user settin
 
 The ingest token is to used to send data to one or more datasets. Ingest tokens do not allow control of your organization, they are only used to ingest events, while the Personal token is used to access the Axiom API programmatically for custom integrations or for tools such as the Axiom CLI.
 
+---
+
 **To generate an ingest Token**
 
 1. under **settings**, select **ingest token**. 
@@ -40,9 +42,9 @@ You can view, create, and manage teams.  Team members added can also manage acce
 
 If you’re a team Owner, you can add new team members to the team by selecting the **Add button** in the upper right.  
 
-Enter the name of the user you want to add as a member. 
+- Enter the name of the user you want to add as a member. 
 
-Search for the team member you want to add to your Team.
+- Search for the team member you want to add to your Team.
 
 
 **Only users with the roles User or Read Only can be added as team members. Once a user is added to one or more teams, they can only see the datasets that are visible to those teams.**
