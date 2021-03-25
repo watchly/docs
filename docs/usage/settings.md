@@ -42,9 +42,9 @@ You can view, create, and manage teams.  Team members added can also manage acce
 
 If you’re a team Owner, you can add new team members to the team by selecting the **Add button** in the upper right.  
 
-Enter the name of the user you want to add as a member. 
+- Enter the name of the user you want to add as a member. 
 
-Search for the team member you want to add to your Team.
+- Search for the team member you want to add to your Team.
 
 
 **Only users with the roles User or Read Only can be added as team members. Once a user is added to one or more teams, they can only see the datasets that are visible to those teams.**
