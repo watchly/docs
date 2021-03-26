@@ -40,7 +40,7 @@ The authentication protocol uses the authorization token which allows third part
 
 You can view, create, and manage teams.  Team members added can also manage access to datasets. 
 
-If you’re a team Owner, you can add new team members to the team by selecting the **Add button** in the upper right.  
+If you’re a team Owner, you can add new team members to the team by selecting the **Add button** at the upper right corner omn the Axiom UI.   
 
 - Enter the name of the user you want to add as a member. 
 
