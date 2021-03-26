@@ -4,7 +4,7 @@
 
 ## Get started with Axiom CLI
 
-Axiom's command line interface (CLI) is an Axiom tool that lets you test, manage, and build your Axiom deployments/instances/projects by typing commands on the command-line. 
+Axiom's command line interface (CLI) is an Axiom tool that lets you test, manage, and build your Axiom deployments and projects by typing commands on the command-line. 
 
 You can use the command line to Ingest data, manage authentication state, and configure multiple deployments. 
 
