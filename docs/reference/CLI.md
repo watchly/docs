@@ -44,7 +44,7 @@ Before logging in, you are being asked for your account credentials interactivel
 <img class="axi-crop" src="/assets/shots/cli-authentication.gif" alt="Cli-authentication"/>
 
 
-**Axiom CLI uses a personal or ingest token to authenticate with Axiom. You can obtain this token via the [Axiom UI](/usage/settings/#token).** 
+**Axiom CLI uses a personal or ingest token to authenticate with Axiom. You can obtain this token via the [Axiom UI](/usage/settings/#token).*
 
 ## Session support
 
