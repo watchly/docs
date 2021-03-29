@@ -346,7 +346,7 @@ In the **protocols section,** configure the ports where Packetbeat can find each
 === "Yaml"
 
 ```yaml
-# index lifecycle management (ILM) must be disabled
+# Disable index lifecycle management (ILM)
 setup.ilm.enabled: false
 # network device to capture traffic from
 packetbeat.interfaces.device: en0
