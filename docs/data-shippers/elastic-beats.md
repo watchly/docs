@@ -213,6 +213,7 @@ The example below configures Heartbeat to use three monitors: *an icmp monitor, 
 === "Yaml"
 
 ```yaml
+# Disable index lifecycle management (ILM)
 setup.ilm.enabled: false
 heartbeat.monitors:
 - type: icmp
@@ -267,6 +268,7 @@ The example below configures Auditbeat to use the ``file_integrity`` module conf
 === "Yaml"
 
 ```yaml
+# Disable index lifecycle management (ILM)
 setup.ilm.enabled: false
 auditbeat.modules:
 - module: file_integrity
