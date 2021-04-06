@@ -1,10 +1,12 @@
 <div class="axi-header">
-  <h1>Ingesting Via Loki Proxy</h1>
+  <h1>Ingesting Via Loki</h1>
 </div>
 
-Axiom Loki Proxy is a push interface to Axiom via Loki endpoint. 
+Loki by Prometheus, is a multi-tenant log aggregation system that is highly scalable and capable of indexing metadata about your logs.
 
 Loki exposes an HTTP API for pushing, querying, and tailing Axiom log data.
+
+**Axiom Loki Proxy** enables a push interface to Axiom via Loki endpoint. 
 
 With **Axiom-Loki-Proxy**, you can ships logs to Axiom via the  [Loki HTTP API](https://grafana.com/docs/loki/latest/api/#post-lokiapiv1push). 
 
@@ -41,19 +43,25 @@ $  docker pull axiomhq/axiom-loki-proxy:latest
 
 ## Configuration
 
-1. Specify the environmental variables for your Axiom deployment
+---
 
-- **AXIOM_DEPLOYMENT_URL:** URL of the Axiom Deployment to use. 
+- Specify the environmental variables for your Axiom deployment
 
-- **AXIOM_ACCESS_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under **Profile or Settings > Ingest Tokens.** 
+**AXIOM_DEPLOYMENT_URL:** URL of the Axiom Deployment to use. 
 
-> **For security reasons it is advised to use an Ingest Token with minimal privileges only.**
+**AXIOM_ACCESS_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under Profile or Settings > Ingest Tokens.
 
-2. Run Axiom-loki-proxy using
+**For security reasons it is advised to use an Ingest Token with minimal privileges only.**
 
-- `./axiom-loki-proxy`  or, **you can run it with Docker**
+- Run & Test it:
 
 ```shell
+./axiom-loki-proxy
+```
+
+Using Docker
+
+```
 $ docker run -p3101:3101/tcp \
   -e=AXIOM_DEPLOYMENT_URL=<AXIOM_DEPLOYMENT_URL> \
   -e=AXIOM_ACCESS_TOKEN=<AXIOM_ACCESS_TOKEN> \

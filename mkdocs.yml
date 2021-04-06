@@ -63,6 +63,7 @@ nav:
       - FluentD: "data-shippers/fluentd.md"
       - Logstash: "data-shippers/logstash.md"
       - Loki: "data-shippers/loki.md"
+      - Syslog: "data-shippers/syslog-proxy.md"
 #     - HEC: "usage/hec.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
