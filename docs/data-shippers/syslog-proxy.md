@@ -43,6 +43,8 @@ $ docker pull axiomhq/axiom-syslog-proxy:latest
 
 ## Configuration
 
+---
+
 - Specify the environmental variables for your Axiom deployment
 
 **AXIOM_DEPLOYMENT_URL:**: URL of the Axiom Deployment to use. 
