@@ -9,6 +9,7 @@ By running this demo, you will have an Axiom instance, Postgresql, Minio plus so
 
 The Axiom Demo configuration is [open source](https://github.com/axiomhq/axiom-demo) and we would love your feedback and ideas to make it better!
 
+
 ## Running the Demo
 
 This requires [Docker] and [docker-compose] to be installed:
@@ -18,6 +19,8 @@ git clone https://github.com/axiomhq/axiom-demo.git
 cd axiom-demo
 docker-compose up -d
 ```
+
+---
 
 Open your browser to [:8080] and log in with these
 credentials:
