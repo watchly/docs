@@ -53,7 +53,7 @@ $  docker pull axiomhq/axiom-loki-proxy:latest
 
 - Run & Test it:
 
-````shell
+```shell
 ./axiom-loki-proxy
 ```
 
@@ -63,8 +63,7 @@ Using Docker
 $ docker run -p3101:3101/tcp \
   -e=AXIOM_DEPLOYMENT_URL=<AXIOM_DEPLOYMENT_URL> \
   -e=AXIOM_ACCESS_TOKEN=<AXIOM_ACCESS_TOKEN> \
-  axiomhq/axiom-loki-prox
-
+  axiomhq/axiom-loki-proxy
 ```
 
 ---
