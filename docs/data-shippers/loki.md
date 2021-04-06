@@ -49,9 +49,7 @@ $  docker pull axiomhq/axiom-loki-proxy:latest
 
 > **For security reasons it is advised to use an Ingest Token with minimal privileges only.**
 
-- Run Axiom-loki-proxy using
-
-- `./axiom-loki-proxy`  or, **you can run it with Docker**
+- Run Axiom-loki-proxy using `./axiom-loki-proxy`  or, **you can run it with Docker**
 
 ```shell
 $ docker run -p3101:3101/tcp \
