@@ -1,5 +1,5 @@
 <div class="axi-header">
-  <h1>Ingesting Via Loki Proxy</h1>
+  <h1>Ingesting Via Loki</h1>
 </div>
 
 Loki by Prometheus, is a multi-tenant log aggregation system that is highly scalable and capable of indexing metadata about your logs.
@@ -59,11 +59,12 @@ $  docker pull axiomhq/axiom-loki-proxy:latest
 
 Using Docker
 
-```shell
+```
 $ docker run -p3101:3101/tcp \
   -e=AXIOM_DEPLOYMENT_URL=<AXIOM_DEPLOYMENT_URL> \
   -e=AXIOM_ACCESS_TOKEN=<AXIOM_ACCESS_TOKEN> \
-  axiomhq/axiom-loki-proxy
+  axiomhq/axiom-loki-prox
+
 ```
 
 ---
