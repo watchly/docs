@@ -44,7 +44,7 @@ Before logging in, you are being asked for your account credentials interactivel
 <img class="axi-crop" src="/assets/shots/cli-authentication.gif" alt="Cli-authentication"/>
 
 
-**Axiom CLI uses a personal or ingest token to authenticate with Axiom. You can obtain this token via the [Axiom UI](/usage/settings/#token).*
+**Axiom CLI uses a personal or ingest token to authenticate with Axiom. You can obtain this token via the [Axiom UI](/usage/settings/#token).**
 
 ## Session support
 
@@ -116,45 +116,51 @@ Import, transfer, load and process data for later use or storage using the Axiom
 
 ```bash
 ➜ ~ axiom
-
 The power of Axiom on the command-line.
 
 USAGE
   axiom <command> <subcommand> [flags]
 
 CORE COMMANDS
-  ingest:     Ingest data
-  stream:     Livestream data
+  ingest:      Ingest data
+  stream:      Livestream data
 
 MANAGEMENT COMMANDS
-  auth:       Manage authentication state
-  config:     Manage configuration
-  dataset:    Manage datasets
+  auth:        Manage authentication state
+  config:      Manage configuration
+  dataset:     Manage datasets
+  organization:Manage organizations
 
 ADDITIONAL COMMANDS
-  completion: Generate shell completion scripts
-  help:       Help about any command
-  version:    Print version
+  completion:  Generate shell completion scripts
+  help:        Help about any command
+  version:     Print version
 
 FLAGS
   -C, --config string       Path to configuration file to use
   -D, --deployment string   Deployment to use
   -h, --help                Show help for command
+  -I, --insecure            Bypass certificate validation
+  -O, --org-id string       Organization ID to use (only valid for Axiom Cloud)
   -T, --token string        Token to use
   -U, --url string          Url to use
   -v, --version             Show axiom version
 
 EXAMPLES
   $ axiom auth login
-  $ cat /var/log/nginx/*.log | axiom ingest -d nginx-logs
-  $ axiom query -d nginx-logs
+  $ axiom version
+  $ cat /var/log/nginx/*.log | axiom ingest nginx-logs
+
+AUTHENTICATION
+  See 'axiom help credentials' for help and guidance on authentication.
 
 ENVIRONMENT VARIABLES
   See 'axiom help environment' for the list of supported environment variables.
 
 LEARN MORE
   Use 'axiom <command> <subcommand> --help' for more information about a command.
-  Read the manual at https://docs.axiom.co/cli
+  
+  Read the manual at https://docs.axiom.co/reference/CLI/
 
 ```
 
