@@ -4,7 +4,11 @@
 
 Visualizations are powerful aggregations that are run across your data to produce insights that are easy to understand and monitor.
 
+With Visualizations, it lets teams create and obtain data stats, group fields and observe methods in running resources. 
+
 This page will introduce you to the visualizations supported by Axiom and some tips on how best to use them.
+
+
 
 ## **`count`**
 
@@ -18,6 +22,8 @@ The `count` visualization will count all matching events and produces a timeseri
 #### Group-By Behaviour
 
 Visualization will produce a separate result for each group plotted on a timeseries chart.
+
+<img class="axi-window" src="/assets/shots/count.png" alt="counts overview" />
 
 !!! example "Examples"
     [`count` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=R0uYyZOwc0fHmWAhHO)  
@@ -36,6 +42,9 @@ The `distinct` visualization counts each distinct occurrance of the distinct fie
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
+<img class="axi-window" src="/assets/shots/distinct.png" alt="distinct overview" />
+
+
 !!! example "Examples"
     [`distinct` query on play.axiom.co](https://play.axiom.co/analytics/github-fork-event?qid=oW64JedBiDCAHDsNeY)  
     [`distinct` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/github-fork-event?qid=RKvriWzdkUgOmLLyDK)
@@ -52,6 +61,8 @@ The `avg` visualization averages the values of the field inside the dataset and 
 #### Group-By Behaviour
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
+
+
 
 !!! example "Examples"
     [`avg` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=T0VpSvCQoarAfuFMrM)  
