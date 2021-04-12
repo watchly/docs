@@ -4,7 +4,7 @@
 
 Visualizations are powerful aggregations that are run across your data to produce insights that are easy to understand and monitor.
 
-With Visualizations, it lets teams create and obtain data stats, group fields and observe methods in running resources. 
+With Visualizations, teams can  create and obtain data stats, group fields and observe methods in running resources. 
 
 This page will introduce you to the visualizations supported by Axiom and some tips on how best to use them.
 
@@ -62,6 +62,7 @@ The `avg` visualization averages the values of the field inside the dataset and 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
+<img class="axi-window" src="/assets/shots/average.png" alt="average overview" />
 
 
 !!! example "Examples"
@@ -79,6 +80,8 @@ The `max` visualization finds the maximum value of the field inside the dataset 
 #### Group-By Behaviour
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
+
+<img class="axi-window" src="/assets/shots/max.png" alt="max overview" />
 
 !!! example "Examples"
     [`max` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=olagwqIYy7sGCRXjao)  
