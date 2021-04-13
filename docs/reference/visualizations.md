@@ -4,7 +4,11 @@
 
 Visualizations are powerful aggregations that are run across your data to produce insights that are easy to understand and monitor.
 
+With Visualizations, teams can  create and obtain data stats, group fields and observe methods in running deployments. 
+
 This page will introduce you to the visualizations supported by Axiom and some tips on how best to use them.
+
+
 
 ## **`count`**
 
@@ -19,9 +23,7 @@ The `count` visualization will count all matching events and produces a timeseri
 
 Visualization will produce a separate result for each group plotted on a timeseries chart.
 
-!!! example "Examples"
-    [`count` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=R0uYyZOwc0fHmWAhHO)  
-    [`count` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=OQlr73NZitahuJnswv)
+<img class="axi-window-shadow" src="/assets/shots/count.png" alt="counts overview" /> 
 
 
 ## **`distinct`**
@@ -36,9 +38,7 @@ The `distinct` visualization counts each distinct occurrance of the distinct fie
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-!!! example "Examples"
-    [`distinct` query on play.axiom.co](https://play.axiom.co/analytics/github-fork-event?qid=oW64JedBiDCAHDsNeY)  
-    [`distinct` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/github-fork-event?qid=RKvriWzdkUgOmLLyDK)
+<img class="axi-window-shadow" src="/assets/shots/distinct.png" alt="distinct overview" />
 
 
 ## **`avg`**
@@ -53,9 +53,8 @@ The `avg` visualization averages the values of the field inside the dataset and 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-!!! example "Examples"
-    [`avg` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=T0VpSvCQoarAfuFMrM)  
-    [`avg` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=56BbnAYoepyL79QfZy)
+<img class="axi-window-shadow" src="/assets/shots/average.png" alt="average overview" />
+
 
 ## **`max`**
 
@@ -69,9 +68,8 @@ The `max` visualization finds the maximum value of the field inside the dataset 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-!!! example "Examples"
-    [`max` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=olagwqIYy7sGCRXjao)  
-    [`max` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=lWSfAOtUSZ7POne8g9)
+<img class="axi-window-shadow" src="/assets/shots/max.png" alt="max overview" />
+
 
 ## **`min`**
 
@@ -85,9 +83,7 @@ The `min` visualization finds the minimum value of the field inside the dataset 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-!!! example "Examples"
-    [`min` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=Bbzlmy9SYY1CHQsxmh)  
-    [`min` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=mGGnJwIfeVz0TnGhwB)
+<img class="axi-window-shadow" src="/assets/shots/min.png" alt="min overview" />
 
 ## **`sum`**
 
@@ -101,9 +97,7 @@ The `sum` visualization adds all the values of the field inside the dataset and 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-!!! example "Examples"
-    [`sum` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=LYDKqNwZToZXqtx8Vu)  
-    [`sum` + `group-by` query on play.axiom.co](hhttps://play.axiom.co/analytics/api-http?qid=JzRVlkZ8g48BmHHBnQ)
+<img class="axi-window-shadow" src="/assets/shots/sum.png" alt="sum overview" />
 
 ## **`percentiles`**
 
@@ -119,9 +113,8 @@ The `percentiles` visualization calculates the requested percentiles of the fiel
 
 Visualization will produce a seperate result for each group plotted on a horizonal bar chart, allowing for visual comparison across the groups.
 
-!!! example "Examples"
-    [`percentiles` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=auEZhk4D789zDxLbyS)  
-    [`percentiles` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=xADc7czdxNfgHFBnK0)
+<img class="axi-window-shadow" src="/assets/shots/percentile.png" alt="sum overview" />
+
 
 ## **`histogram`**
 
@@ -130,13 +123,27 @@ The `histogram` visualization buckets the field into a distribution of N buckets
 #### Arguments
 
 * `field: number` - a number field
-* `nBuckets: number of buckets to return
+* `nBuckets`: number of buckets to return
     * e.g. `histogram(request_size, 15)`
 
 #### Group-By Behaviour
 
 Visualization will produce a seperate result for each group plotted on a timeseries histogram. Hovering over a group in the totals table will show only the results for that group in the histogram.
 
-!!! example "Examples"
-    [`histogram` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=uHgCGk04C1s8oU1box)  
-    [`histogram` + `group-by` query on play.axiom.co](https://play.axiom.co/analytics/api-http?qid=pPskm8Uz43MpBlq1cf)
+<img class="axi-window-shadow" src="/assets/shots/histogram.png" alt="histogram overview" />
+
+## **`topk`**
+
+The `topk` visualization calculates the **top** values for a field in a dataset. Where `k` can be *10*, *20* or any number you specify. 
+
+#### Arguments 
+
+* `field: number` - a number field
+* `nResults`: number of results to return 
+    * e.g. `topk(method, 10)`
+
+#### Group-By Behaviour
+
+Visualization will produce a seperate result for each group plotted on a timeseries chart.
+
+<img class="axi-window-shadow" src="/assets/shots/topk.png" alt="topk overview" />
