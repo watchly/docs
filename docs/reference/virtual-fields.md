@@ -18,9 +18,13 @@ Once a dataset is selected in either the [Analytics](/usage/analyze) or [Stream]
 
 <img class="axi-crop" src="/assets/shots/analyze-slideout-vfields.png" alt="virtual fields slideout" />
 
+---
+
 Click "Add Virtual Field" to open the virtual field editor dialog.
 
 <img class="axi-crop" src="/assets/shots/vfields-editor.png" alt="virtual fields editor" />
+
+---
 
 The editor dialog has the following components:
 
@@ -44,7 +48,7 @@ Virtual Fields can be used for segmentation in the same way as any standard fiel
 ## Reference
 Virtual Fields use a rich expression language that is easy to grasp but powerful in use. This section documents the language, and the functions available.
 
-### Strings 
+### String Functions
 
 | **Functions** | **Description**                                            |
 |----------------|---------------------------------------------------------------------------------------|
@@ -59,7 +63,7 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 | **split** `(val: string, delim: string): array`     | Returns an array of substrings split by `delim`. |
 
 
-### Arithmetic Functions
+### Math Functions
 
 | **Functions**    | **Description**                                                |                                        
 |--------------------|-----------------------------------------------------------------------------------------------|
@@ -113,45 +117,55 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 
 ### Literals
 
-* `strings` - single and double quotes are supported
-* `numbers` - `101`, `101.1`
-* `booleans` - `true` and `false`
-* `arrays` - `["one", "two", "three"]`
-* `maps` - `{ region: "us-east-1" }
-* `nil` - `nil`
+| **Functions** | **Description**    |
+|---------------|-----------------------------|
+| `strings` | single and double quotes are supported.| 
+| `numbers` | `101`, `101.1` |
+| `booleans` | `true` and `false` |
+| `arrays` | `["one", "two", "three"]` |
+| `maps` | `{ region: "us-east-1" } |
+| `nil` -|`nil` |
 
 ### Arithmetic Operators
 
-* `+` - addition
-* `-` - subtraction
-* `*` - multiplication
-* `/` - division
-* `%` - modulus
-* `**` - pow
+| **Operator** | **Description**    |
+|--------------|----------------------|
+| `+` | addition |
+| `-` | subtraction | 
+| `*` | multiplication |
+| `/` | division |
+| `%` | modulus |
+| `**` | pow |
 
 ### Comparison Operators
 
-* `==` - equal
-* `!=` - not equal
-* `<` - less than
-* `>` - greater than
-* `<=` - less than or equal to
-* `>=` - greater than or equal to
+| **Operator** | **Description**    |
+|--------------|---------------------|
+| `==` | equal |
+| `!=` | not equal |
+| `<` | less than |
+| `>` | greater than |
+| `<=` | less than or equal to |
+| `>=` | greater than or equal to |
 
 ### Logical Operators
 
-* `and` or `&&`
-* `or` or `||`
-* `not` or `!`
-* `success ? 'yes' : 'no'` - ternary
+| **Operator** |
+|--------------|
+| `and` or `&&` |
+| `or` or `||` |
+| `not` or `!` |
+| `success ? 'yes' : 'no'` - **ternary** |
 
 ### String Operators
 
-* `+` - concatenation
-* `matches` - regex match
-* `contains` - string contains
-* `startsWith` - has prefix
-* `endsWith` - has suffix
+| **Operator** | **Description**    |
+|--------------|---------------------|
+| `+` | concatenation |
+| `matches` | regex match |
+| `contains` | string contains |
+| `startsWith` | has prefix |
+| `endsWith` | has suffix |
 
 !!! info
     To test the negative case of not matching, wrap the operator in a `not()` operator:
@@ -176,8 +190,10 @@ In addition to the [arithmetic operators](#arithmetic-operators):
 
 ### Membership Operators
 
-* `in` - contains
-* `not in` - does not contain
+| **Operator** | **Description**    |
+|---------------|--------------------|
+| `in` | **contains** |
+| `not in` | **does not contain** |
 
 !!! example
     Arrays: `metadata.region in ["us-east-1", "us-east-2"]`  
@@ -186,14 +202,16 @@ In addition to the [arithmetic operators](#arithmetic-operators):
 
 ### Builtins
 
-* `len` - length of an array, map, or string
-* `all` - will return true if all element satisfies the predicate
-* `none` - will return true if all element does NOT satisfies the predicate
-* `any` - will return true if any element satisfies the predicate
-* `one` - will return true if exactly ONE element satisfies the predicate
-* `filter` - filter array by the predicate
-* `map` - map all items with the closure
-* `count` - returns number of elements what satisfies the predicate
+| **Operator** | **Description**    |
+|--------------|--------------------|
+| `len` | length of an array, map, or string |
+| `all` | will return true if all element satisfies the predicate |
+| `none` | will return true if all element does NOT satisfies the predicate |
+| `any` | will return true if any element satisfies the predicate |
+| `one` | will return true if exactly ONE element satisfies the predicate |
+| `filter` | filter array by the predicate |
+| `map` | map all items with the closure |
+| `count` | returns number of elements what satisfies the predicate |
 
 !!! example "Ensure all comments are less than 280 chars"
     all(comments, {.Size < 280})
