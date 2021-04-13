@@ -23,7 +23,7 @@ The `count` visualization will count all matching events and produces a timeseri
 
 Visualization will produce a separate result for each group plotted on a timeseries chart.
 
-<img class="axi-window" src="/assets/shots/count.png" alt="counts overview" />
+<img class="axi-window-shadow" src="/assets/shots/count.png" alt="counts overview" /> 
 
 
 ## **`distinct`**
@@ -38,7 +38,7 @@ The `distinct` visualization counts each distinct occurrance of the distinct fie
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-<img class="axi-window" src="/assets/shots/distinct.png" alt="distinct overview" />
+<img class="axi-window-shadow" src="/assets/shots/distinct.png" alt="distinct overview" />
 
 
 ## **`avg`**
@@ -53,7 +53,7 @@ The `avg` visualization averages the values of the field inside the dataset and 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-<img class="axi-window" src="/assets/shots/average.png" alt="average overview" />
+<img class="axi-window-shadow" src="/assets/shots/average.png" alt="average overview" />
 
 
 ## **`max`**
@@ -68,7 +68,7 @@ The `max` visualization finds the maximum value of the field inside the dataset 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-<img class="axi-window" src="/assets/shots/max.png" alt="max overview" />
+<img class="axi-window-shadow" src="/assets/shots/max.png" alt="max overview" />
 
 
 ## **`min`**
@@ -83,7 +83,7 @@ The `min` visualization finds the minimum value of the field inside the dataset 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-<img class="axi-window" src="/assets/shots/min.png" alt="min overview" />
+<img class="axi-window-shadow" src="/assets/shots/min.png" alt="min overview" />
 
 ## **`sum`**
 
@@ -97,7 +97,7 @@ The `sum` visualization adds all the values of the field inside the dataset and 
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-<img class="axi-window" src="/assets/shots/sum.png" alt="sum overview" />
+<img class="axi-window-shadow" src="/assets/shots/sum.png" alt="sum overview" />
 
 ## **`percentiles`**
 
@@ -113,7 +113,7 @@ The `percentiles` visualization calculates the requested percentiles of the fiel
 
 Visualization will produce a seperate result for each group plotted on a horizonal bar chart, allowing for visual comparison across the groups.
 
-<img class="axi-window" src="/assets/shots/percentile.png" alt="sum overview" />
+<img class="axi-window-shadow" src="/assets/shots/percentile.png" alt="sum overview" />
 
 
 ## **`histogram`**
@@ -130,7 +130,7 @@ The `histogram` visualization buckets the field into a distribution of N buckets
 
 Visualization will produce a seperate result for each group plotted on a timeseries histogram. Hovering over a group in the totals table will show only the results for that group in the histogram.
 
-<img class="axi-window" src="/assets/shots/histogram.png" alt="histogram overview" />
+<img class="axi-window-shadow" src="/assets/shots/histogram.png" alt="histogram overview" />
 
 ## **`topk`**
 
@@ -146,4 +146,4 @@ The `topk` visualization calculates the **top** values for a field in a dataset.
 
 Visualization will produce a seperate result for each group plotted on a timeseries chart.
 
-<img class="axi-window" src="/assets/shots/topk.png" alt="topk overview" />
+<img class="axi-window-shadow" src="/assets/shots/topk.png" alt="topk overview" />
