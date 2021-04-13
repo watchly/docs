@@ -48,6 +48,8 @@ Virtual Fields can be used for segmentation in the same way as any standard fiel
 ## Reference
 Virtual Fields use a rich expression language that is easy to grasp but powerful in use. This section documents the language, and the functions available.
 
+---
+
 ### String Functions
 
 | **Functions** | **Description**                                            |
@@ -113,6 +115,8 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 | **normalizeIPV6** `(address: string): string`  | Returns the IP address or prefix normalized to the NetDB internal format.|  
 | **sprintf** `(format: string, val ...any): string`  | Returns a formatted string with the given values. |
 
+---
+
 ### Literals
 
 | **Functions** | **Description**    |
@@ -165,6 +169,8 @@ Virtual Fields use a rich expression language that is easy to grasp but powerful
 | `startsWith` | has prefix |
 | `endsWith` | has suffix |
 
+---
+
 !!! info
     To test the negative case of not matching, wrap the operator in a `not()` operator:
     
@@ -197,6 +203,7 @@ In addition to the [arithmetic operators](#arithmetic-operators):
     Arrays: `metadata.region in ["us-east-1", "us-east-2"]`  
     Maps: `'region' in { region: 'us-east-1 }` // true
 
+---
 
 ### Builtins
 
