@@ -138,7 +138,7 @@ The `topk` visualization calculates the **top** values for a field in a dataset.
 
 #### Arguments 
 
-* `field: number` - a number field
+* `field: string` - a string field
 * `nResults`: number of results to return 
     * e.g. `topk(method, 10)`
 
