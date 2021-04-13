@@ -134,7 +134,7 @@ Visualization will produce a seperate result for each group plotted on a timeser
 
 ## **`topk`**
 
-The `topk` visualization calculates the **top** values for a field in a dataset. Where `k` can be ‘10’, ’20’ or any number you specify. 
+The `topk` visualization calculates the **top** values for a field in a dataset. Where `k` can be *10*, *20* or any number you specify. 
 
 #### Arguments 
 
