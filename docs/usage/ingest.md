@@ -39,6 +39,8 @@ If you would like to instead use a language binding, currently our Golang client
 
 More client libraries are coming very soon!
 
+---
+
 ### Limits
 
 | Kind                      | Limit |
@@ -51,11 +53,15 @@ More client libraries are coming very soon!
 
 Configure, read, collect, and Send logs to your Axiom deployment using a variety of data shippers. Data shippers are lightweight agents that acquire logs, metrics, and lets you ship data directly into Axiom. 
 
+---
+
 <a class="axi-link-button" href="/data-shippers/api" title="API Compatibility">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using API</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
 </a>
+
+---
 
 <a class="axi-link-button" href="/data-shippers/elastic-beats" title="Elastic Beats">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
