@@ -64,6 +64,7 @@ nav:
       - Logstash: "data-shippers/logstash.md"
       - Loki: "data-shippers/loki.md"
       - Syslog: "data-shippers/syslog-proxy.md"
+      - Kubernetes: "data-shippers/kubernetes-filebeat.md"
 #     - HEC: "usage/hec.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
