@@ -2,13 +2,12 @@
   <h1>Ingest using Kubernetes</h1>
 </div>
 
-You can ingest data into Axiom by configuring the **Kubernetes** `.yaml` file 
+You can ingest logs from your Kubernetes cluster into **Axiom** using filebeat.
 
-The following is an example of a Deployment configuration to ingest your data logs into **Axiom** using Kubernetes. 
+The following is an example of a **DaemonSet** configuration to ingest your data logs into **Axiom**. 
 
 
 ## Configuration
-
 
 ```yaml
 apiVersion: v1
@@ -184,7 +183,7 @@ env:
 
 where:
 
-- **AXIOm_HOST** is your Axiom deployment URL. 
+- **AXIOM_HOST** is your Axiom deployment URL. 
 - **AXIOM_DATASET_NAME** is your dataset name. 
 - **AXIOM_INGEST_TOKEN** This can be either your ingest token or personal token. 
 
@@ -194,3 +193,8 @@ The personal token can be retrieved from the users profile page **(Setting > Pro
 
 The personal access token grants access to all resources available to the user  while the ingest token just allows ingestion into the datasets the token is configured for.
 
+## Run DaemonSet 
+
+To Run the DaemonSet, create and run the `.yaml` file using `kubectl apply -f daemonset.yaml` 
+
+- you can specify any name for the Daemonset configuration file.
