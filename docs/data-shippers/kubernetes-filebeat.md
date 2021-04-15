@@ -1,5 +1,5 @@
 <div class="axi-header">
-  <h1>Ingest using Kubernetes</h1>
+  <h1>Ingesting via Kubernetes</h1>
 </div>
 
 You can ingest logs from your Kubernetes cluster into **Axiom** using filebeat.
@@ -187,7 +187,9 @@ where:
 - **AXIOM_DATASET_NAME** is your dataset name. 
 - **AXIOM_INGEST_TOKEN** This can be either your ingest token or personal token. 
 
-The personal token can be retrieved from the users profile page **(Setting > Profile > Personal token)** or an ingest token retrieved from the **settings > Ingest Token** page of your  Axiom deployment.
+The personal token can be retrieved from the users profile page **(Setting > Profile > Personal token)** 
+
+or an ingest token retrieved from the **settings > Ingest Token** page of your  Axiom deployment.
 
 ---
 
