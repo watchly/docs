@@ -181,7 +181,7 @@ env:
               value: xait-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-where:
+Where:
 
 - **AXIOM_HOST** is your Axiom deployment URL. 
 - **AXIOM_DATASET_NAME** is your dataset name. 
@@ -199,4 +199,4 @@ The personal access token grants access to all resources available to the user  
 
 To Run the DaemonSet, create and run the `.yaml` file using `kubectl apply -f daemonset.yaml` 
 
-- you can specify any name for the Daemonset configuration file.
+- You can specify any name for the Daemonset configuration file.
