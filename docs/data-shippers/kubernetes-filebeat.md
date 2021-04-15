@@ -193,12 +193,9 @@ The personal token can be retrieved from the users profile page **(Setting > Pro
 
 or an ingest token retrieved from the **settings > Ingest Token** page of your  Axiom deployment.
 
+
+The personal access token grants access to all resources available to the user, while the ingest token just allows ingestion into the datasets the token is configured for.
+
 ---
 
-The personal access token grants access to all resources available to the user  while the ingest token just allows ingestion into the datasets the token is configured for.
-
-## Run DaemonSet 
-
-To Run the DaemonSet, create and run the `.yaml` file using `kubectl apply -f daemonset.yaml` 
-
-- You can specify any name for the Daemonset configuration file.
+- After editing your values, apply the changes to your cluster using **`kubectl apply -f daemonset.yaml`**
