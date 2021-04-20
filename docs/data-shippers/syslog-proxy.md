@@ -46,11 +46,11 @@ $ docker pull axiomhq/axiom-syslog-proxy:latest
 
 - Specify the environmental variables for your Axiom deployment
 
-AXIOM_DEPLOYMENT_URL: URL of the Axiom Deployment to use. 
+**AXIOM_DEPLOYMENT_URL:** URL of the Axiom Deployment to use. 
 
-AXIOM_ACCESS_TOKEN: Personal Access or Ingest token. Your personal access or ingest token can be created under Profile or Settings > Ingest Tokens.
+**AXIOM_ACCESS_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under Profile or Settings > Ingest Tokens.
 
-AXIOM_INGEST_DATASET:  Dataset to ingest into
+**AXIOM_INGEST_DATASET:**  Dataset to ingest into
 
 - Run it:
 
