@@ -101,7 +101,7 @@ Monitors are configured with a query, a frequency (how often the monitor should 
 
 Integrations can be installed and configured using different third-party Data shippers to quickly get insights from your logs and services by setting up a background task that continuously synchronizes events into Axiom. 
 
-<a class="axi-link-button" href="/data-shippers" title="Learn about integrations">
+<a class="axi-link-button" href="/data-shippers/elastic-beats/" title="Learn about integrations">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Learn about integrations</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
