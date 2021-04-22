@@ -237,6 +237,8 @@ Query results are presented beside the Query Builder in the Results View:
 
 The results view adapts to the query that has been run and so it will add and remove components as necessary to give you the best experience.
 
+---
+
 The components that it can present are explained below:
 
 ### Status Bar
