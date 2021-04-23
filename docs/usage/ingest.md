@@ -9,10 +9,10 @@ You can also Collect, load, group, move, data from one or more sources to Axiom 
 Before ingesting data, you will need an API Token which you can generate from the **Settings->Tokens** page on the Axiom Dashboard. See [API Tokens documentation](/usage/settings#api-tokens).
 
 <br />
- Once you have an ingest token, there are four ways to get your data into Axiom:
+ Once you have an ingest token, there are three ways to get your data into Axiom:
 
 1. Using the [Ingest API](#ingest-api)
-2. Using a [Data Shipper](#data-shippers) (Logstash, Filebeats, etc)
+2. Using a [Data Shipper](#data-shippers) (Logstash, Filebeat, Metricbeat, Fluentd etc)
 4. Using the [Elasticsearch Bulk API](/data-shippers/api) that Axiom supports natively
 
 ## Ingest API
