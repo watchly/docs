@@ -81,4 +81,4 @@ Similar to the Analytics page, the starred queries slide-out is activated via th
 
 ---
 
-**[Find out more about starred queries here](/usage/analyze#starred-queries).**
+### **[Find out more about starred queries here](/usage/analyze#starred-queries).**
