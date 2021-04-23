@@ -79,4 +79,7 @@ Similar to the Analytics page, the starred queries slide-out is activated via th
 
 <img class="axi-crop" src="/assets/shots/stream-toolbar-starred.png" alt="starred queries" />
 
-[Find out more about starred queries here](/usage/analyze#starred-queries).
+---
+
+
+**[Find out more about starred queries here](/usage/analyze#starred-queries).**
