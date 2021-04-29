@@ -189,6 +189,8 @@ $ axiom help auth status
 
 **if you have questions, or any opinions you can [start an issue](https://github.com/axiomhq/cli/issues) on Axiom CLI's open source repository.**
 
+---
+
 
 **You can also visit our [Slack group]() to start or join a discussion. We’d love to hear from you!**
 
