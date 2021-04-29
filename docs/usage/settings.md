@@ -19,6 +19,9 @@ The ingest token is to used to send data to one or more datasets. Ingest tokens 
 3. Enter a **name** and **description** and select **ADD**. 
 4. Copy the generated token to your clipboard. Once you navigate from the page, token can be seen again by selecting **Ingest Tokens**. 
 
+---
+
+
 **To generate a Personal Token**
 
 1. Under **settings**, select **profile**
