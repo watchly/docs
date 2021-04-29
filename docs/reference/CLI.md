@@ -192,7 +192,7 @@ $ axiom help auth status
 ---
 
 
-**You can also visit our [Slack group]() to start or join a discussion. We’d love to hear from you!**
+**You can also visit our [Slack group](https://www.axiom.co/support/) to start or join a discussion. We’d love to hear from you!**
 
 
 
