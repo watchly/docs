@@ -37,6 +37,7 @@ The example below shows fluentD configuration that sends data to Axiom:
 # FluentD is listening for forward, monitor agent and debug agent using the source element. 
 # built-in TCP input
 # $ echo <json> | fluent-cat <tag>
+
 <source>
   @type forward
   @id forward_input
@@ -47,8 +48,8 @@ The example below shows fluentD configuration that sends data to Axiom:
   @id monitor_agent_input
   port 24220
 </source>
-# Listen DRb for debug
 
+# Listen DRb for debug
 <source>
   @type debug_agent
   @id debug_agent_input
