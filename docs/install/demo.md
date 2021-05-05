@@ -81,10 +81,10 @@ axiom ingest my-dataset < file.json
 
 ## Stopping the Demo
 
-Run `docker-compose stop` to stop the stack, `docker-compose start` to start
+Run **`docker-compose stop`** to stop the stack, **`docker-compose start`** to start
 it again.
 
-If you want to clean up, run `docker-compose down -v` to remove all containers
+If you want to clean up, run **`docker-compose down -v`** to remove all containers
 and volumes. The docker images will persist on your machine unless you manually
 delete them.
 
