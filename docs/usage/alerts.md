@@ -38,6 +38,8 @@ The monitors query builder mimics that of the Analytics [Query Builder](/usage/a
 
 The goal of the query is to produce one or more rows of results (> 1 in the case of a group-by being used) that can each be compared to the Trigger Options above to determine whether the monitor is triggered.
 
+---
+
 **Group By**
 
 If a group by clause is used, then a monitor can trigger once for every group that is produced by a query. A monitor will stay triggered until all groups are back within threshold. Groups are a great way of getting more specific alerts where necessary.
@@ -53,11 +55,15 @@ Notifiers are how monitors alert external parties when they are triggered.
 
 Axiom currently supports four notifiers, each of which can be configured multiple times to allow for different options (e.g. separate slack channel notifiers for web and backend). 
 
+---
+
 ### Email
 
 Create email notifers with team members to have everyone emailed when a monitor is triggered/resolved.
 
 <img class="axi-crop" src="/assets/shots/monitors-notifiers-email.png" alt="email notifier" />
+
+---
 
 
 ### Slack
@@ -66,11 +72,15 @@ Create Slack notifiers to notify specific channels in your Slack organization. C
 
 <img class="axi-crop" src="/assets/shots/monitors-notifiers-slack.png" alt="slack notifier" />
 
+---
+
 ### PagerDuty
 
 Create a PagerDuty notifer to use all the incident management features of PagerDuty with Axiom. Triggered/resolve states will be managed by Axiom, and you can configure schedules/alerting rules/etc inside PagerDuty.
 
 <img class="axi-crop" src="/assets/shots/monitors-notifiers-pagerduty.png" alt="pagerduty notifier" />
+
+---
 
 ### Webhook
 
