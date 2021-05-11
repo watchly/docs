@@ -1,3 +1,10 @@
+# Axiom Documentation
+
+<img class="axi-window-shadow" src="/assets/shots/axiom.jpg" alt="documentation overview" /> 
+
+This repository contains the documentation website code and Markdown source files for **docs.axiom.co**
+
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
