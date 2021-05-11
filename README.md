@@ -1,13 +1,19 @@
-# Welcome to MkDocs
+# Axiom Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This repository contains the documentation website code and Markdown source files for **https://docs.axiom.co/**
 
-## Commands
+To file a docs issue, use the issue tracker in the [Axiom/docs](https://github.com/axiomhq/docs/issues/new) repo.
+
+## Mkdocs Commands
 
 - `mkdocs new [dir-name]` - Create a new project.
 - `mkdocs serve` - Start the live-reloading docs server.
 - `mkdocs build` - Build the documentation site.
 - `mkdocs -h` - Print help message and exit.
+
+For full documentation on Mkdocs visit [mkdocs.org](https://www.mkdocs.org).
+
+---
 
 ## Project layout
 
