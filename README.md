@@ -1,5 +1,7 @@
 # Axiom Documentation
 
+![Alt text](/assets/shots/doc-axiom.png?raw=true "documentation")
+
 <img class="axi-window-shadow" src="/assets/shots/doc-axiom.png" alt="documentation overview" /> 
 
 This repository contains the documentation website code and Markdown source files for **docs.axiom.co**
