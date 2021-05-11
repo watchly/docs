@@ -2,9 +2,7 @@
   <h1>Monitoring and Notifiers</h1>
 </div>
 
-**Setup Monitors and Notifiers to be alerted when errors or other conditions are met by events.**
-
-<img class="axi-window-shadow" src="/assets/shots/doc-axiom.png" alt="documentation overview" /> 
+**Setup Monitors and Notifiers to be alerted when errors or other conditions are met by events.** 
 
 This guide will introduce Monitors and Notifiers, and how they work together to enable alerting to you, your team members, and external services.
 
