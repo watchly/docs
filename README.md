@@ -1,6 +1,6 @@
 # Axiom Documentation
 
-<img class="axi-window-shadow" src="/assets/shots/axiom.jpg" alt="documentation overview" /> 
+<img class="axi-window-shadow" src="/assets/shots/axiom.png" alt="documentation overview" /> 
 
 This repository contains the documentation website code and Markdown source files for **docs.axiom.co**
 
