@@ -161,6 +161,8 @@ PS C:\Program Files\Winlogbeat> Start-Service winlogbeat
 
 You can view the status of your service and control it from the Services management console in Windows. 
 
+---
+
 To launch the management console, run this command:
 
 ```shell 

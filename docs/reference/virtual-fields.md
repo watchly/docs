@@ -193,6 +193,8 @@ In addition to the [arithmetic operators](#arithmetic-operators):
 !!! tip    
     The range is inclusive: `1..3 == [1, 2, 3]`
 
+---
+
 
 ### Membership Operators
 
@@ -226,6 +228,7 @@ In addition to the [arithmetic operators](#arithmetic-operators):
 !!! example "Ensure there is exactly one private repo"
     one(repos, {.private})
 
+---
 
 ### Closures
 
