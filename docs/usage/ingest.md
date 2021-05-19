@@ -63,7 +63,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/elastic-beats" title="Elastic Beats">
+<a class="axi-link-button" href="/data-shippers/elastic-beats/" title="Elastic Beats">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using Elastic Beats</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
