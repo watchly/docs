@@ -13,7 +13,7 @@ theme:
 plugins:
   - search
   - redirects:
-      redirect_maps:
+      redirect_maps: true 
   - minify:
       minify_html: true
 extra_css:
