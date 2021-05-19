@@ -59,7 +59,7 @@ nav:
       - Settings: "usage/settings.md"
   - Data Shippers:
       - API Compatibility: "data-shippers/api.md"
-      - Elastic Beats: "data-shippers/elastic-beats.md"
+      - 'Elastic Beats': "data-shippers/elastic-beats.md"
       - FluentD: "data-shippers/fluentd.md"
       - Logstash: "data-shippers/logstash.md"
       - Loki: "data-shippers/loki.md"
