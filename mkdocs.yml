@@ -13,7 +13,7 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        'elastic-beats.md': 'https://docs.axiom.co/elastic-beats/'
+        'elastic-beats.md': 'elastic-beats.md'
   - minify:
       minify_html: true
 extra_css:
