@@ -13,7 +13,6 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        'elastic-beats.md': 'elastic-beats.md'
   - minify:
       minify_html: true
 extra_css:
