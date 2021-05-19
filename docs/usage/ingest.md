@@ -55,7 +55,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/api" title="API Compatibility">
+<a class="axi-link-button" href="/data-shippers/api/" title="API Compatibility">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using API</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
