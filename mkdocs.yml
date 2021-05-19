@@ -11,6 +11,9 @@ theme:
     - instant
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        'elastic-beats.md': 'https://docs.axiom.co/elastic-beats/'
   - minify:
       minify_html: true
 extra_css:
