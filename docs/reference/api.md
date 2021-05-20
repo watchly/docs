@@ -29,7 +29,7 @@ All URLs start with `https://<axiom_url>/api/v1/tokens/ingest` the path is prefi
 
 ---
 
--  **POST /api/v1/tokens/ingest/**
+-  `POST /api/v1/tokens/ingest/`
 
 **Example as a curl command**
 
