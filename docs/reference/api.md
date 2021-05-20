@@ -54,17 +54,25 @@ https://<axiom_url>/api/v1/tokens/ingest
 
 | **Code** | **Description**                          |
 |----------------|-----------------------------------------------------|
-|     200  | {
+|     200  |  {
+                  "description": "string",
+                  "id": "string",
+                  "name": "string",
+                  "scopes": [
+                    "string"
+                  ]
+                }  |
+
+```
+{
   "description": "string",
   "id": "string",
   "name": "string",
   "scopes": [
     "string"
   ]
-} |
-
-
-
+}
+```
 
 
 
