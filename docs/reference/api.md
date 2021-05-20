@@ -23,7 +23,7 @@ Also, we have two API clients for your convenience:
 
 ## Make a Request 
 
-All URLs start with https://<axiomurl>/api/v1/tokens/ingest. The path is prefixed with the API version.
+All URLs start with https://<axiom_url>/api/v1/tokens/ingest. The path is prefixed with the API version.
 
 ## Ingesting structured Data
 
