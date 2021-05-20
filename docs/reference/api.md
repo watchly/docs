@@ -27,7 +27,9 @@ All URLs start with https://<axiomurl>/api/v1/tokens/ingest. The path is prefixe
 
 ## Ingesting structured Data
 
-1. **POST /api/v1/tokens/ingest/**
+---
+
+-  **POST /api/v1/tokens/ingest/**
 
 **Example as a curl command**
 
@@ -59,7 +61,6 @@ https://<axiom_url>/api/v1/tokens/ingest
 **Response**
 
 | **Content type ** | **application/json** |
-|----------------|-------------|
 
 Code = 200
 
@@ -74,7 +75,9 @@ Code = 200
 }
 ```
 
-2. **GET /api/v1/tokens​/ingest**
+---
+
+-  **GET /api/v1/tokens​/ingest**
 
 **Example as a curl command**
 
@@ -95,7 +98,6 @@ https://<axiom_url>/api/v1/tokens/ingest
 **Response**
 
 | **Content type ** | **application/json** |
-|----------------|-------------|
 
 Code = 200
 
@@ -112,7 +114,9 @@ Code = 200
 ]
 ```
 
-3. **DELETE /api/v1​/tokens​/ingest​/{id}**
+---
+
+-  **DELETE /api/v1​/tokens​/ingest​/{id}**
 
 **Example as a curl command**
 
@@ -131,7 +135,6 @@ https://<axiom_url>/api/v1/tokens/ingest/string
 **Response**
 
 | **Content type ** | **application/json** |
-|----------------|-------------|
 
 Code = 
 
@@ -139,7 +142,9 @@ Code =
 
 ```
 
-4.  **GET /api/v1/tokens​/ingest​/{id}**
+---
+
+- **GET /api/v1/tokens​/ingest​/{id}**
 
 **Example as a curl command**
 
@@ -157,7 +162,6 @@ https://<axiom_url>/api/v1/tokens/ingest/string
 ```
 
 | **Content type ** | **application/json** |
-|----------------|-------------|
 
 Code = 200
 
@@ -172,7 +176,9 @@ Code = 200
 }
 ```
 
-5. **PUT /api/v1/tokens​/ingest​/{id}**
+---
+
+- **PUT /api/v1/tokens​/ingest​/{id}**
 
 **Example as a curl command**
 
@@ -190,7 +196,6 @@ https://<axiom_url>/api/v1/tokens/ingest/string
 ```
 
 | **Content type ** | **application/json** |
-|----------------|-------------|
 
 Code = 200
 
@@ -205,7 +210,7 @@ Code = 200
 }
 ```
 
-6. **GET /tokens​/ingest​/{id}​/token**
+- **GET /tokens​/ingest​/{id}​/token**
 
 **Example as a curl command**
 
@@ -224,7 +229,6 @@ https://axicode.axiom.co/api/v1/tokens/ingest/string/token
 ```
 
 | **Content type ** | **application/json** |
-|----------------|-------------|
 
 Code = 200
 
@@ -237,93 +241,3 @@ Code = 200
 }
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### GET/tokens​/ingest​/{id}
-
-| **Content type ** | **application/json** |
-|----------------|-------------|
-
-Code = 200
-
-```{
-  "description": "string",
-  "id": "string",
-  "name": "string",
-  "scopes": [
-    "string"
-  ]
-}
-```
-
-#### PUT/tokens​/ingest​/{id}
-
-| **Content type ** | **application/json** |
-|----------------|-------------|
-
-
-Code = 200
-
-```{
-  "description": "string",
-  "id": "string",
-  "name": "string",
-  "scopes": [
-    "string"
-  ]
-}
-```
-
-#### GET/tokens​/ingest​/{id}​/token
-
-| **Content type ** | **application/json** |
-|----------------|-------------|
-
-Code = 200
-
-```
-{
-  "scopes": [
-    "string"
-  ],
-  "token": "string"
-}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
