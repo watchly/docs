@@ -21,7 +21,7 @@ Also, we have two API clients for your convenience:
 
 - JS Client
 
-## Make a Request 
+## Make a Request
 
 All URLs start with https://<axiom_url>/api/v1/tokens/ingest. The path is prefixed with the API version.
 
