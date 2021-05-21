@@ -23,6 +23,10 @@ Also, we have two API clients for your convenience:
 
 ## Ingesting data
 
+Individual events are ingested as an HTTP POST request.
+
+
+
 ### Using curl command to ingest data
 
 `POST /api/v1/ingest/` 
@@ -45,6 +49,10 @@ curl -X POST "https://axicode.axiom.co/api/v1/ingest"
 
 ```
 
+### Body Specification 
+
+The body of the POST should be a JSON encoded object containing key/value pairs. As an example, to report a GET request from the users `/download path` took 231ms:
+
 ```
 curl -X 'POST' 'https://azure1.staging.axiomtestlabs.co/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer xait-96ac7408-c7d1-4cde-9e23-d1bda820636a' \
@@ -53,7 +61,36 @@ curl -X 'POST' 'https://azure1.staging.axiomtestlabs.co/api/v1/datasets/neil-cmc
 
 ```
 
-Axiom supports integration of different data formats:
+Supported data types:
+
+- strings
+- numbers
+- booleans
+
+curl -X 'POST' 'https://azure1.staging.axiomtestlabs.co/api/v1/datasets/neil-cmc/ingest' \
+  -H 'Authorization: Bearer xait-96ac7408-c7d1-4cde-9e23-d1bda820636a' \
+  -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
+  -d ''
+
+---
+
+Datasets name are usually case sensitive, **Dataset names must be between 1-128 characters, and may only contain ASCII alphanumeric characters and the '-' character.**
+
+When sending an Event, you can set the following standard fields:
+
+**Name** |        **Description**                  |
+|-----------------|-----------------------------------------------------------|
+| duration_ms         |    You can specify the time duration |
+| method  |   | HTTP Methods
+|  path |   path of your file   |
+|  res_size_bytes |      |
+|id   |  |
+|name|   |
+|scopes ||
+
+---
+
+Axiom supports ingestion of different data formats:
 
 - application/json
 - application/nd-json
