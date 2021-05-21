@@ -50,9 +50,14 @@ curl -X 'POST' 'https://azure1.staging.axiomtestlabs.co/api/v1/datasets/neil-cmc
   -H 'Authorization: Bearer xait-96ac7408-c7d1-4cde-9e23-d1bda820636a' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
   -d '{ "path": "/download", "method": "GET", "duration_ms": 231, "res_size_bytes": 3012 }'
-{"ingested":1,"failed":0,"failures":[],"processedBytes":84,"blocksCreated":0,"walLength":3}
 
 ```
+
+Axiom supports integration of different data formats:
+
+- application/json
+- application/nd-json
+- text/csv
 
 ## Ingest Tokens
 
@@ -81,6 +86,8 @@ Ingest Tokens just allows ingestion into the datasets the token is configured fo
 You can obtain the Ingest Token from the settings > Ingest Token of the Axiom deployment.
 
 <img class="axi-window-shadow" src="/assets/shots/ingest-token.png" alt="Ingest Token overview" /> 
+
+
 
 
 
