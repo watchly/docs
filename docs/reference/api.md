@@ -60,7 +60,7 @@ Individual events are ingested as an HTTP POST request.
 
 
 ```
-curl -X POST "$YOUR_AXIOM_URL/api/v1/ingest" 
+curl -X POST '$YOUR_AXIOM_URL/api/v1/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/x-ndjson' \
   -d "{  \"description\": \"string\",  \"name\": \"string\",  \"scopes\": [    \"string\"  ]}"
