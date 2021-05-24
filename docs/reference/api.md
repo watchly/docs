@@ -73,9 +73,7 @@ A successful POST Request returns a standard HTTP 200 response code.
 
 ## Ingest Grouped Events 
 
-The following example request contains grouped events. The structure of the `JSON` payload should have the scheme of:
-
-`[ { "labels": { "key1": "value1", "key2": "value12" } }, ]` in which teh array comprises of one or more JSON objects describing Events.
+The following example request contains grouped events. The structure of the `JSON` payload should have the scheme of `[ { "labels": { "key1": "value1", "key2": "value12" } }, ]` in which the array comprises of one or more JSON objects describing Events.
 
 ### Example Request
 
