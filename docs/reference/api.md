@@ -14,6 +14,34 @@ Axiom uses OAuth2 for authentication. All requests must use HTTPS.
 
 You can generate a ingest token in your Axiom user settings for manual authentication in shell scripts or commands that use the Axiom API. Refer to the code sample below for an example of how to use this token in a curl request.
 
+### API Tokens
+
+Axiom has two types of API tokens; 
+
+- Personal API Tokens.
+- Ingest Tokens.
+
+### Personal API Token; 
+
+The personal token can be retrieved from the users profile page, all users have a Personal Token. With the Personal Token users can access the Axiom API programmatically for custom integrations, management setting, or for tools such as the Axiom CLI.
+
+The personal access token grants access to all resources available to the user on his behalf.  
+
+Personal Access or Ingest token. Can be created under **Profile** or **Settings > Profile > Personal Tokens.**
+
+<img class="axi-window-shadow" src="/assets/shots/personal-token.png" alt="Personal Token overview" /> 
+
+
+### Ingest Token
+
+Ingest Tokens just allows ingestion into the datasets the token is configured for. Use ingest tokens to send data to one or more datasets. Ingest tokens do not allow control of your organization, they are only used to ingest events. 
+
+**For security reasons it is advised to use an Ingest Token with minimal privileges only.**
+
+You can obtain the Ingest Token from the settings > Ingest Token of the Axiom deployment.
+
+<img class="axi-window-shadow" src="/assets/shots/ingest-token.png" alt="Ingest Token overview" /> 
+
 
 Also, we have two API clients for your convenience:
 
@@ -33,14 +61,15 @@ Individual events are ingested as an HTTP POST request.
 
 ```
 curl -X POST "$YOUR_AXIOM_URL/api/v1/ingest" 
-  -H  "accept: application/json" -H  "Content-Type: application/json" 
+  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Content-Type: application/x-ndjson' \
   -d "{  \"description\": \"string\",  \"name\": \"string\",  \"scopes\": [    \"string\"  ]}"
 
 ```
 
 ## Body Specification 
 
-The body of the POST should be a JSON encoded object containing key/value pairs. As an example, to report a GET request from the users `/download path` took 231ms with a response size of `3012`
+The body of the POST should be a JSON encoded object containing key/value pairs. As an example, to report a GET request from the users `/download path took 231ms with a response size of 3012`. 
 
 ```
 { "path": "/download", "method": "GET", "duration_ms": 231, "res_size_bytes": 3012 }'
@@ -49,15 +78,32 @@ The body of the POST should be a JSON encoded object containing key/value pairs.
 
 ## Examples 
 
-This example sends an API event to Axiom. It is in the `neil-cmc` dataset.
+These examples sends an API event to Axiom. It is in the `neil-cmc` dataset.
 
-### Example Request using Curl 
+
+## Ingest Events using NDJSON
+
+`NDJSON` consists of individual lines where each individual line is any valid JSON text and each line is delimited with a newline character. The `NDJSON` payload should have the scheme of `{"id":1,"name":"Alice"} {"id":2,"name":"Bob"} {"id":3,"name":"Carol"}`
+
+
+### Example Request using NDJSON 
 
 ```
-curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
   -d '{ "path": "/download", "method": "POST", "duration_ms": 231, "res_size_bytes": 3012, "endpoint":"/foo" }'
+
+```
+
+#### More examples
+
+```
+
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
+  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
+  -d '{"container": {"image": "front:master.0326.5","name": "tunnel-front"},"labels": {"component": "tunnel","pod-template-hash": "75f5666499"},"namespace": "kube-system","node": {"name": "32068356-vmss000002"},"pod": {"name": "fnxln","uid": "f0bdea4e57"},"replicaset": {"name": "75f5666499"}}}'
 
 ```
 
@@ -71,15 +117,15 @@ A successful POST Request returns a standard HTTP 200 response code.
 
 ---
 
-## Ingest Grouped Events 
+## Ingest Events using JSON
 
 The following example request contains grouped events. The structure of the `JSON` payload should have the scheme of `[ { "labels": { "key1": "value1", "key2": "value12" } }, ]` in which the array comprises of one or more JSON objects describing Events.
 
-### Example Request
+### Example Request using JSON
 
 ```
 
-curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
   -d '[
@@ -100,7 +146,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
 You can also group events with different labels into the same request as shown below: 
 
 ```
-curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
   -d '[
@@ -158,6 +204,38 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
 
 ```
 
+### Example Response
+
+```
+
+A successful POST Request returns a standard HTTP 200 response code.
+
+```
+
+## Ingest Events using CSV
+
+
+The following example request contains events. The structure of the `CSV` payload uses a comma to separate values ['value1', 'value2', 'value3'].
+
+### Example Request using CSV
+
+```
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
+  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Content-Type: text/csv' -H 'x-axiom-org-id: axiom' \
+  -d '['name', 'area', 'country_code2', 'country_code3']'
+
+```
+
+### Example Response
+
+```
+
+A successful POST Request returns a standard HTTP 200 response code.
+
+```
+
+
 Supported data types:
 
 - strings
@@ -176,31 +254,3 @@ Axiom supports ingestion of different data formats:
 - application/json
 - application/nd-json
 - text/csv
-
-## Ingest Tokens
-
-Axiom has two types of API tokens; 
-
-- Personal API Tokens.
-- Ingest Tokens.
-
-### Personal API Token; 
-
-The personal token can be retrieved from the users profile page, all users have a Personal Token. With the Personal Token users can access the Axiom API programmatically for custom integrations, management setting, or for tools such as the Axiom CLI.
-
-The personal access token grants access to all resources available to the user on his behalf.  
-
-Personal Access or Ingest token. Can be created under **Profile** or **Settings > Profile > Personal Tokens.**
-
-<img class="axi-window-shadow" src="/assets/shots/personal-token.png" alt="Personal Token overview" /> 
-
-
-### Ingest Token
-
-Ingest Tokens just allows ingestion into the datasets the token is configured for. Use ingest tokens to send data to one or more datasets. Ingest tokens do not allow control of your organization, they are only used to ingest events. 
-
-**For security reasons it is advised to use an Ingest Token with minimal privileges only.**
-
-You can obtain the Ingest Token from the settings > Ingest Token of the Axiom deployment.
-
-<img class="axi-window-shadow" src="/assets/shots/ingest-token.png" alt="Ingest Token overview" /> 
