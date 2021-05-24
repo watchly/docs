@@ -69,7 +69,7 @@ curl -X POST '$YOUR_AXIOM_URL/api/v1/ingest' \
 
 ## Body Specification 
 
-The body of the POST should be a JSON encoded object containing key/value pairs. As an example, to report a GET request from the users `/download path took 231ms with a response size of 3012`. 
+The body of the POST should be a JSON encoded object containing key/value pairs. As an example, to report a GET request from the users `/download path with a duration of 231ms and a response size of 3012`. 
 
 ```
 { "path": "/download", "method": "GET", "duration_ms": 231, "res_size_bytes": 3012 }'
