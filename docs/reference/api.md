@@ -56,7 +56,7 @@ Also, we have two API clients for your convenience:
 Individual events are ingested as an HTTP POST request.
 
 
-### Using curl command to ingest data
+### Using curl command to ingest data 
 
 
 ```
@@ -153,7 +153,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
   {
     "labels": {
       "author": "System1",
-      "model": "whip.log"      $YOUR_HUMIO_URL/api/v1/ingest
+      "model": "whip.log"
     },
     "events": [
       {
