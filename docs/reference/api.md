@@ -235,6 +235,7 @@ A successful POST Request returns a standard HTTP 200 response code.
 
 ```
 
+---
 
 Supported data types:
 
