@@ -76,6 +76,12 @@ The body of the POST should be a JSON encoded object containing key/value pairs.
 
 ```
 
+Axiom supports ingestion of different data formats:
+
+- application/json
+- application/nd-json
+- text/csv
+
 ## Examples 
 
 These examples sends an API event to Axiom. It is in the `neil-cmc` dataset.
@@ -247,11 +253,3 @@ Supported data types:
 ---
 
 Datasets name are usually case sensitive, Dataset names must be between 1-128 characters, and may only contain ASCII alphanumeric characters and the '-' character.
-
----
-
-Axiom supports ingestion of different data formats:
-
-- application/json
-- application/nd-json
-- text/csv
