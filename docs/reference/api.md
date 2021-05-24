@@ -26,38 +26,136 @@ Also, we have two API clients for your convenience:
 Individual events are ingested as an HTTP POST request.
 
 
-
 ### Using curl command to ingest data
 
 `POST /api/v1/ingest/` 
 
 ```
-
-curl $YOUR_AXIOM_URL/api/v1/ingest/ \
- -X POST \
- -H "Content-Type: application/json" \
- -H "Authorization: Bearer $INGEST_TOKEN" \
- -d '[{"tags": {"host":"myserver"}, "events" : [{"timestamp": "2016-06-06T12:00:00+02:00", "attributes": {"key1":"value1"}}]}]'
-
-```
-
-```
-
-curl -X POST "https://axicode.axiom.co/api/v1/ingest" 
+curl -X POST "$YOUR_AXIOM_URL/api/v1/ingest" 
   -H  "accept: application/json" -H  "Content-Type: application/json" 
   -d "{  \"description\": \"string\",  \"name\": \"string\",  \"scopes\": [    \"string\"  ]}"
 
 ```
 
-### Body Specification 
+## Body Specification 
 
-The body of the POST should be a JSON encoded object containing key/value pairs. As an example, to report a GET request from the users `/download path` took 231ms:
+The body of the POST should be a JSON encoded object containing key/value pairs. As an example, to report a GET request from the users `/download path` took 231ms with a response size of `3012`
 
 ```
-curl -X 'POST' 'https://azure1.staging.axiomtestlabs.co/api/v1/datasets/neil-cmc/ingest' \
-  -H 'Authorization: Bearer xait-96ac7408-c7d1-4cde-9e23-d1bda820636a' \
+{ "path": "/download", "method": "GET", "duration_ms": 231, "res_size_bytes": 3012 }'
+
+```
+
+## Examples 
+
+This example sends an API event to Axiom. It is in the `neil-cmc` dataset.
+
+### Example Request using Curl 
+
+```
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
+  -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
-  -d '{ "path": "/download", "method": "GET", "duration_ms": 231, "res_size_bytes": 3012 }'
+  -d '{ "path": "/download", "method": "POST", "duration_ms": 231, "res_size_bytes": 3012, "endpoint":"/foo" }'
+
+```
+
+### Example Response
+
+```
+
+# A successful POST returns an HTTP 200 
+
+```
+
+---
+
+## Ingest Grouped Events 
+
+The following example request contains grouped events. The structure of the `JSON` payload should have the scheme of:
+
+`[ { "labels": { "key1": "value1", "key2": "value12" } }, ]` in which teh array comprises of one or more JSON objects describing Events.
+
+### Example Request
+
+```
+
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
+  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
+  -d '[
+        {
+          "time":"2021-23-04302:11:23.222Z",
+          "data":{"key1":"value1","key2":"value2"}
+        },
+        {
+          "data":{"key3":"value3"},
+          "labels":{"key4":"value4"}
+        }
+      ]'
+
+```
+
+### Grouping Events with different Labels
+
+You can also group events with different labels into the same request as shown below: 
+
+```
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
+  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
+  -d '[
+  {
+    "labels": {
+      "author": "System1",
+      "model": "whip.log"      $YOUR_HUMIO_URL/api/v1/ingest
+    },
+    "events": [
+      {
+        "timestamp": "2020-05-04T11:00:00+06:00",
+        "elements": {
+          "foo": "bar"
+        }
+      },
+      {
+        "timestamp": "2020-05-04T12:00:01+03:00",
+        "attributes": {
+          "status": "202",
+          "address": "/src.php"
+        }
+      }
+    ]
+  },
+  {
+    "labels": {
+      "author": "System2",
+      "model": "whip.log"
+    },
+    "events": [
+      {
+        "timestamp": "2020-05-04T13:00:02+02:00",
+        "attributes": {
+          "key2": "value2"
+        }
+      }
+    ]
+  },
+  {
+    "labels": {
+      "author": "System3",
+      "model": "whip.log"
+    },
+    "events": [
+      {
+        "timestamp": "2020-05-04T14:00:03+02:00",
+        "attributes": {
+          "key3": "value3",
+          "status": "200"
+        }
+      }
+    ]
+  }
+]'
 
 ```
 
@@ -65,28 +163,12 @@ Supported data types:
 
 - strings
 - numbers
+- Arrays of objects
 - booleans
-
-curl -X 'POST' 'https://azure1.staging.axiomtestlabs.co/api/v1/datasets/neil-cmc/ingest' \
-  -H 'Authorization: Bearer xait-96ac7408-c7d1-4cde-9e23-d1bda820636a' \
-  -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
-  -d ''
 
 ---
 
-Datasets name are usually case sensitive, **Dataset names must be between 1-128 characters, and may only contain ASCII alphanumeric characters and the '-' character.**
-
-When sending an Event, you can set the following standard fields:
-
-**Name** |        **Description**                  |
-|-----------------|-----------------------------------------------------------|
-| duration_ms         |    You can specify the time duration |
-| method  |   | HTTP Methods
-|  path |   path of your file   |
-|  res_size_bytes |      |
-|id   |  |
-|name|   |
-|scopes ||
+Datasets name are usually case sensitive, Dataset names must be between 1-128 characters, and may only contain ASCII alphanumeric characters and the '-' character.
 
 ---
 
@@ -123,9 +205,3 @@ Ingest Tokens just allows ingestion into the datasets the token is configured fo
 You can obtain the Ingest Token from the settings > Ingest Token of the Axiom deployment.
 
 <img class="axi-window-shadow" src="/assets/shots/ingest-token.png" alt="Ingest Token overview" /> 
-
-
-
-
-
-
