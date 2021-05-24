@@ -95,7 +95,7 @@ These examples sends an API event to Axiom. It is in the `neil-cmc` dataset.
 ### Example Request using NDJSON 
 
 ```
-curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
   -d '{ "path": "/download", "method": "POST", "duration_ms": 231, "res_size_bytes": 3012, "endpoint":"/foo" }'
@@ -131,7 +131,7 @@ The following example request contains grouped events. The structure of the `JSO
 
 ```
 
-curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
   -d '[
@@ -152,7 +152,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
 You can also group events with different labels into the same request as shown below: 
 
 ```
-curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neilcmc/ingest' \
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
   -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
   -d '[
