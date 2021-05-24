@@ -23,12 +23,13 @@ Also, we have two API clients for your convenience:
 
 ## Ingesting data
 
+`POST /api/v1/ingest/` 
+
 Individual events are ingested as an HTTP POST request.
 
 
 ### Using curl command to ingest data
 
-`POST /api/v1/ingest/` 
 
 ```
 curl -X POST "$YOUR_AXIOM_URL/api/v1/ingest" 
@@ -64,7 +65,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/<name>/ingest' \
 
 ```
 
-# A successful POST returns an HTTP 200 
+A successful POST Request returns a standard HTTP 200 response code.
 
 ```
 
