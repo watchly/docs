@@ -2,17 +2,13 @@
   <h1>Get Started with the Axiom API</h1>
 </div>
 
-The best way to get started with our API is to use [Go-Axiom](https://github.com/axiomhq/axiom-go) to send events directly to Axiom API.
-
 Axiom understands your resources and provides an API to ingest structured data logs, handle and manage your deployments. This is a **REST-style** API that uses JSON for serialization and OAuth 2 for authentication. 
 
 This page covers the basics for interacting with the Axiom API, plus instructions for ingesting data and notes on some commonly used endpoints.
 
 ## Authentication
 
-Axiom uses OAuth2 for authentication. All requests must use HTTPS.
-
-You can generate a ingest token in your Axiom user settings for manual authentication in shell scripts or commands that use the Axiom API. Refer to the code sample below for an example of how to use this token in a curl request.
+You can generate a ingest token in your Axiom user settings for manual authentication in shell scripts or commands that use the Axiom API. Refer to the code sample below for an example of how to use this token in a curl request. All requests must use **HTTPS.**
 
 ### API Tokens
 
@@ -21,13 +17,13 @@ Axiom has two types of API tokens;
 - Personal API Tokens.
 - Ingest Tokens.
 
-### Personal API Token; 
+### Personal API Token
 
 The personal token can be retrieved from the users profile page, all users have a Personal Token. With the Personal Token users can access the Axiom API programmatically for custom integrations, management setting, or for tools such as the Axiom CLI.
 
 The personal access token grants access to all resources available to the user on his behalf.  
 
-Personal Access or Ingest token. Can be created under **Profile** or **Settings > Profile > Personal Tokens.**
+Personal Access can be created under **Profile** or **Settings > Profile > Personal Tokens.**
 
 <img class="axi-window-shadow" src="/assets/shots/personal-token.png" alt="Personal Token overview" /> 
 
@@ -43,11 +39,11 @@ You can obtain the Ingest Token from the settings > Ingest Token of the Axiom de
 <img class="axi-window-shadow" src="/assets/shots/ingest-token.png" alt="Ingest Token overview" /> 
 
 
-Also, we have two API clients for your convenience:
+To send events directly to Axiom API. We have two API clients for your convenience:
 
-- Go Client 
+- [Go Client](https://github.com/axiomhq/axiom-go) 
 
-- JS Client
+- [JS Client]()
 
 ## Ingesting data
 
@@ -61,7 +57,7 @@ Individual events are ingested as an HTTP POST request.
 
 ```
 curl -X POST '$YOUR_AXIOM_URL/api/v1/ingest' \
-  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/x-ndjson' \
   -d "{  \"description\": \"string\",  \"name\": \"string\",  \"scopes\": [    \"string\"  ]}"
 
@@ -96,7 +92,7 @@ These examples sends an API event to Axiom. It is in the `neil-cmc` dataset.
 
 ```
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
-  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
   -d '{ "path": "/download", "method": "POST", "duration_ms": 231, "res_size_bytes": 3012, "endpoint":"/foo" }'
 
@@ -107,7 +103,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 ```
 
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
-  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
   -d '{"container": {"image": "front:master.0326.5","name": "tunnel-front"},"labels": {"component": "tunnel","pod-template-hash": "75f5666499"},"namespace": "kube-system","node": {"name": "32068356-vmss000002"},"pod": {"name": "fnxln","uid": "f0bdea4e57"},"replicaset": {"name": "75f5666499"}}}'
 
@@ -117,7 +113,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 ```
 
-A successful POST Request returns a standard HTTP 200 response code.
+A successful POST Request returns a standard HTTP 200 response code JSON with details
 
 ```
 
@@ -153,7 +149,7 @@ You can also group events with different labels into the same request as shown b
 
 ```
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
-  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
   -d '[
   {
@@ -214,7 +210,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 ```
 
-A successful POST Request returns a standard HTTP 200 response code.
+A successful POST Request returns a standard HTTP 200 response code JSON with details
 
 ```
 
@@ -227,7 +223,7 @@ The following example request contains events. The structure of the `CSV` payloa
 
 ```
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
-  -H 'Authorization: Bearer $INGEST_TOKEN' \
+  -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: text/csv' -H 'x-axiom-org-id: axiom' \
   -d '['name', 'area', 'country_code2', 'country_code3']'
 
@@ -237,7 +233,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 ```
 
-A successful POST Request returns a standard HTTP 200 response code.
+A successful POST Request returns a standard HTTP 200 response code JSON with details
 
 ```
 
