@@ -178,7 +178,7 @@ PS C:\Program Files\Winlogbeat> Stop-Service winlogbeat
 
 
 ---
-**For more information on Winlogbeat event logs visit the [documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)**
+**For more information on Winlogbeat event logs visit the Winlogbeat [documentation](https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html)**
 
 
 

@@ -55,7 +55,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/api" title="API Compatibility">
+<a class="axi-link-button" href="/data-shippers/api/" title="API Compatibility">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using API</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
@@ -63,7 +63,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/elastic-beats" title="Elastic Beats">
+<a class="axi-link-button" href="/data-shippers/elastic-beats/" title="Elastic Beats">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using Elastic Beats</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
@@ -71,7 +71,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/fluentd" title="FluentD">
+<a class="axi-link-button" href="/data-shippers/fluentd/" title="FluentD">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using FluentD</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
@@ -79,7 +79,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/kubernetes-filebeat" title="Kubernetes">
+<a class="axi-link-button" href="/data-shippers/kubernetes-filebeat/" title="Kubernetes">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using Kubernetes</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
@@ -87,7 +87,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/logstash" title="Logstash">
+<a class="axi-link-button" href="/data-shippers/logstash/" title="Logstash">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using Logstash</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
@@ -95,7 +95,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/loki" title="Loki">
+<a class="axi-link-button" href="/data-shippers/loki/" title="Loki">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using Loki Proxy</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
@@ -103,7 +103,7 @@ Configure, read, collect, and Send logs to your Axiom deployment using a variety
 
 ---
 
-<a class="axi-link-button" href="/data-shippers/syslog-proxy" title="Syslog">
+<a class="axi-link-button" href="/data-shippers/syslog-proxy/" title="Syslog">
   <img src="/assets/integrate.svg" width=24 alt="integrations icon" />
   <span>Ingest using Syslog Proxy</span>
   <img src="/assets/chevron-right.svg" width=16 alt="go" />
