@@ -239,7 +239,7 @@ A successful POST Request returns a 200 response code JSON with details
 
 ---
 
-Supported data types:
+### Supported data types:
 
 - strings
 - numbers
