@@ -2,7 +2,7 @@
   <h1>Get Started with the Axiom API</h1>
 </div>
 
-Axiom understands your resources and provides an API to ingest structured data logs, handle and manage your deployments. This is a **REST-style** API that uses JSON for serialization and OAuth 2 for authentication. 
+Axiom understands your resources and provides an API to ingest structured data logs, handle and manage your deployments. This is a **REST-style** API that uses JSON for serialization. 
 
 This page covers the basics for interacting with the Axiom API, plus instructions for ingesting data and notes on some commonly used endpoints.
 
