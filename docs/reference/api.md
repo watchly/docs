@@ -221,7 +221,7 @@ A successful POST Request returns a standard HTTP 200 response code.
 ## Ingest Events using CSV
 
 
-The following example request contains events. The structure of the `CSV` payload uses a comma to separate values ['value1', 'value2', 'value3'].
+The following example request contains events. The structure of the `CSV` payload uses a comma to separate values `['value1', 'value2', 'value3'].`
 
 ### Example Request using CSV
 
