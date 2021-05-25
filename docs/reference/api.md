@@ -8,7 +8,9 @@ This page covers the basics for interacting with the Axiom API, plus instruction
 
 ## Authentication
 
-You can generate a ingest token in your Axiom user settings for manual authentication in shell scripts or commands that use the Axiom API. Refer to the code sample below for an example of how to use this token in a curl request. All requests must use **HTTPS.**
+You can generate an Ingest Token/Personal Token in your Axiom user settings for manual authentication in shell scripts or commands that use the Axiom API. 
+
+Refer to the code sample below for an example of how to use this token in a curl request. All requests must use **HTTPS.**
 
 ### API Tokens
 
