@@ -41,9 +41,7 @@ You can obtain the Ingest Token from the settings > Ingest Token of the Axiom de
 
 To send events directly to Axiom API. We have two API clients for your convenience:
 
-- [Go Client](https://github.com/axiomhq/axiom-go) 
-
-- [JS Client]()
+- [Go Client](https://github.com/axiomhq/axiom-go)
 
 ## Ingesting data
 
