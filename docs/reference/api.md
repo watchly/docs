@@ -113,7 +113,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 ```
 
-A successful POST Request returns a standard HTTP 200 response code JSON with details
+A successful POST Request returns a 200 response code JSON with details
 
 ```
 
@@ -210,7 +210,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 ```
 
-A successful POST Request returns a standard HTTP 200 response code JSON with details
+A successful POST Request returns a 200 response code JSON with details
 
 ```
 
@@ -233,7 +233,7 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 ```
 
-A successful POST Request returns a standard HTTP 200 response code JSON with details
+A successful POST Request returns a 200 response code JSON with details
 
 ```
 
