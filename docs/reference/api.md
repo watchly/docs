@@ -6,7 +6,7 @@ Axiom understands your resources and provides an API to ingest structured data l
 
 This page covers the basics for interacting with the Axiom API, plus instructions for ingesting data and notes on some commonly used endpoints.
 
-If you would like to manage Axiom more completely via API, we recommend you use [axiom-go](https://github.com/axiomhq/axiom-go)
+If you would like to manage Axiom more completely via API, we recommend you use [axiom-go](https://github.com/axiomhq/axiom-go).
 
 ## Authentication
 
