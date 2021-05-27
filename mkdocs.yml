@@ -46,8 +46,9 @@ nav:
       - Introducing Axiom: "introducing-axiom.md"
       - FAQ: "faq.md"
   - Installation:
-      - Demo: "install/demo.md"
+      - Desktop Demo: "install/demo.md"
       - Kubernetes: "install/kubernetes.md"
+      - Axiom Cloud: "install/cloud.md"
 #      - Storage: "install/storage.md"
 #      - Recommendations: "install/recommendations.md"
   - Usage:
