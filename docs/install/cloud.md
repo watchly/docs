@@ -8,7 +8,7 @@ Introducing Axiom Cloud, the fastest and simplest way to get started with Axiom.
 
 ## Create User Account
 
-Visit https://cloud.axiom.co/ to create your user account. You will see the Axiom Cloud welcome page for you to register your details.  
+Visit [cloud.axiom.co](https://cloud.axiom.co/) to create your user account. You will see the Axiom Cloud welcome page for you to register your details.  
 
 <img class="axi-window-shadow" src="/assets/shots/axiomcloud.png" alt="Axiom Cloud overview" /> 
 
