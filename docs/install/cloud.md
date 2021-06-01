@@ -33,7 +33,7 @@ After registering you will have a default account which is a free account. Then 
 
 ## Billing 
 
-Your Organization comes with a free 14 day Trial plan. Axiom will not charge you during the first 14 days of your Axiom Pro trial. You can cancel at any time during the trial period without incurring any cost.
+You can upgrade your organization to a free 14-day trial. Axiom will not charge you during the first 14 days of your Axiom Pro trial. You can cancel at any time during the trial period without incurring any cost.
 
 At the end of the trial period, your account will automatically convert to a paid plan.
 

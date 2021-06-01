@@ -45,10 +45,10 @@ nav:
       - Welcome: "index.md"
       - Introducing Axiom: "introducing-axiom.md"
       - FAQ: "faq.md"
-  - Installation:
+  - Getting Started:
+      - Axiom Cloud: "install/cloud.md"
       - Desktop Demo: "install/demo.md"
       - Kubernetes: "install/kubernetes.md"
-      - Axiom Cloud: "install/cloud.md"
 #      - Storage: "install/storage.md"
 #      - Recommendations: "install/recommendations.md"
   - Usage:
