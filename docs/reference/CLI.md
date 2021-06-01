@@ -83,21 +83,11 @@ AX_BACKEND="main-instance"
 
 ```
 
-## Obtain a token in the Axiom UI
+## Tokens
 
-**To generate an ingest Token**
+You can generate an ingest and personal token manually in your Axiom user settings.
 
-1. under **settings**, select **ingest token**. 
-2. Select **Add ingest token**.
-3. Enter a **name** and **description** and select **ADD**. 
-4. Copy the generated token to your clipboard. Once you navigate from the page, token can be seen again by selecting **Ingest Tokens**. 
-
-**To generate a Personal Token**
-
-1. Under **settings**, select **profile**
-2. Select **Add personal token**
-3. Enter a **name** and **description** and select **ADD**.
-4. Copy the generated token to your clipboard. Once you navigate from the page, token can be seen again by selecting **Personal token**
+See [Tokens](/usage/settings/#token) to know more about managing access and authorization. 
 
 ## Configuration and Deployment 
 
@@ -163,6 +153,10 @@ LEARN MORE
   Read the manual at https://docs.axiom.co/reference/CLI/
 
 ```
+
+## Command reference 
+
+View and Get started with [Axiom CLI Command List here.](https://github.com/axiomhq/cli#commands)
 
 ## Get help
 
