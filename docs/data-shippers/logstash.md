@@ -4,8 +4,6 @@
 
 **NOTE:** Currently You can only ship logs to Axiom using the Logstash versions [7.12](https://www.elastic.co/guide/en/beats/libbeat/7.12/index.html) and lower. 
 
----
-
 ## Logstash
 
 Logstash is an open source log aggregation, transformation tool and server-side data processing pipeline that ingests data from a multitude of sources simultaneously. With Logstash, you can collect, parse, ingest and store logs for future use on **Axiom**.
