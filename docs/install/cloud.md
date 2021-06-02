@@ -62,7 +62,7 @@ See [Tokens](/usage/settings/#token) to know more about managing access and auth
 
 ## Status 
 
-You can see the license and instance configuration for your organization by selecting the **Status** this lets you have an overview of how much data you can ingest, how long your plan is valid, maximum amount of Users & Teams you can have. 
+You can see the license and instance configuration for your organization by selecting **Status** this lets you have an overview of how much data you can ingest, how long your plan is valid, maximum amount of Users & Teams you can have. 
 
 <img class="axi-window-shadow" src="/assets/shots/status-cloud.png" alt="Status overview" /> 
 
