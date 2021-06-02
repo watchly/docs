@@ -2,7 +2,6 @@
   <h1>Settings</h1>
 </div>
 
-
 ## Authentication
 
 The authentication protocol uses the authorization token which allows third party services obtain limited access to your Axiom instances. It lets you configure a OAuth2 authentication when your provide your `Client ID` and `Client Secret` from your provider for multiple use case support. 
