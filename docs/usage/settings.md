@@ -2,6 +2,15 @@
   <h1>Settings</h1>
 </div>
 
+## Authentication
+
+The authentication protocol uses the authorization token which allows third party services obtain limited access to your Axiom instances. It lets you configure a OAuth2 authentication when your provide your `Client ID` and `Client Secret` from your provider for multiple use case support. 
+
+**To add OAuth2 Provider** visit **Settings > Authentication**
+
+<img class="axi-window-shadow" src="/assets/shots/authentication.png" alt="Auth overview" /> 
+
+
 ## Token
 
 **Obtain a token in the Axiom UI**
@@ -37,19 +46,34 @@ The ingest token is to used to send data to one or more datasets. Ingest tokens 
 
 <img class="axi-window-shadow" src="/assets/shots/personal-token.png" alt="Personal Token overview" /> 
 
----
-
 ## API
 
 The best way to get started with our API is to use [Go-Axiom](https://github.com/axiomhq/cli) to send events directly to Axiom. 
-## Authentication
 
-The authentication protocol uses the authorization token which allows third party services obtain limited access to your Axiom instances. It lets you configure a OAuth2 authentication when your provide your `Client ID` and `Client Secret` from your provider for multiple use case support. 
+## Dataset 
 
-**To add OAuth2 Provider** visit **Settings > Authentication**
+Manage datasets for your organization, including creating new datasets or deleting existing datasets.
 
-<img class="axi-window-shadow" src="/assets/shots/authentication.png" alt="Auth overview" /> 
+**Datasets are a collection of similar events** When data is sent to Axiom it is stored in a dataset. 
 
+Dataset names must be between 1-128 characters, and may only contain ASCII alphanumeric characters and the '-' character.
+
+To create a dataset, enter the **name** and **description** of your dataset. 
+
+<img class="axi-window-shadow" src="/assets/shots/dataset.png" alt="Auth overview" /> 
+
+## Status
+
+You can see the license and instance configuration for your organization by selecting **Status** this lets you know:
+
+- How much data you can ingest. 
+- How long can you use your Instance.
+- Maximum Datasets you can have.
+- Maximum number of Users.
+- Maximum number of Teams. 
+- Maximum Query Window.
+
+<img class="axi-window-shadow" src="/assets/shots/status.png" alt="Auth overview" /> 
 
 
 ## Manage Teams
@@ -62,8 +86,10 @@ If you’re a team Owner, you can add new team members to the team by selecting 
 
 - Search for the team member you want to add to your Team.
 
-
 **Only users with the roles User or Read Only can be added as team members. Once a user is added to one or more teams, they can only see the datasets that are visible to those teams.**
+
+<img class="axi-window-shadow" src="/assets/shots/teams.png" alt="Auth overview" /> 
+
 
 ## User Settings
 
@@ -72,3 +98,5 @@ After signing up, you can control the access to your Axiom deployments by managi
 Team owners can add a user's name, email, and also assign a specific role. 
 
 **Settings > Users > Add user > Assign roles**. 
+
+<img class="axi-window-shadow" src="/assets/shots/users.png" alt="Auth overview" /> 
