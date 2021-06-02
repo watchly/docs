@@ -99,4 +99,4 @@ Team owners can add a user's name, email, and also assign a specific role.
 
 **Settings > Users > Add user > Assign roles**. 
 
-<img class="axi-window-shadow" src="/assets/shots/users.png" alt="Auth overview" /> 
+<img class="axi-window-shadow" src="/assets/shots/user.png" alt="Auth overview" /> 
