@@ -96,9 +96,12 @@ Axiom CLI lets you ingest, authenticate, and stream data.
 For more information about Configuration, managing authentication status, ingesting, streaming, and more, 
 visit the [Axiom CLI](https://github.com/axiomhq/cli) repository on GitHub. 
 
+Axiom CLI supports the ingestion of different formats of data **( JSON, NDJSON, and CSV)** 
+
 ## Ingestion
 
-Import, transfer, load and process data for later use or storage using the Axiom CLI move data from o Axiom CLI supports the ingestion of different formats of data ( JSON, NDJSON, and CSV) 
+Import, transfer, load and process data for later use or storage using the Axiom CLI. With [Axiom CLI](https://github.com/axiomhq/cli) you can Ingest the contents of a **JSON, NDJSON, CSV** logfile into a dataset.  
+
 
 **To view a list of all the available commands run `axiom` on your terminal:** 
 
