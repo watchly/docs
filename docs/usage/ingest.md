@@ -4,16 +4,16 @@
 
 Ingest, transport and fetch data from different sources such as Relational database, web logs, batch data, real-time, application logs, streaming data, etc for later usage using the Axiom API. 
 
-You can also Collect, load, group, move, data from one or more sources to Axiom where it can be stored and further analyzed.
+You can also collect, load, group and move data from one or more sources to Axiom where it can be stored and further analyzed.
 
-Before ingesting data, you will need an API Token which you can generate from the **Settings->Tokens** page on the Axiom Dashboard. See [API Tokens documentation](/usage/settings#api-tokens).
+Before ingesting data, you will need an API Token which you can generate from the **Settings->Tokens** page on the Axiom Dashboard. See [API Tokens documentation](/usage/settings#token)
 
 <br />
  Once you have an ingest token, there are three ways to get your data into Axiom:
 
 1. Using the [Ingest API](#ingest-api)
 2. Using a [Data Shipper](#data-shippers) (Logstash, Filebeat, Metricbeat, Fluentd etc)
-4. Using the [Elasticsearch Bulk API](/data-shippers/api) that Axiom supports natively
+3. Using the [Elasticsearch Bulk API](/data-shippers/api) that Axiom supports natively
 
 ## Ingest API
 
