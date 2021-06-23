@@ -6,7 +6,7 @@ Ingest, transport and fetch data from different sources such as Relational datab
 
 You can also collect, load, group and move data from one or more sources to Axiom where it can be stored and further analyzed.
 
-Before ingesting data, you will need an API Token which you can generate from the **Settings->Tokens** page on the Axiom Dashboard. See [API Tokens documentation](/usage/settings#api-tokens).
+Before ingesting data, you will need an API Token which you can generate from the **Settings->Tokens** page on the Axiom Dashboard. See [API Tokens documentation](/usage/settings#token)
 
 <br />
  Once you have an ingest token, there are three ways to get your data into Axiom:
