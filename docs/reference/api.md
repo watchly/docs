@@ -56,8 +56,9 @@ Individual events are ingested as an HTTP POST request.
 
 ### Using curl command to ingest data 
 
+=== "cURL"
 
-```
+```bash
 curl -X POST '$YOUR_AXIOM_URL/api/v1/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/x-ndjson' \
@@ -92,7 +93,9 @@ These examples sends an API event to Axiom. It is in the `neil-cmc` dataset.
 
 ### Example Request using NDJSON 
 
-```
+=== "cURL"
+
+```bash
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
@@ -102,8 +105,9 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 #### More examples
 
-```
+=== "cURL"
 
+```bash
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/x-ndjson' -H 'x-axiom-org-id: axiom' \
@@ -127,7 +131,9 @@ The following example request contains grouped events. The structure of the `JSO
 
 ### Example Request using JSON
 
-```
+=== "cURL"
+
+```bash
 
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN' \
@@ -149,7 +155,9 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 You can also group events with different labels into the same request as shown below: 
 
-```
+=== "cURL"
+
+```bash
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
@@ -223,7 +231,9 @@ The following example request contains events. The structure of the `CSV` payloa
 
 ### Example Request using CSV
 
-```
+=== "cURL"
+
+```bash
 curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
   -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
   -H 'Content-Type: text/csv' -H 'x-axiom-org-id: axiom' \
@@ -243,10 +253,10 @@ A successful POST Request returns a 200 response code JSON with details
 
 ### Supported data types:
 
-- strings
-- numbers
+- Strings
+- Numbers
 - Arrays of objects
-- booleans
+- Booleans
 
 ---
 
