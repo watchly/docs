@@ -4,7 +4,7 @@
 
 Introducing Axiom Cloud, the fastest and simplest way to get started with Axiom. With your Axiom Cloud Account, You don't need to worry about Infrastructure complications on setting up your deployment. 
 
-**This page will show you how get started with Axiom Cloud.**
+**This page will show you how to get started with Axiom Cloud.**
 
 ## Create User Account
 
