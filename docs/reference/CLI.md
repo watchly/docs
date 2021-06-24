@@ -58,7 +58,7 @@ $ docker run axiomhq/cli
 
 ```
 
-You can check the version and find out basic commands about the tool with the following command:
+You can check the version and find out basic commands about Axiom CLI by running the following command:
 
 === "bash"
 ```sh
@@ -69,7 +69,7 @@ $ axiom
 
 You can manage the authentication state of your deployments with the Axiom command-line interface. It's possible for you to log in, log out of, select an Axiom deployment, and view the authentication status of your deployments. 
 
-Before logging in, you are being asked for your account credentials interactively on the command line, enter your various credentials, and log into your specified deployment. The resulting token is printed out for further use or stored in the configuration file alongside the instance URL and alias to refer to it in the future. 
+Before logging in, you are being asked for your account credentials interactively on the command line, enter your various credentials, and log into your specified deployment. The resulting [token](/usage/settings/#token) is printed out for further use or stored in the configuration file alongside the instance URL and alias to refer to it in the future. 
 
 <img class="axi-crop" src="/assets/shots/cli-authentication.gif" alt="Cli-authentication"/>
 
@@ -78,7 +78,7 @@ Before logging in, you are being asked for your account credentials interactivel
 
 ## Session support
 
-You can configure multiple Axiom deployments using the Axiom CLI by configuring the appropriate endpoint and auth token. The configuration is obtained from the configuration file or the environment: `~/.config/.axiom.toml`
+You can configure multiple Axiom deployments using the Axiom CLI by configuring the appropriate endpoint and [auth token.](/usage/settings/#token) The configuration is obtained from the configuration file or the environment: `~/.config/.axiom.toml`
 
 <img class="axi-crop" src="/assets/shots/cli-session-support.gif" alt="Cli-session"/>
 
