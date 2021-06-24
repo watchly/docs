@@ -10,6 +10,8 @@ You can use the command line to Ingest data, manage authentication state, and co
 
 ## Installation
 
+### Install using go get
+
 To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.15 or higher, then run this command from any directory in your terminal. 
 
 === "Go"
@@ -17,6 +19,8 @@ To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.
     ```bash
     $ go get -u github.com/axiomhq/cli/cmd/axiom
     ```
+
+### Install using Homebrew
 
 You can also install the CLI using [Homebrew](https://brew.sh/) 
 
@@ -26,20 +30,46 @@ You can also install the CLI using [Homebrew](https://brew.sh/)
     $ brew tap axiomhq/tap
     $ brew install axiom 
     ```
-This installs Axiom command globally so you can run `axiom` commands from any directory. 
+This installs Axiom command globally so you can run `axiom` commands from any directory.
 
-You can check the version and find out basic commands about the tool with the following command:
+To update:
+
+=== "Brew"
+
+```bash
+$ brew upgrade axiom
+```
+
+### Install from source
+
+```sh
+$ git clone https://github.com/axiomhq/cli.git
+$ cd cli
+$ make install # Build and install binary into $GOPATH
+
+```
+### Run the Docker image
+
+Docker images are available on [DockerHub.](https://hub.docker.com/r/axiomhq/cli)
+
+```sh
+$ docker pull axiomhq/cli
+$ docker run axiomhq/cli
+
+```
+
+You can check the version and find out basic commands about Axiom CLI by running the following command:
 
 === "bash"
-```
+```sh
 $ axiom
-```
 
+```
 ## Authentication 
 
 You can manage the authentication state of your deployments with the Axiom command-line interface. It's possible for you to log in, log out of, select an Axiom deployment, and view the authentication status of your deployments. 
 
-Before logging in, you are being asked for your account credentials interactively on the command line, enter your various credentials, and log into your specified deployment. The resulting token is printed out for further use or stored in the configuration file alongside the instance URL and alias to refer to it in the future. 
+Before logging in, you are being asked for your account credentials interactively on the command line, enter your various credentials, and log into your specified deployment. The resulting [token](/usage/settings/#token) is printed out for further use or stored in the configuration file alongside the instance URL and alias to refer to it in the future. 
 
 <img class="axi-crop" src="/assets/shots/cli-authentication.gif" alt="Cli-authentication"/>
 
@@ -48,7 +78,7 @@ Before logging in, you are being asked for your account credentials interactivel
 
 ## Session support
 
-You can configure multiple Axiom deployments using the Axiom CLI by configuring the appropriate endpoint and auth token. The configuration is obtained from the configuration file or the environment: `~/.config/.axiom.toml`
+You can configure multiple Axiom deployments using the Axiom CLI by configuring the appropriate endpoint and [auth token.](/usage/settings/#token) The configuration is obtained from the configuration file or the environment: `~/.config/.axiom.toml`
 
 <img class="axi-crop" src="/assets/shots/cli-session-support.gif" alt="Cli-session"/>
 
@@ -156,7 +186,6 @@ LEARN MORE
   Read the manual at https://docs.axiom.co/reference/CLI/
 
 ```
-
 ## Command reference 
 
 View and Get started with [Axiom CLI Command List here.](https://github.com/axiomhq/cli#commands)
@@ -175,6 +204,7 @@ For more information about a specific command, run `help` with the name of the c
 === "bash"
 ```
 $ axiom help auth 
+
 ```
 
 This also works for sub-commands.
@@ -182,16 +212,11 @@ This also works for sub-commands.
 === "bash"
 ```
 $ axiom help auth status
+
 ```
 
 **if you have questions, or any opinions you can [start an issue](https://github.com/axiomhq/cli/issues) on Axiom CLI's open source repository.**
 
 ---
 
-
 **You can also visit our [Slack group](https://www.axiom.co/support/) to start or join a discussion. We’d love to hear from you!**
-
-
-
-
-

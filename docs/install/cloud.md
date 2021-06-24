@@ -43,7 +43,7 @@ On the Billings dashboard you can get the total usage of each running component 
 
 ---
 
-To know more about pricing, kindly check out our [simple and minimal pricing plans using the Axiom cost calculator.](https://www.axiom.co/pricing/). This helps you to see how much more data you could store while still benefiting from huge savings.
+To know more about pricing, kindly check out our [simple and minimal pricing plans using the Axiom cost calculator](https://www.axiom.co/pricing/). This helps you to see how much more data you could store while still benefiting from huge savings.
 
 ## Datasets
 
