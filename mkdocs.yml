@@ -65,7 +65,7 @@ nav:
       - FluentD: "data-shippers/fluentd.md"
       - Logstash: "data-shippers/logstash.md"
       - Loki: "data-shippers/loki.md"
-      - Syslog: "data-shippers/syslog-proxy.md"
+      - Syslog: "data-shippers/syslog-proxy.md/"
       - Kubernetes: "data-shippers/kubernetes-filebeat.md"
 #     - HEC: "usage/hec.md"
   - Reference:
