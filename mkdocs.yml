@@ -1,5 +1,5 @@
 site_name: Documentation
-site_url: https://docs.axiom.co
+site_url: https://docs.axiom.co/
 copyright: Copyright (c) Axiom, Inc. 2021
 strict: true
 theme:
@@ -65,8 +65,8 @@ nav:
       - FluentD: "data-shippers/fluentd.md"
       - Logstash: "data-shippers/logstash.md"
       - Loki: "data-shippers/loki.md"
-      - Syslog: "data-shippers/syslog-proxy.md/"
-      - Kubernetes: "data-shippers/kubernetes-filebeat.md"
+      - Syslog: "data-shippers/syslog-proxy.md"
+      - Kubernetes: "data-shippers/kubernetes-filebeat.md/"
 #     - HEC: "usage/hec.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
