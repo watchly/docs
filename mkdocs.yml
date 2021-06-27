@@ -2,6 +2,7 @@ site_name: Documentation
 site_url: https://docs.axiom.co/
 copyright: Copyright (c) Axiom, Inc. 2021
 strict: true
+use_directory_urls: false
 theme:
   name: material
   custom_dir: overrides
