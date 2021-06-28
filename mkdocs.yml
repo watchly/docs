@@ -19,6 +19,7 @@ plugins:
       redirect_maps:
           'data-shippers/api.md': 'https://docs.axiom.co/data-shippers/api/'
           'data-shippers/logstash.md': 'https://docs.axiom.co/data-shippers/logstash/'
+          'data-shippers/syslog-proxy.md' : 'https://docs.axiom.co/data-shippers/syslog-proxy/'
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
