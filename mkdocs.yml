@@ -1,7 +1,7 @@
 site_name: Documentation
 site_url: https://docs.axiom.co/
 copyright: Copyright (c) Axiom, Inc. 2021
-strict: false 
+strict: true  
 use_directory_urls: true 
 theme:
   name: material
