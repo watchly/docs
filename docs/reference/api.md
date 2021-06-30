@@ -42,6 +42,9 @@ You can obtain the Ingest Token from the settings > Ingest Token of the Axiom de
 
 <img class="axi-window-shadow" src="/assets/shots/ingest-token.png" alt="Ingest Token overview" /> 
 
+---
+
+#### Sending Events to Axiom API. 
 
 To send events directly to Axiom API. We have the Go API client for your convenience:
 
