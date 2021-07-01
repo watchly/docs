@@ -2,7 +2,7 @@
   <h1>Runing Axiom on Kubernetes</h1> 
 </div>
 
-To get Axiom running on Kubernetes is by using our [Helm chart](https://github.com/axiomhq/axiom-helm-charts).
+To get Axiom running on Kubernetes use our [Helm chart](https://github.com/axiomhq/axiom-helm-charts).
 
 The following documentation assumes some knowledge of working with Kubernetes and Helm charts.
 
