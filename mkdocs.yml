@@ -59,6 +59,7 @@ nav:
       - Dashboards: "usage/dashboards.md"
       - Alerting: "usage/alerts.md"
       - Settings: "usage/settings.md"
+      - Libraries: "usage/libraries.md"
   - Data Shippers:
       - API Compatibility: "data-shippers/api.md"
       - Elastic Beats: "data-shippers/elastic-beats.md"
