@@ -72,3 +72,15 @@ Create calculated columns and attach them to the result set.
 | extend method , ['geo.city'], ['geo.country'], content_type
 
 ```
+
+## join operator
+
+Append the rows of two tables to form a new table by matching values of the specified columns from each table.
+
+### Syntax
+
+LeftTable | join [JoinParameters] ( RightTable ) on Attributes
+
+| **Arguements**  | **Returns** |
+|---------------------------------------|----------------------------------| 
+| <ul><li> `LeftTable:` The left table or tabular expression, sometimes called outer table, whose rows are to be merged. Denoted as `$left.` </li><li> RightTable: The right table or tabular expression, sometimes called inner table, whose rows are to be merged. Denoted as `$right.`
