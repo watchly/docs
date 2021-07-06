@@ -10,7 +10,6 @@ Sorts out a dataset to a branch of rows that meets a *state* when executed.
 ['http-logs']
 | where method == 'GET'
 ```
----
 
 | **Syntax** | **Arguements**  | **Returns** |
 |----------------|------------------------------------|---------------| 
