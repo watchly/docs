@@ -13,7 +13,7 @@ Sorts out a dataset to a branch of rows that meets a *state* when executed.
 
 | **Syntax** | **Arguements**  | **Returns** |
 |----------------|------------------------------------|---------------| 
-|  ['http-logs'] `where` *state*    |  **`http-logs`:** The dataset whose events are to be filtered, **state**: a bool expression over the columns of the dataset `http-logs` , it's then checked for each row in `http-logs` | Row in dataset `http-logs` for which *state* is true.  |
+|  ['http-logs'] `where` *state*    |  **`http-logs`:** The dataset whose events are to be filtered,                             **state**: a bool expression over the columns of the dataset `http-logs` , it's then checked for each row in `http-logs` | Row in dataset `http-logs` for which *state* is true.  |
 ### Example
 
 ```
