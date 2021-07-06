@@ -2,8 +2,6 @@
   <h1>Tabular Operators</h1>
 </div>
 
-
-
 ## where operator 
 
 Sorts out a dataset to a branch of rows that meets a *state* when executed.
