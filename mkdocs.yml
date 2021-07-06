@@ -71,8 +71,8 @@ nav:
 #     - HEC: "usage/hec.md"
   - APL:
       - Overview: "apl/overview.md"
-      - Axiom Processing Language: 
-            "apl/tabular-operators.md"
+      - Axiom Processing Language: "apl/apl.md"
+      - Tabular Operators: "apl/tabular-operators.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
       - Virtual Fields: "reference/virtual-fields.md"

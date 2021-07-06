@@ -26,4 +26,3 @@ You can use Axiom Processing Language in:
 - Application Queries. 
 - Filtering data from sources
 - Creating insights and visualizations. 
-
