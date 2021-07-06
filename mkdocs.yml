@@ -69,6 +69,8 @@ nav:
       - Syslog: "data-shippers/syslog-proxy.md"
       - Kubernetes: "data-shippers/kubernetes-filebeat.md"
 #     - HEC: "usage/hec.md"
+  - APL:
+      - Overview: "APL/apl.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
       - Virtual Fields: "reference/virtual-fields.md"
