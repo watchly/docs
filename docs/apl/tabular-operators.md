@@ -30,6 +30,7 @@ Returns the number of events and all matching events from the dataset.
 | **Syntax** | **Arguements**  | **Returns** |
 |----------------|------------------------------------|---------------| 
 |  ['http-logs']  count   |  **['http-logs']:** dataset whose events are to be counted | a table with a single data and column with. The value of the only cell is the number of events in `http-logs`.
+
 ### Example 
 
 ```
