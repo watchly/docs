@@ -6,9 +6,7 @@
 
 Axiom Processing Language is a fast and highly scalable data processing service for logging and querying log analytics. Axiom APL is used to query large datasets. 
 
-With APL knowledge, you will be guided step by step on how to run Queries on your data logs. 
-
-Axiom Processing Language is designed for big data workloads, particularly using large amounts of data coming in from your data shippers, API or workloads. 
+With APL knowledge, you will be guided step by step on how to run Queries on your data logs. Axiom Processing Language is designed for big data workloads, particularly using large amounts of data coming in from your data shippers, API or workloads. 
 ## APL Features
 
 - Simplicity: Easy to read syntax and great editing experience. 
@@ -17,7 +15,7 @@ Axiom Processing Language is designed for big data workloads, particularly using
 - Intuitive 
 - Highly productive. 
 
-APL consists of tons of query operators and functions such as aggregation, filters, etc
+APL consists of a lot of query operators and functions such as aggregation, filters, etc
 
 ## APL Usage
 
