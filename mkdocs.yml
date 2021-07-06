@@ -70,7 +70,8 @@ nav:
       - Kubernetes: "data-shippers/kubernetes-filebeat.md"
 #     - HEC: "usage/hec.md"
   - APL:
-      - Overview: "APL/apl.md"
+      - Overview: "apl/overview.md"
+      - Axiom Processing Language: "apl/apl.md"
   - Reference:
       - Visualizations: "reference/visualizations.md"
       - Virtual Fields: "reference/virtual-fields.md"
