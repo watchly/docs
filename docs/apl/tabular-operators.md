@@ -117,10 +117,24 @@ Return up to the specified number of rows.
 | take 1000 
 
 ```
+```
 
 ['http-logs']
 | take 700
 
 ```
 
+## summarize operator 
 
+Produces a table that aggregates the content of the input table.
+
+```
+['http-logs']
+| summarize histogram(req_duration_ms, 30)
+```
+
+Returns a table that shows the `heat-map` in each interval [0, 30], [30, 20, 10], and so on. This example has a cell for `HISTOGRAM(req_duration_ms)`. All other input columns are ignored.
+
+### Syntax 
+
+[Dataset name] | summarize [[Column =] Aggregation [, ...]] [by [Column =] GroupExpression [, ...]]
