@@ -81,4 +81,46 @@ Select the columns to insert, rename, include or drop, and embed new computed co
 
 | **Arguments**  | **Returns** |
 |---------------------------------------|----------------------------------| 
-|||
+| <ul><li> T: The input table. which is your dataset name.  </li><li> ColumnName (FieldName): Optional name of a column to appear in the output. If there is no Expression, then ColumnName is compulsory and a column of that name must appear in the input.  </li><li> Expression: Optional scalar expression referencing the input columns. If ColumnName is not omitted then Expression is mandatory.  | </li><li> A table that has the columns named as arguments, and as many rows as the input table. |
+
+### Example 
+
+```
+['http-logs']
+| project ['geo.country'] = ['id']
+```
+
+```
+['http-logs']
+| project ['geo.country'] = ['id'], method = ['geo.city']
+```
+
+```
+['http-logs']
+| project ['geo.city'], content_type, ['geo.country'], ['id'], is_tls
+```
+
+## take operator 
+
+Return up to the specified number of rows.
+
+### Syntax
+
+ [dataset name] | `take`  
+ 
+`take` NumberOfRows
+
+### Example 
+
+```
+['http-logs']
+| take 1000 
+
+```
+
+['http-logs']
+| take 700
+
+```
+
+
