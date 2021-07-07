@@ -137,4 +137,22 @@ Returns a table that shows the `heat-map` in each interval [0, 30], [30, 20, 10]
 
 ### Syntax 
 
-[Dataset name] | summarize [[Column =] Aggregation [, ...]] [by [Column =] GroupExpression [, ...]]
+[Dataset name] | `summarize [[Column =] Aggregation [, ...]] [by [Column =] GroupExpression [, ...]]`
+
+| **Arguments**  | **Returns** |
+|---------------------------------------|----------------------------------| 
+| <ul><li> Aggregation: A call to an aggregation function such as count() or avg(), with column names as arguments. See the list of aggregation functions. </li><li> Column(`field`): Optional name for a result column. Defaults to a name derived from the expression. </li><li> GroupExpression: A scalar expression that can reference the input data. The output will have as many records as there are distinct values of all the group expressions.| </li><li> The input rows are arranged into groups having the same values of the expressions. The expressions can be `by` expressions. . The specified aggregation functions are computed over each group, producing a row for each group.  (Some aggregation functions return multiple columns.) </li><li> To summarize over ranges of numeric values, use bin() to reduce ranges to discrete values. |
+
+### Example
+
+```
+['http-logs']
+| summarize histogram(req_duration_ms, 30), count()
+```
+
+```
+['http-logs']
+| where _time > ago(1h)
+| summarize topk(content_type, 40)
+
+```
