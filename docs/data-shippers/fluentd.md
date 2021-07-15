@@ -62,11 +62,11 @@ The example below shows fluentD configuration that sends data to Axiom:
   @type           elasticsearch
 
   ## host is the url of your Axiom deployment
-  hosts "https://cloud.axiom.co:443/api/v1/datasets/<my-datasets>/elastic"
+  hosts "https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"
 
   ## api_key can be your ingest or personal token
   api_key "user:token"
-  
+
   verify_es_version_at_startup false
 </match>
 ```

@@ -48,7 +48,7 @@ $ docker pull axiomhq/axiom-syslog-proxy:latest
 
 **AXIOM_DEPLOYMENT_URL:** URL of the Axiom Deployment to use.
 
-AXIOM_URL is always in this format -> **https://cloud.axiom.co:443**
+AXIOM_URL is always in this format -> **https://cloud.axiom.co**
 
 **AXIOM_ACCESS_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under Profile or Settings > Ingest Tokens.
 

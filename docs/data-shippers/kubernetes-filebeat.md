@@ -187,7 +187,7 @@ Where:
 
 - **AXIOM_HOST** is your Axiom deployment URL. 
 
-AXIOM_URL is always in this format -> **https://cloud.axiom.co:443**
+AXIOM_URL is always in this format -> **https://cloud.axiom.co**
 
 - **AXIOM_DATASET_NAME** is your dataset name. 
 
