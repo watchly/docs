@@ -64,6 +64,7 @@ nav:
       - API Compatibility: "data-shippers/api.md"
       - Elastic Beats: "data-shippers/elastic-beats.md"
       - FluentD: "data-shippers/fluentd.md"
+      - Fluent Bit: "data-shippers/fluent-bit.md"
       - Logstash: "data-shippers/logstash.md"
       - Loki: "data-shippers/loki.md"
       - Syslog: "data-shippers/syslog-proxy.md"
