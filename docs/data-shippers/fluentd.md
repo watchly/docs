@@ -60,10 +60,13 @@ The example below shows fluentD configuration that sends data to Axiom:
 ## matches the input and sends output to **Axiom host**
 <match *.**>
   @type           elasticsearch
+
   ## host is the url of your Axiom deployment
-  hosts "$YOUR_AXIOM_URL:443/api/v1/datasets/<dataset>/elastic"
+  hosts "https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"
+
   ## api_key can be your ingest or personal token
   api_key "user:token"
+
   verify_es_version_at_startup false
 </match>
 ```
