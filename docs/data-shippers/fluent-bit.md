@@ -1,5 +1,5 @@
 <div class="axi-header">
-  <h1>Ingesting using Fluent-Bit</h1>
+  <h1>Ingesting using Fluent Bit</h1>
 </div>
 
 ## Fluent Bit
