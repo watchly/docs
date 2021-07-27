@@ -15,30 +15,30 @@ Using the **Axiom-Loki-Proxy**, you can ship logs to Axiom via the [Loki HTTP AP
 ### Install & Update using Homebrew
 
 ```shell
-$ brew tap axiomhq/tap
-$ brew install axiom-loki-proxy
-$ brew update
-$ brew upgrade axiom-loki-proxy
+brew tap axiomhq/tap
+brew install axiom-loki-proxy
+brew update
+brew upgrade axiom-loki-proxy
 ```
 
 ### Install using `go get`
 
 ```shell
-$ go get -u github.com/axiomhq/axiom-loki-proxy/cmd/axiom-loki-proxy
+go get -u github.com/axiomhq/axiom-loki-proxy/cmd/axiom-loki-proxy
 ```
 
 ### Install from source
 
 ```shell
-$ git clone https://github.com/axiomhq/axiom-loki-proxy.git
-$ cd axiom-loki-proxy
-$ make build
+git clone https://github.com/axiomhq/axiom-loki-proxy.git
+cd axiom-loki-proxy
+make build
 ```
 
 ### Run the Loki-Proxy Docker [image](https://hub.docker.com/r/axiomhq/axiom-loki-proxy)
 
 ```shell
-$  docker pull axiomhq/axiom-loki-proxy:latest
+docker pull axiomhq/axiom-loki-proxy:latest
 ```
 
 ## Configuration
@@ -64,10 +64,10 @@ AXIOM_URL is always in this format -> **https://cloud.axiom.co**
 Using Docker
 
 ```
-$ docker run -p3101:3101/tcp \
-  -e=AXIOM_DEPLOYMENT_URL=<AXIOM_DEPLOYMENT_URL> \
-  -e=AXIOM_ACCESS_TOKEN=<AXIOM_ACCESS_TOKEN> \
-  axiomhq/axiom-loki-proxy
+docker run -p3101:3101/tcp \
+-e=AXIOM_DEPLOYMENT_URL=<AXIOM_DEPLOYMENT_URL> \
+-e=AXIOM_ACCESS_TOKEN=<AXIOM_ACCESS_TOKEN> \
+axiomhq/axiom-loki-proxy
 ```
 
 ---
