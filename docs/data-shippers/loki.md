@@ -6,9 +6,9 @@ Loki by Prometheus, is a multi-tenant log aggregation system that is highly scal
 
 Loki exposes an HTTP API for pushing, querying, and tailing Axiom log data.
 
-**Axiom Loki Proxy** enables a push interface to Axiom via Loki endpoint. 
+**Axiom Loki Proxy** provides a gateway for you to connect a direct link interface to Axiom via Loki endpoint. 
 
-With **Axiom-Loki-Proxy**, you can ships logs to Axiom via the  [Loki HTTP API](https://grafana.com/docs/loki/latest/api/#post-lokiapiv1push). 
+Using the **Axiom-Loki-Proxy**, you can ship logs to Axiom via the [Loki HTTP API](https://grafana.com/docs/loki/latest/api/#post-lokiapiv1push). 
 
 ## Installation
 
@@ -72,8 +72,4 @@ $ docker run -p3101:3101/tcp \
 
 ---
 
-For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit out repository on [Github](https://github.com/axiomhq/axiom-loki-proxy). 
-
-
-
-
+For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit out repository on [Github](https://github.com/axiomhq/axiom-loki-proxy).
