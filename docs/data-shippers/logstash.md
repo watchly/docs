@@ -2,7 +2,7 @@
   <h1>Ingest using Logstash</h1>
 </div>
 
-**NOTE:** Currently You can only ship logs to Axiom using the Logstash versions [7.12](https://www.elastic.co/guide/en/logstash/7.12/index.html) and lower. 
+**NOTE:** Currently, you can only ship logs to Axiom using the Logstash versions [7.12](https://www.elastic.co/guide/en/logstash/7.12/index.html) and lower. 
 
 ## Logstash
 

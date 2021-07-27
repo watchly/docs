@@ -2,7 +2,7 @@
   <h1>Ingest using Elastic Beats</h1>
 </div>
 
-**NOTE:** Currently You can only ship logs to Axiom using the Elastic Beats versions [7.12](https://www.elastic.co/guide/en/beats/libbeat/7.12/index.html) and lower.  
+**NOTE:** Currently, you can only ship logs to Axiom using the Elastic Beats versions [7.12](https://www.elastic.co/guide/en/beats/libbeat/7.12/index.html) and lower.  
 
 ---
 
@@ -46,7 +46,7 @@ filebeat.inputs:
       - $PATH_TO_LOG_FILE
 output.elasticsearch:
   # using the specified Axiom API
-  hosts: ["https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"]
+  hosts: ["https://cloud.axiom.co:443/api/v1/datasets/<my-datasets>/elastic"]
   # api_key can be your ingest or personal token
   api_key: "user:token"
 ```
@@ -86,7 +86,7 @@ metricbeat.modules:
     - memory
     - network
 output.elasticsearch:
-  hosts: ["https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"]
+  hosts: ["https://cloud.axiom.co:443/api/v1/datasets/<my-datasets>/elastic"]
   # api_key can be your ingest or personal token
   api_key:  "user:token"
 ```
@@ -239,7 +239,7 @@ heartbeat.monitors:
   id: my-http-service
   name: My HTTP Service
 output.elasticsearch:
-  hosts: ["https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"]
+  hosts: ["https://cloud.axiom.co:443/api/v1/datasets/<my-datasets>/elastic"]
   # api_key can be your ingest or personal token
   api_key: "user:token"
 ```
@@ -286,7 +286,7 @@ auditbeat.modules:
   - /bin
   - /usr/local/sbin
 output.elasticsearch:
-  hosts: ["https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"]
+  hosts: ["https://cloud.axiom.co:443/api/v1/datasets/<my-datasets>/elastic"]
   # api_key can be your ingest or personal token
   api_key: "user:token"
 ```
@@ -388,7 +388,7 @@ protocols:
   mongodb:
     ports: [27017]
 output.elasticsearch:
-  hosts: ["https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"]
+  hosts: ["https://cloud.axiom.co:443/api/v1/datasets/<my-datasets>/elastic"]
   # api_key can be your ingest or personal token
   api_key: "user:token" 
 ```
