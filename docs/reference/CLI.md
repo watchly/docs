@@ -16,9 +16,9 @@ To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.
 
 === "Go"
 
-    ```bash
+```bash
 go get -u github.com/axiomhq/cli/cmd/axiom
-    ```
+```
 
 ### Install using Homebrew
 
@@ -26,10 +26,10 @@ You can also install the CLI using [Homebrew](https://brew.sh/)
 
 === "Brew"
 
-    ```bash
+```bash
 brew tap axiomhq/tap
 brew install axiom 
-    ```
+```
 This installs Axiom command globally so you can run `axiom` commands from any directory.
 
 To update:
