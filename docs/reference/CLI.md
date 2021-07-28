@@ -90,7 +90,7 @@ backends:
 - main-instance:
   url: https://cloud.axiom.co
   user: username@axiom.co
-  token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  token: XaptXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 - alt-instance:
   url: https://axiom-2.mycompany.com
   user: username@axiom.co
