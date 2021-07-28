@@ -88,7 +88,7 @@ You can configure multiple Axiom deployments using the Axiom CLI by configuring 
 active-backend: main-instance
 backends:
 - main-instance:
-  url: https://axiom.mycompany.com
+  url: https://cloud.axiom.co
   user: username@axiom.co
   token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 - alt-instance:
