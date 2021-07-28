@@ -17,7 +17,7 @@ To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.
 === "Go"
 
     ```bash
-    $ go get -u github.com/axiomhq/cli/cmd/axiom
+go get -u github.com/axiomhq/cli/cmd/axiom
     ```
 
 ### Install using Homebrew
@@ -27,8 +27,8 @@ You can also install the CLI using [Homebrew](https://brew.sh/)
 === "Brew"
 
     ```bash
-    $ brew tap axiomhq/tap
-    $ brew install axiom 
+brew tap axiomhq/tap
+brew install axiom 
     ```
 This installs Axiom command globally so you can run `axiom` commands from any directory.
 
@@ -37,15 +37,15 @@ To update:
 === "Brew"
 
 ```bash
-$ brew upgrade axiom
+brew upgrade axiom
 ```
 
 ### Install from source
 
 ```sh
-$ git clone https://github.com/axiomhq/cli.git
-$ cd cli
-$ make install # Build and install binary into $GOPATH
+git clone https://github.com/axiomhq/cli.git
+cd cli
+make install # Build and install binary into $GOPATH
 
 ```
 ### Run the Docker image
@@ -53,8 +53,8 @@ $ make install # Build and install binary into $GOPATH
 Docker images are available on [DockerHub.](https://hub.docker.com/r/axiomhq/cli)
 
 ```sh
-$ docker pull axiomhq/cli
-$ docker run axiomhq/cli
+docker pull axiomhq/cli
+docker run axiomhq/cli
 
 ```
 
@@ -62,7 +62,7 @@ You can check the version and find out basic commands about Axiom CLI by running
 
 === "bash"
 ```sh
-$ axiom
+axiom
 
 ```
 ## Authentication 
@@ -103,8 +103,8 @@ To view available environment variables run `axiom help environment` for an up t
 
 ```
 # Directly set an Axiom instance:
-AX_URL="https://axiom.mycompany.com"
-AX_TOKEN="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+AX_URL="https://cloud.axiom.co"
+AX_TOKEN="XaptXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 # Select an Axiom instance from the available ones configured in
 # "~/.config/axiom/backends.yml" by using its alias, overriding the
@@ -196,14 +196,14 @@ To get usage tips and learn more about available commands from within Axiom CLI,
 
 === "bash"
 ```
-$ axiom help
+axiom help
 ```
 
 For more information about a specific command, run `help` with the name of the command. 
 
 === "bash"
 ```
-$ axiom help auth 
+axiom help auth 
 
 ```
 
@@ -211,7 +211,7 @@ This also works for sub-commands.
 
 === "bash"
 ```
-$ axiom help auth status
+axiom help auth status
 
 ```
 
