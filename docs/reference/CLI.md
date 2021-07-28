@@ -92,9 +92,9 @@ backends:
   user: username@axiom.co
   token: XaptXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 - alt-instance:
-  url: https://axiom-2.mycompany.com
+  url: https://cloud.axiom.co
   user: username@axiom.co
-  token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  token: XaptXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ```
 To view available environment variables run `axiom help environment` for an up to date list of env vars: 
