@@ -68,5 +68,6 @@ The example below shows fluentD configuration that sends data to Axiom:
   api_key "user:token"
 
   verify_es_version_at_startup false
+
 </match>
 ```

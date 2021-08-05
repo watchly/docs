@@ -43,33 +43,31 @@ docker pull axiomhq/axiom-loki-proxy:latest
 
 ## Configuration
 
----
-
 - Specify the environmental variables for your Axiom deployment
 
-**AXIOM_DEPLOYMENT_URL:** URL of the Axiom Deployment to use. 
+**When using Axiom Selfhost:**
 
-AXIOM_URL is always in this format -> **https://cloud.axiom.co**
+**AXIOM_URL:** URL of the Axiom deployment to use. 
 
-**AXIOM_ACCESS_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under Profile or Settings > Ingest Tokens.
+**AXIOM_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under Profile or Settings > Ingest Tokens.
 
 **For security reasons it is advised to use an Ingest Token with minimal privileges only.**
 
-- Run & Test it:
+## Run & Test it:
 
 ```shell
 ./axiom-loki-proxy
 ```
 
-Using Docker
+### Using Docker
 
 ```
-docker run -p3101:3101/tcp \
--e=AXIOM_DEPLOYMENT_URL=<AXIOM_DEPLOYMENT_URL> \
--e=AXIOM_ACCESS_TOKEN=<AXIOM_ACCESS_TOKEN> \
-axiomhq/axiom-loki-proxy
+docker run -p8080:8080/tcp \
+  -e=AXIOM_TOKEN=<YOU_AXIOM_TOKEN> \
+  axiomhq/axiom-loki-proxy
+
 ```
 
 ---
 
-For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit out repository on [Github](https://github.com/axiomhq/axiom-loki-proxy).
+For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-loki-proxy).
