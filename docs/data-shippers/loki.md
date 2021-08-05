@@ -70,4 +70,4 @@ docker run -p8080:8080/tcp \
 
 ---
 
-For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-loki-proxy).
+For more information on Axiom-loki-proxy and how you can propose bug fix, report issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-loki-proxy).

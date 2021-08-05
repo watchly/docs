@@ -87,4 +87,4 @@ curl  http://localhost:3111/honeycomb/v1/batch/<DATASET> -X POST \
 
 ---
 
-For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-honeycomb-proxy).
+For more information on Axiom-honeycomb-proxy and how you can propose bug fix, report issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-honeycomb-proxy).
