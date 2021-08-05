@@ -77,7 +77,7 @@ echo -n "udp message" | nc -u -w1 localhost 514
 
 ---
 
-For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-syslog-proxy). 
+For more information on Axiom-loki-proxy and how you can propose bug fix, report issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-syslog-proxy). 
 
 
 
