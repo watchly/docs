@@ -42,32 +42,30 @@ docker pull axiomhq/axiom-syslog-proxy:latest
 
 ## Configuration
 
----
-
 - Specify the environmental variables for your Axiom deployment
 
-**AXIOM_DEPLOYMENT_URL:** URL of the Axiom Deployment to use.
+**When using Axiom Selfhost:**
 
-AXIOM_URL is always in this format -> **https://cloud.axiom.co**
+**AXIOM_URL:** URL of the Axiom Deployment to use.
 
-**AXIOM_ACCESS_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under Profile or Settings > Ingest Tokens.
+**AXIOM_TOKEN:** Personal Access or Ingest token. Your personal access or ingest token can be created under `Profile` or `Settings > Ingest Tokens.`
 
 **AXIOM_INGEST_DATASET:**  Dataset to ingest into
 
-- Run it:
+## Run it:
 
 ```shell
 ./axiom-syslog-proxy
 ```
 
-Using Docker
+### Using Docker
 
 ```shell
 docker run -p601:601/tcp -p514:514/udp  \
--e=AXIOM_DEPLOYMENT_URL=<AXIOM_DEPLOYMENT_URL> \
--e=AXIOM_ACCESS_TOKEN=<AXIOM_ACCESS_TOKEN> \
--e=AXIOM_INGEST_DATASET=<AXIOM_INGEST_DATASET> \
-axiomhq/axiom-syslog-proxy
+  -e=AXIOM_TOKEN=<YOUR_AXIOM_TOKEN>     \
+  -e=AXIOM_DATASET=<YOUR_AXIOM_DATASET> \
+  axiomhq/axiom-syslog-proxy
+
 ```
 
 - Test it:
@@ -79,7 +77,7 @@ echo -n "udp message" | nc -u -w1 localhost 514
 
 ---
 
-For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit out repository on [Github](https://github.com/axiomhq/axiom-syslog-proxy). 
+For more information on Axiom-loki-proxy and how you can propose bug fix, fill issues and submit PRs, kindly visit our repository on [Github](https://github.com/axiomhq/axiom-syslog-proxy). 
 
 
 
