@@ -217,6 +217,58 @@ curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
 
 ```
 
+### Grouping Events with different tags
+
+You can also group events with different tags into the same request as shown in the following example.
+
+This request contains three events. The first two are tagged with `client1` and the third is tagged with `client2`:
+
+=== "cURL"
+
+```bash
+curl -X 'POST' '$YOUR_AXIOM_URL/api/v1/datasets/neil-cmc/ingest' \
+  -H 'Authorization: Bearer $INGEST_TOKEN or $PERSONAL_TOKEN' \
+  -H 'Content-Type: application/json' -H 'x-axiom-org-id: axiom' \
+  -d '[
+  {
+    "tags": {
+      "host": "client1",
+      "origin": "data.log"
+    },
+    "events": [
+      {
+        "timestamp": "2021-05-07T12:03:05+02:00",
+        "attributes": {
+          "method": "GET"
+        }
+      },
+      {
+        "timestamp": "2021-05-07T12:03:01+02:00",
+        "attributes": {
+          "statuscode": "200",
+          "city": "Utsunomiya"
+        }
+      }
+    ]
+  },
+  {
+    "tags": {
+      "host": "client2",
+      "origin": "data.log"
+    },
+    "events": [
+      {
+        "timestamp": "2021-05-07T12:03:02+02:00",
+        "attributes": {
+          "country": "Mexico"
+        }
+      }
+    ]
+  }
+]'
+
+```
+
 ### Example Response
 
 ```
