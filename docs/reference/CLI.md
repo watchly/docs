@@ -12,7 +12,7 @@ You can use the command line to Ingest data, manage authentication state, and co
 
 ### Install using go install 
 
-To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.15 or higher, then run this command from any directory in your terminal. 
+To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.16 or higher, then run this command from any directory in your terminal. 
 
 === "Go"
 
