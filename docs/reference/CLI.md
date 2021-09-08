@@ -10,14 +10,14 @@ You can use the command line to Ingest data, manage authentication state, and co
 
 ## Installation
 
-### Install using go get
+### Install using go install 
 
 To install Axiom CLI, make sure you have [Go](https://golang.org/dl/) version 1.15 or higher, then run this command from any directory in your terminal. 
 
 === "Go"
 
 ```bash
-go get -u github.com/axiomhq/cli/cmd/axiom
+go install github.com/axiomhq/cli/cmd/axiom@latest
 ```
 
 ### Install using Homebrew
@@ -214,6 +214,7 @@ This also works for sub-commands.
 axiom help auth status
 
 ```
+
 
 **if you have questions, or any opinions you can [start an issue](https://github.com/axiomhq/cli/issues) on Axiom CLI's open source repository.**
 
