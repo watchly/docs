@@ -76,3 +76,5 @@ nav:
       - Virtual Fields: "reference/virtual-fields.md"
       - Axiom CLI: "reference/CLI.md"
       - API: "reference/api.md"
+  - Get help:
+      - Resources & tips: "get-help/resources-and-tips.md"
