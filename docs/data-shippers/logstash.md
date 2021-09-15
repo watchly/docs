@@ -44,7 +44,7 @@ input{
 }
 output{
   elasticsearch{
-    hosts => ["https://cloud.axiom.co/api/v1/datasets/<my-datasets>/elastic"]
+    hosts => ["https://cloud.axiom.co:443/api/v1/datasets/<my-datasets>/elastic"]
     # api_key can be your ingest or personal token
     api_key => "user:token"
     ssl => true
