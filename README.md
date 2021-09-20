@@ -1,3 +1,10 @@
+# /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+# THIS REPO IS NO LONGER USED. DOCS ARE IN AXIOM-CO
+
+# /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
 # Axiom Documentation
 
 This repository contains the documentation website code and Markdown source files for **https://docs.axiom.co/**
